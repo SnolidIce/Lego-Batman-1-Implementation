@@ -10,7 +10,7 @@ class LegoBatman1Location(Location):
 class LegoBatman1LocationData(NamedTuple):
     category: str
     code: Optional[int] = None
-
+    can_create: Callable[[MultiWorld, int], bool] = lambda multiworld, player: True
 
 def get_locations_by_category(category: str) -> Dict[str, LegoBatman1LocationData]:
     location_dict: Dict[str, LegoBatman1LocationData] = {}
