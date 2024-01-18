@@ -225,7 +225,7 @@ location_table: Dict[str, LegoBatman1LocationData] = {
     "TJR Hero #5 - Room 1, Use generator on right side":                                    LegoBatman1LocationData("To the Top of the Tower",   45035996171),
     "TJR Hero #5 - Room 2, Climb up magnet wall then walk along edge":                      LegoBatman1LocationData("To the Top of the Tower",   45035996172),
     "TJR Hero #5 - Room 2, Climb up magnet wall then walk a little past switch":            LegoBatman1LocationData("To the Top of the Tower",   45035996173),
-    "TJR Hero #5 - Room 2, Push organ out of hiding, then play it":                                        LegoBatman1LocationData("To the Top of the Tower",   45035996174),
+    "TJR Hero #5 - Room 2, Push organ out of hiding, then play it":                         LegoBatman1LocationData("To the Top of the Tower",   45035996174),
     "TJR Hero #5 - Boss Room, Cause train crash from Batman Torpedo in back then blow up silver pipe":LegoBatman1LocationData("To the Top of the Tower",   45035996175),
     "TJR Hero #5 - Boss Room, Blow up silver object right side":                            LegoBatman1LocationData("To the Top of the Tower",   45035996176),
     
