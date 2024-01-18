@@ -194,7 +194,7 @@ location_table: Dict[str, LegoBatman1LocationData] = {
     "TJR Hero #3 - Room 1, Fly up on railway":                                              LegoBatman1LocationData("Flight of the Bat",   45035996144),
     "TJR Hero #3 - Room 1, Blow up silver object near hotel sign":                          LegoBatman1LocationData("Flight of the Bat",   45035996145),
     "TJR Hero #3 - Room 2, Shoot grey pipe":                                                LegoBatman1LocationData("Flight of the Bat",   45035996146),
-    "TJR Hero #3 - Room 2, Go through toxic gas and shot turnstile":                        LegoBatman1LocationData("Flight of the Bat",   45035996147),
+    "TJR Hero #3 - Room 2, Go through toxic gas and shoot turnstiles":                      LegoBatman1LocationData("Flight of the Bat",   45035996147),
     "TJR Hero #3 - Room 2, Destory 3 silver valves":                                        LegoBatman1LocationData("Flight of the Bat",   45035996148),
     "TJR Hero #3 - Room 2, Torpedo gray barrel and tow blue barrel to button":              LegoBatman1LocationData("Flight of the Bat",   45035996149),
     "TJR Hero #3 - Boss Room, Go through toxic gas and shoot stuff":                        LegoBatman1LocationData("Flight of the Bat",   45035996150),
@@ -225,7 +225,7 @@ location_table: Dict[str, LegoBatman1LocationData] = {
     "TJR Hero #5 - Room 1, Use generator on right side":                                    LegoBatman1LocationData("To the Top of the Tower",   45035996171),
     "TJR Hero #5 - Room 2, Climb up magnet wall then walk along edge":                      LegoBatman1LocationData("To the Top of the Tower",   45035996172),
     "TJR Hero #5 - Room 2, Climb up magnet wall then walk a little past switch":            LegoBatman1LocationData("To the Top of the Tower",   45035996173),
-    "TJR Hero #5 - Room 2, Push organ then play it":                                        LegoBatman1LocationData("To the Top of the Tower",   45035996174),
+    "TJR Hero #5 - Room 2, Push organ out of hiding, then play it":                                        LegoBatman1LocationData("To the Top of the Tower",   45035996174),
     "TJR Hero #5 - Boss Room, Cause train crash from Batman Torpedo in back then blow up silver pipe":LegoBatman1LocationData("To the Top of the Tower",   45035996175),
     "TJR Hero #5 - Boss Room, Blow up silver object right side":                            LegoBatman1LocationData("To the Top of the Tower",   45035996176),
     
