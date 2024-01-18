@@ -60,10 +60,6 @@ class CharacterShopSanity(Toggle):
     """
     display_name = "CharacterShopSanity"
 
-class CosmeticExtraSanity(Toggle):
-    """Adds all 6 Cosmetic Extras into the pool."""
-    display_name = "Cosmetic ExtraSanity"
-
 class StartingLevels(Choice):
     """What levels you start off with.
     Vanillia: Start with only the first level of hero campaign 
@@ -95,17 +91,10 @@ class DectectorLogic(Toggle):
 class RequireMultipliers(Toggle):
     """Requires atleast a stud multipler for True Statuses and characters in shop to be in logic. 
     The ammount required for true status and purchases are turned up.
-    8x Studs becomes progression instead of useful.
+    6x Studs becomes progression instead of useful.
     """
     display_name = "Require Stud Multipliers?"
 
-
-class BuyRedBricks(Toggle):
-    """Requires Red Brick to be bought to use them. You buy them once you receive it.
-    Can make the game artifically longer. 
-    Makes 8x Studs Progression
-    """
-    display_name = "Buy Red Bricks?"
 
 class IncreaseCharSpeed(Toggle):
     """
@@ -171,11 +160,9 @@ class LegoBatman1Options(PerGameCommonOptions):
     kit_sanity: MiniKitSanity
     hostage_sanity: HostageSanity
     shop_sanity: CharacterShopSanity
-    cosmetic_sanity: CosmeticExtraSanity
     start_level: StartingLevels
     multipler_req: RequireMultipliers
     dector_req: DectectorLogic
-    buy_red: BuyRedBricks
     speed_up: IncreaseCharSpeed
     hints: Hints
     hint_items: HintItems
