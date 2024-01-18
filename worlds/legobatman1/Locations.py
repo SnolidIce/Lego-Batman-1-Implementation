@@ -23,7 +23,7 @@ def get_locations_by_category(category: str) -> Dict[str, LegoBatman1LocationDat
 
 location_table: Dict[str, LegoBatman1LocationData] = {
     # You Can Bank On Batman
-    "TRR Hero #1 - Room 1, Top Of ladder near switch and grapple":                          LegoBatman1LocationData("You Can Bank On Batman",   45035996000),
+    "TRR Hero #1 - Room 1, Top Of ladder near switch and grapple":LegoBatman1LocationData("You Can Bank On Batman",   45035996000, can_create=lambda multiworld, player: bool(getattr(multiworld, "kit_sanity")[player])),
     "TRR Hero #1 - Room 1, Garage Door from switch near grapple and ladder":                LegoBatman1LocationData("You Can Bank On Batman",   45035996001),
     "TRR Hero #1 - Break 5 Telephone Booths through out level":                             LegoBatman1LocationData("You Can Bank On Batman",   45035996002),
     "TRR Hero #1 - Room 1, Defeat enemeies in window near spawn":                           LegoBatman1LocationData("You Can Bank On Batman",   45035996003),
