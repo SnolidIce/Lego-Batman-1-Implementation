@@ -22,6 +22,8 @@ def get_locations_by_category(category: str) -> Dict[str, LegoBatman1LocationDat
 
 
 location_table: Dict[str, LegoBatman1LocationData] = {
+
+
     # You Can Bank On Batman
     "TRR Hero #1 - Room 1, Top Of ladder near switch and grapple":LegoBatman1LocationData("You Can Bank On Batman",   45035996000, can_create=lambda multiworld, player: bool(getattr(multiworld, "kit_sanity")[player])),
     "TRR Hero #1 - Room 1, Garage Door from switch near grapple and ladder":                LegoBatman1LocationData("You Can Bank On Batman",   45035996001),
@@ -516,16 +518,16 @@ location_table: Dict[str, LegoBatman1LocationData] = {
     "Buy Extra Toggle":                             LegoBatman1LocationData("Shop", 45035996435),
     "Buy Disguise":                                 LegoBatman1LocationData("Shop", 45035996436),
     "Buy Ice Rink":                                 LegoBatman1LocationData("Shop", 45035996437),
-    "Buy Bruce Wayne":                              LegoBatman1LocationData("Shop", 45035996438),
-    "Buy Alfred":                                   LegoBatman1LocationData("Shop", 45035996439),
-    "Buy Batgirl":                                  LegoBatman1LocationData("Shop", 45035996440),
-    "Buy Nightwing":                                LegoBatman1LocationData("Shop", 45035996441),
-    "Buy Commissioner Gordon":                      LegoBatman1LocationData("Shop", 45035996442),
-    "Buy Mad Hatter":                               LegoBatman1LocationData("Shop", 45035996443),
-    "Buy Fishmonger":                               LegoBatman1LocationData("Shop", 45035996444),
-    "Buy Scientist":                                LegoBatman1LocationData("Shop", 45035996445),
-    "Buy Security Guard":                           LegoBatman1LocationData("Shop", 45035996446),
-    "Buy Police Marksman":                          LegoBatman1LocationData("Shop", 45035996447),
+    "Buy Bruce Wayne":                              LegoBatman1LocationData("Shop", 45035996438, can_create=lambda multiworld, player: bool(getattr(multiworld, "char_shop_sanity")[player])),
+    "Buy Alfred":                                   LegoBatman1LocationData("Shop", 45035996439, can_create=lambda multiworld, player: bool(getattr(multiworld, "char_shop_sanity")[player])),
+    "Buy Batgirl":                                  LegoBatman1LocationData("Shop", 45035996440, can_create=lambda multiworld, player: bool(getattr(multiworld, "char_shop_sanity")[player])),
+    "Buy Nightwing":                                LegoBatman1LocationData("Shop", 45035996441, can_create=lambda multiworld, player: bool(getattr(multiworld, "char_shop_sanity")[player])),
+    "Buy Commissioner Gordon":                      LegoBatman1LocationData("Shop", 45035996442, can_create=lambda multiworld, player: bool(getattr(multiworld, "char_shop_sanity")[player])),
+    "Buy Mad Hatter":                               LegoBatman1LocationData("Shop", 45035996443, can_create=lambda multiworld, player: bool(getattr(multiworld, "char_shop_sanity")[player])),
+    "Buy Fishmonger":                               LegoBatman1LocationData("Shop", 45035996444, can_create=lambda multiworld, player: bool(getattr(multiworld, "char_shop_sanity")[player])),
+    "Buy Scientist":                                LegoBatman1LocationData("Shop", 45035996445, can_create=lambda multiworld, player: bool(getattr(multiworld, "char_shop_sanity")[player])),
+    "Buy Security Guard":                           LegoBatman1LocationData("Shop", 45035996446, can_create=lambda multiworld, player: bool(getattr(multiworld, "char_shop_sanity")[player])),
+    "Buy Police Marksman":                          LegoBatman1LocationData("Shop", 45035996447, can_create=lambda multiworld, player: bool(getattr(multiworld, "char_shop_sanity")[player])),
     "Buy Police Officer":                           LegoBatman1LocationData("Shop", 45035996448),
     "Buy S.W.A.T.":                                 LegoBatman1LocationData("Shop", 45035996449),
     "Buy Sailor":                                   LegoBatman1LocationData("Shop", 45035996450),

@@ -111,7 +111,6 @@ class Hints(Toggle):
 
 class HintItems(Choice):
     """
-    Only matters for Shop Hints:
     Local Item: Hints are only related to your items on your Slot
     Local Location: Hints are only related to your locations on your Slot
     Current Level: Hints are only related to the level you are about to enter
@@ -159,7 +158,7 @@ class LegoBatman1Options(PerGameCommonOptions):
     logic: Logic
     kit_sanity: MiniKitSanity
     hostage_sanity: HostageSanity
-    shop_sanity: CharacterShopSanity
+    char_shop_sanity: CharacterShopSanity
     start_level: StartingLevels
     multipler_req: RequireMultipliers
     dector_req: DectectorLogic
