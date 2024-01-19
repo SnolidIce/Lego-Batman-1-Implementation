@@ -145,7 +145,7 @@ item_table: Dict[str, LegoBatman1ItemData] = {
     "Police Watercraft":                    LegoBatman1ItemData("Shop Chars",   450359962108, ItemClassification.filler),
     "Police Boat":                          LegoBatman1ItemData("Shop Chars",   450359962109, ItemClassification.filler),
     "Penguin Goon Submarine":               LegoBatman1ItemData("Shop Chars",   450359962110, ItemClassification.progression),
-    "Mad Hatter's SteamBoat":               LegoBatman1ItemData("Shop Chars",   450359962111, ItemClassification.filler),
+    "Mad Hatter's Steamboat":               LegoBatman1ItemData("Shop Chars",   450359962111, ItemClassification.filler),
     "Robin's Submarine":                    LegoBatman1ItemData("Shop Chars",   450359962112, ItemClassification.progression),
     "Mr.Freeze's Iceberg":                  LegoBatman1ItemData("Shop Chars",   450359962113, ItemClassification.filler),                   
     "The Joker Van":                        LegoBatman1ItemData("Shop Chars",   450359962114, ItemClassification.progression),
