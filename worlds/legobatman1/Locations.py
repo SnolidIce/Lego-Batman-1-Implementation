@@ -28,7 +28,7 @@ location_table: Dict[str, LegoBatman1LocationData] = {
     "TRR Hero #1 - Room 1, Top Of ladder near switch and grapple":                          LegoBatman1LocationData("You Can Bank On Batman",   45035996000),
     "TRR Hero #1 - Room 1, Garage Door from switch near grapple and ladder":                LegoBatman1LocationData("You Can Bank On Batman",   45035996001),
     "TRR Hero #1 - Break 5 Telephone Booths through out level":                             LegoBatman1LocationData("You Can Bank On Batman",   45035996002),
-    "TRR Hero #1 - Room 1, Defeat enemeies in window near spawn":                           LegoBatman1LocationData("You Can Bank On Batman",   45035996003),
+    
     "TRR Hero #1 - Room 1, Glass Window near spawn":                                        LegoBatman1LocationData("You Can Bank On Batman",   45035996004),
     "TRR Hero #1 - Room 1, Mind Control Pannel near Toxins":                                LegoBatman1LocationData("You Can Bank On Batman",   45035996005),
     "TRR Hero #1 - Room 1, In the sewer lid with garbage can on it":                        LegoBatman1LocationData("You Can Bank On Batman",   45035996006),
@@ -42,7 +42,7 @@ location_table: Dict[str, LegoBatman1LocationData] = {
     "TRR Hero #2 - Room 1, Build and Climb rails on the right of spawn":                    LegoBatman1LocationData("An Icy Reception",   45035996012),
     "TRR Hero #2 - Room 1, Destroy Wood Barrier right of spawn after climbing rails":       LegoBatman1LocationData("An Icy Reception",   45035996013),
     "TRR Hero #2 - Room 1, Strength behind truck left of spawn":                            LegoBatman1LocationData("An Icy Reception",   45035996014),
-    "TRR Hero #2 - Room 1, Inside Mind Control Door left of spawn, defeat enemies":         LegoBatman1LocationData("An Icy Reception",   45035996015),
+   
     "TRR Hero #2 - Room 1, Climb Rails inside Mind Control Door left of spawn":             LegoBatman1LocationData("An Icy Reception",   45035996016),
     "TRR Hero #2 - Room 1, Silver object above rails behind gate north of spawn":           LegoBatman1LocationData("An Icy Reception",   45035996017),
     "TRR Hero #2 - Room 1, Drive truck to platform by spawn and blow up silver objects":    LegoBatman1LocationData("An Icy Reception",   45035996018),
@@ -69,7 +69,7 @@ location_table: Dict[str, LegoBatman1LocationData] = {
     "TRR Hero #4 - Room 1, Build and destroy all carrots":                                  LegoBatman1LocationData("A Poisonous Appointment",   45035996036),
     "TRR Hero #4 - Room 1, Jump on the tree off of the tractor, jump to the right tree":    LegoBatman1LocationData("A Poisonous Appointment",   45035996036),
     "TRR Hero #4 - Room 2, Go through the heat gas and use the tech pad":                   LegoBatman1LocationData("A Poisonous Appointment",   45035996037),
-    "TRR Hero #4 - Room 2, Break glass wall and defeat enemies":                            LegoBatman1LocationData("A Poisonous Appointment",   45035996038),
+    
     "TRR Hero #4 - Room 2, push the glass box and jump on flowers":                         LegoBatman1LocationData("A Poisonous Appointment",   45035996039),
     "TRR Hero #4 - Room 2, Build potted plant and double jump to rail":                     LegoBatman1LocationData("A Poisonous Appointment",   45035996040),
     "TRR Hero #4 - Build 3 carrots":                                                        LegoBatman1LocationData("A Poisonous Appointment",   45035996041),
@@ -84,7 +84,7 @@ location_table: Dict[str, LegoBatman1LocationData] = {
     "TRR Hero #5 - Room 1, Far Right side of room grapple":                                 LegoBatman1LocationData("The Face-Off",   45035996048),
     "TRR Hero #5 - Room 1, Use Tech Pad and go through rotating door":                      LegoBatman1LocationData("The Face-Off",   45035996049),
     "TRR Hero #5 - Room 1, Build Neon Giant Dollar Sign":                                   LegoBatman1LocationData("The Face-Off",   45035996050),
-    "TRR Hero #5 - Room 1, Use Attract Machine and Double Jump on Leaves, defeat enemies":  LegoBatman1LocationData("The Face-Off",   45035996051),
+    
     "TRR Hero #5 - Room 1, Use Attract Machine and Double Jump on Leaves and Double jump":  LegoBatman1LocationData("The Face-Off",   45035996052),
     "TRR Hero #5 - Room 2, After Two Face Fight, Push Colored Buttons on left side":        LegoBatman1LocationData("The Face-Off",   45035996053),
     "TRR Hero #5 - Room 2, After Two Face Fight, jump down bridge into toxin":              LegoBatman1LocationData("The Face-Off",   45035996054),
@@ -102,7 +102,6 @@ location_table: Dict[str, LegoBatman1LocationData] = {
     "PCP Hero #1 - Room 2, Build and Destroy flowers near bridge":                          LegoBatman1LocationData("There She Goes Again",   45035996064),
     "PCP Hero #1 - Room 2, Remove Trash Can near bridge and grapple":                       LegoBatman1LocationData("There She Goes Again",   45035996065),
     "PCP Hero #1 - Room 2, Remove Trash Can near fan and go under":                         LegoBatman1LocationData("There She Goes Again",   45035996066),
-    "PCP Hero #1 - Room 2, Fight Guys near rail after first Catwoman fight":                LegoBatman1LocationData("There She Goes Again",   45035996067),
     "PCP Hero #1 - Room 2, Use tech pad to push buttons, blow up silver, fly to glass pannel up left":LegoBatman1LocationData("There She Goes Again",   45035996068),
     "PCP Hero #1 - Room 2, Use tech pad to push buttons, blow up silver, fly to glass pannel right and sink":LegoBatman1LocationData("There She Goes Again",   45035996069),
     "PCP Hero #1 - Boss Room, Break wall near entrance":                                    LegoBatman1LocationData("There She Goes Again",   45035996070),
@@ -122,7 +121,7 @@ location_table: Dict[str, LegoBatman1LocationData] = {
 
     # Under The City
     "PCP Hero #3 - Room 1, Use Tech Pannel and run over bouys":                             LegoBatman1LocationData("Under The City",   45035996082),
-    "PCP Hero #3 - Room 1, Far Right of room, defeat enemy":                                LegoBatman1LocationData("Under The City",   45035996083),
+    
     "PCP Hero #3 - Room 1, Glide from robin suit and use mind control door, open cage":     LegoBatman1LocationData("Under The City",   45035996084),
     "PCP Hero #3 - Room 1, Double Jump from rail near middle of room":                      LegoBatman1LocationData("Under The City",   45035996085),
     "PCP Hero #3 - Room 2, Pull Blue Garbage can and break glass":                          LegoBatman1LocationData("Under The City",   45035996086),
@@ -143,7 +142,7 @@ location_table: Dict[str, LegoBatman1LocationData] = {
     "PCP Hero #4 - Room 2, Break Silver gate and go in water":                              LegoBatman1LocationData("Zoo's Company",   45035996099),
     "PCP Hero #4 - Room 2, Break silver rocks in lion enclosure":                           LegoBatman1LocationData("Zoo's Company",   45035996100),
     "PCP Hero #4 - Room 2, Top right cornor of elephant enclosure":                         LegoBatman1LocationData("Zoo's Company",   45035996101),
-    "PCP Hero #4 - Room 2, Fight enemies near batman suit":                                 LegoBatman1LocationData("Zoo's Company",   45035996102),
+   
     "PCP Hero #4 - Room 3, Jump on big lily pad behind boat":                               LegoBatman1LocationData("Zoo's Company",   45035996103),
     "PCP Hero #4 - Room 3, Freeze water near waterfall and jump up":                        LegoBatman1LocationData("Zoo's Company",   45035996105),
     "PCP Hero #4 - Room 3, Use strength thing near batman suit":                            LegoBatman1LocationData("Zoo's Company",   45035996104),
@@ -152,7 +151,7 @@ location_table: Dict[str, LegoBatman1LocationData] = {
     "PCP Hero #5 - Room 1, Break glass cover near spawn and sink down":                     LegoBatman1LocationData("Penguin's Lair",   45035996106),
     "PCP Hero #5 - Room 1, Freeze water near silver gate and blow it up":                   LegoBatman1LocationData("Penguin's Lair",   45035996107),
     "PCP Hero #5 - Room 1, Double Jump on rails to roof of cabin":                          LegoBatman1LocationData("Penguin's Lair",   45035996108),
-    "PCP Hero #5 - Room 1, On the far right side of room, defeat enemies":                  LegoBatman1LocationData("Penguin's Lair",   45035996109),
+    
     "PCP Hero #5 - Room 1, Grow 3 carrots all in room 1":                                   LegoBatman1LocationData("Penguin's Lair",   45035996110),
     "PCP Hero #5 - Room 1, Right side of room break trees, grapple and glide":              LegoBatman1LocationData("Penguin's Lair",   45035996111),
     "PCP Hero #5 - Boss Room, Glide to ice berg in back of room":                           LegoBatman1LocationData("Penguin's Lair",   45035996112),
@@ -172,7 +171,7 @@ location_table: Dict[str, LegoBatman1LocationData] = {
     "TJR Hero #1 - Room 2, Use strength and double jump to rails":                          LegoBatman1LocationData("Joker's Home Turf",   45035996124),
     "TJR Hero #1 - Room 2, Swim in toxin waters near the end of the room":                  LegoBatman1LocationData("Joker's Home Turf",   45035996125),
     "TJR Hero #1 - Room 3, Freeze water near entrance then double jump up, then break glass and solve puzzle":LegoBatman1LocationData("Joker's Home Turf",   45035996126),
-    "TJR Hero #1 - Room 3, Use generator far right of room and use elevator and defeat enemies":LegoBatman1LocationData("Joker's Home Turf",   45035996127),
+    
     "TJR Hero #1 - Room 3, Use generator far right of room and use elevator and push turnstile":LegoBatman1LocationData("Joker's Home Turf",   45035996128),
     "TJR Hero #1 - Boss Room, Climb up magnet wall and push ramp down":                      LegoBatman1LocationData("Joker's Home Turf",   45035996129),
 
@@ -183,7 +182,7 @@ location_table: Dict[str, LegoBatman1LocationData] = {
     "TJR Hero #2 - Room 1, Use Tech Pannel on duck game, then destroy all ducks":           LegoBatman1LocationData("Little Fun at the Big Top",   45035996133),
     "TJR Hero #2 - Room 1, Use Tech Pannel on Crane Game, grab and break all 3 pink prizes":LegoBatman1LocationData("Little Fun at the Big Top",   45035996134),
     "TJR Hero #2 - Room 2, Break glass & silver object, build grapple and grapple up":      LegoBatman1LocationData("Little Fun at the Big Top",   45035996135),
-    "TJR Hero #2 - Room 2, Defeat enemies top right of tea cups":                           LegoBatman1LocationData("Little Fun at the Big Top",   45035996136),
+    
     "TJR Hero #2 - Room 2, Use generator near tea cups, after it spins go in bottom left cup":LegoBatman1LocationData("Little Fun at the Big Top", 45035996137),
     "TJR Hero #2 - Room 2, Ride down spiral slide":                                         LegoBatman1LocationData("Little Fun at the Big Top",   45035996138),
     "TJR Hero #2 - Room 3, Use tech pad to bring colored boats in the correct colored homes":LegoBatman1LocationData("Little Fun at the Big Top",  45035996139),
@@ -210,7 +209,7 @@ location_table: Dict[str, LegoBatman1LocationData] = {
     "TJR Hero #4 - Room 1, Destroy 3 cakes":                                                LegoBatman1LocationData("In the Dark Night",   45035996156),
     "TJR Hero #4 - Room 2, Grow 3 plants then sink in fish tank":                           LegoBatman1LocationData("In the Dark Night",   45035996157),
     "TJR Hero #4 - Room 2, Use attract machine to build helicopter, then use tech pannel to fly helicopter into buttons in center of room":LegoBatman1LocationData("In the Dark Night",   45035996158),
-    "TJR Hero #4 - Room 3, Defeat enemies south of spawn":                                  LegoBatman1LocationData("In the Dark Night",   45035996159),
+    
     "TJR Hero #4 - Room 3, Pull truck away from garage and blow up silver obeject":         LegoBatman1LocationData("In the Dark Night",   45035996160),
     "TJR Hero #4 - Room 3, Go across toxins then blow up silver objects, build and walk on magnet wall":LegoBatman1LocationData("In the Dark Night",   45035996161),
     "TJR Hero #4 - Room 3, Build heated ladder then climb, glide and double jump":         LegoBatman1LocationData("In the Dark Night",   45035996162),
@@ -218,7 +217,7 @@ location_table: Dict[str, LegoBatman1LocationData] = {
     "TJR Hero #4 - Boss Room, Break glass and use generator":                              LegoBatman1LocationData("In the Dark Night",   45035996164),
 
     # To the Top of the Tower
-    "TJR Hero #5 - Room 1, Bottom left of spawn, defeat enemies":                           LegoBatman1LocationData("To the Top of the Tower",   45035996165),
+   
     "TJR Hero #5 - Room 1, Blow up 3 silver gargoyles":                                     LegoBatman1LocationData("To the Top of the Tower",   45035996166),
     "TJR Hero #5 - Room 1, Left of room, break potted plants and build ladder then press buttons":LegoBatman1LocationData("To the Top of the Tower",   45035996167),
     "TJR Hero #5 - Room 1, Left side of room, build magnet wall, break glass":              LegoBatman1LocationData("To the Top of the Tower",   45035996168),
@@ -235,7 +234,7 @@ location_table: Dict[str, LegoBatman1LocationData] = {
     "TRR Villian #1 - Room 1, Pull garbage cans with strong character":                        LegoBatman1LocationData("The Ridler Makes a Withdrawal",   45035996178),
     "TRR Villian #1 - Room 1, Pull white truck in parking lot then double jump up":            LegoBatman1LocationData("The Ridler Makes a Withdrawal",   45035996177),
     "TRR Villian #1 - Room 1, Drive Blue car to machine in bottom right of parking lot":       LegoBatman1LocationData("The Ridler Makes a Withdrawal",   45035996179),
-    "TRR Villian #1 - Room 2, Break Glass and defeat enemies":                                 LegoBatman1LocationData("The Ridler Makes a Withdrawal",   45035996180),
+    
     "TRR Villian #1 - Room 2, Break silver window near glass":                                 LegoBatman1LocationData("The Ridler Makes a Withdrawal",   45035996181),
     "TRR Villian #1 - Room 2, Batarang window then grapple up to it":                          LegoBatman1LocationData("The Ridler Makes a Withdrawal",   45035996182),
     "TRR Villian #1 - Room 2, Break glass window with tv after silver gate":                   LegoBatman1LocationData("The Ridler Makes a Withdrawal",   45035996183),
@@ -249,7 +248,7 @@ location_table: Dict[str, LegoBatman1LocationData] = {
     "TRR Villian #2 - Room 1, Drive Ice Cream truck into garage":                              LegoBatman1LocationData("On the Rocks",   45035996189),
     "TRR Villian #2 - Room 1, Break 3 snowmen (One is in glass door sub room)":                LegoBatman1LocationData("On the Rocks",   45035996200),
     "TRR Villian #2 - Room 1, Pull window near fan":                                           LegoBatman1LocationData("On the Rocks",   45035996190),
-    "TRR Villian #2 - Room 2, Break silver handle then go inside and defeat enemies":          LegoBatman1LocationData("On the Rocks",   45035996191),
+    
     "TRR Villian #2 - Room 2, Break silver handle then go inside near ladder":                 LegoBatman1LocationData("On the Rocks",   45035996192),
     "TRR Villian #2 - Room 2, Break silver handle then go inside, break object, build switch, go across and build object":LegoBatman1LocationData("On the Rocks",   45035996193),
     "TRR Villian #2 - Room 2, Walk up magnet wall then go down":                               LegoBatman1LocationData("On the Rocks",   45035996194),
@@ -263,7 +262,7 @@ location_table: Dict[str, LegoBatman1LocationData] = {
     "TRR Villian #3 - Room 1, Use tech pannel at spawn then drive car through flags":          LegoBatman1LocationData("Green Fingers",   45035996201),
     "TRR Villian #3 - Room 1, Blow up 2 silver gates, then grapple twice, then double jump":   LegoBatman1LocationData("Green Fingers",   45035996202),
     "TRR Villian #3 - Room 1, Left side jump on rails":                                        LegoBatman1LocationData("Green Fingers",   45035996203),
-    "TRR Villian #3 - Room 2, Bomb silver door, then go in and defeat enemy":                  LegoBatman1LocationData("Green Fingers",   45035996204),
+    
     "TRR Villian #3 - Room 2, Bomb silver door, then go in and use attract machine, use tech pannel to bake cake":LegoBatman1LocationData("Green Fingers",   45035996205),
     "TRR Villian #3 - Room 3, Blow up silver door then solve pushing puzzle":                  LegoBatman1LocationData("Green Fingers",   45035996206),
     "TRR Villian #3 - Room 4, Sink in hole in fountain then break glass and pull switch":      LegoBatman1LocationData("Green Fingers",   45035996207),
@@ -275,7 +274,7 @@ location_table: Dict[str, LegoBatman1LocationData] = {
 
     # An Enterprising Theft
     "TRR Villian #4 - Room 1, Break glass, build switches, double jump to item":               LegoBatman1LocationData("An Enterprising Theft",   45035996213),
-    "TRR Villian #4 - Room 1, Break glass door to meeting room then defeat enemy":             LegoBatman1LocationData("An Enterprising Theft",   45035996214),
+   
     "TRR Villian #4 - Room 1, Break glass door to scientist room, build contraptions, ride dog to open door near spawn, use tech suit in sub room":LegoBatman1LocationData("An Enterprising Theft",   45035996215),
     "TRR Villian #4 - Room 1, Blow up silver object then open door":                           LegoBatman1LocationData("An Enterprising Theft",   45035996216),
     "TRR Villian #4 - Room 1, Break glass on top floor":                                       LegoBatman1LocationData("An Enterprising Theft",   45035996217),
@@ -293,7 +292,7 @@ location_table: Dict[str, LegoBatman1LocationData] = {
     "TRR Villian #5 - Room 2, Batarang 3 paintings then build and pull switch":                LegoBatman1LocationData("Breaking Blocks",   45035996227),
     "TRR Villian #5 - Room 2, Break glass pane, then use attract machine, then walk up magnet wall":LegoBatman1LocationData("Breaking Blocks",   45035996228),
     "TRR Villian #5 - Room 3, Push bookshelf then break boxes":                                LegoBatman1LocationData("Breaking Blocks",   45035996229),
-    "TRR Villian #5 - Room 3, Break silver door then defeat enemy in sub room":                LegoBatman1LocationData("Breaking Blocks",   45035996239),
+    
     "TRR Villian #5 - Room 3, Break silver door then blow up silver cage":                     LegoBatman1LocationData("Breaking Blocks",   45035996240),
     "TRR Villian #5 - Room 3, Break silver door then build and push gold block, break glass, break pannel, then blow up silver door":LegoBatman1LocationData("Breaking Blocks",   45035996241),
     "TRR Villian #5 - Room 4, Destroy 4 gold items":                                           LegoBatman1LocationData("Breaking Blocks",   45035996242),
@@ -303,7 +302,7 @@ location_table: Dict[str, LegoBatman1LocationData] = {
 
 
     # Rockin' the Docks
-    "PCP Villian #1 - Room 1, Break glass window and defeat enemy":                            LegoBatman1LocationData("Rockin' the Docks",   45035996246),
+    
     "PCP Villian #1 - Room 1, Break glass window and jump up rails":                           LegoBatman1LocationData("Rockin' the Docks",   45035996247),
     "PCP Villian #1 - Room 1, Grow 3 carrots from breaking red canisters":                     LegoBatman1LocationData("Rockin' the Docks",   45035996248),
     "PCP Villian #1 - Room 1, Drive 2 trucks onto orange buttons":                             LegoBatman1LocationData("Rockin' the Docks",   45035996249),
@@ -317,7 +316,7 @@ location_table: Dict[str, LegoBatman1LocationData] = {
     "PCP Villian #1 - Room 3, Go up elevator then walk left":                                  LegoBatman1LocationData("Rockin' the Docks",   45035996257),
 
     # Stealing the Show
-    "PCP Villian #2 - Room 1, Break strength box, then build magnet wall, break window and defeat enemy":LegoBatman1LocationData("Stealing the Show",   45035996258),
+    
     "PCP Villian #2 - Room 1, Break strength box, then build magnet wall then go to left side and jump":LegoBatman1LocationData("Stealing the Show",   45035996259),
     "PCP Villian #2 - Room 1, Break 3 neon signs":                                             LegoBatman1LocationData("Stealing the Show",   45035996260),
     "PCP Villian #2 - Room 1, Grow plants and climb up":                                       LegoBatman1LocationData("Stealing the Show",   45035996261),
@@ -346,7 +345,7 @@ location_table: Dict[str, LegoBatman1LocationData] = {
 
     # A Daring Rescue
     "PCP Villian #4 - Room 1, Bomb silver sewer lid then walk along toxins":                   LegoBatman1LocationData("A Daring Rescue",   45035996282),
-    "PCP Villian #4 - Room 2, Use generator and go in sub room, then deafet enemies":          LegoBatman1LocationData("A Daring Rescue",   45035996283),
+    
     "PCP Villian #4 - Room 2, Use generator and go in sub room, then build instruments and wait":LegoBatman1LocationData("A Daring Rescue",   45035996284),
     "PCP Villian #4 - Room 2, Go through heat pipe to enter sub room, then solve puzzle":      LegoBatman1LocationData("A Daring Rescue",   45035996285),
     "PCP Villian #4 - Room 3, Destroy 5 TVs during the alligator sequence":                    LegoBatman1LocationData("A Daring Rescue",   45035996286),
@@ -359,7 +358,7 @@ location_table: Dict[str, LegoBatman1LocationData] = {
     "PCP Villian #4 - Room 8, Open jail door bottom right of room":                            LegoBatman1LocationData("A Daring Rescue",   45035996292),
 
     # Arctic World
-    "PCP Villian #5 - Room 1, Swim across toxic water and defeat enemies":                     LegoBatman1LocationData("Arctic World",   45035996293),
+    
     "PCP Villian #5 - Room 1, Use attract machine and play fishing mini game":                 LegoBatman1LocationData("Arctic World",   45035996294),
     "PCP Villian #5 - Room 1, Slide on ice, then sink and pull switch":                         LegoBatman1LocationData("Arctic World",   45035996295),
     "PCP Villian #5 - Room 1, Climb up magnet wall, pull gate, use generator, grapple and wait":LegoBatman1LocationData("Arctic World",   45035996296),
@@ -376,7 +375,7 @@ location_table: Dict[str, LegoBatman1LocationData] = {
     "TJR Villian #1 - Room 1, Push block then double jump up":                                 LegoBatman1LocationData("A Surprise for the Commissioner",   45035996305),
     "TJR Villian #1 - Room 1, Break glass after cooperative puzzle":                           LegoBatman1LocationData("A Surprise for the Commissioner",   45035996306),
     "TJR Villian #1 - Freeze 3 waters into ice cream (2 in room one, 1 in room 3)":            LegoBatman1LocationData("A Surprise for the Commissioner",   45035996307),
-    "TJR Villian #1 - Room 1, Blow up silver gate and defeat enemies":                         LegoBatman1LocationData("A Surprise for the Commissioner",   45035996308),
+    
     "TJR Villian #1 - Room 1, Blow up silver gate, build switch, pull switch":                 LegoBatman1LocationData("A Surprise for the Commissioner",   45035996309),
     "TJR Villian #1 - Room 1, Walk up magnet wall then pull switchs and grapple":              LegoBatman1LocationData("A Surprise for the Commissioner",   45035996310),
     "TJR Villian #1 - Room 1, Double jump on rollercoaster":                                   LegoBatman1LocationData("A Surprise for the Commissioner",   45035996311),
@@ -403,7 +402,7 @@ location_table: Dict[str, LegoBatman1LocationData] = {
     # The Joker's Masterpiece
     "TJR Villian #3 - Room 1, Batarang bat statue on pillar and press both buttons":           LegoBatman1LocationData("The Joker's Masterpiece",   45035996329),
     "TJR Villian #3 - Break 3 containers throughout level (2 in room two, 1 in room one)":     LegoBatman1LocationData("The Joker's Masterpiece",   45035996330),
-    "TJR Villian #3 - Room 1, Bomb silver door, then go in heated room, and defeat enemies":   LegoBatman1LocationData("The Joker's Masterpiece",   45035996331),
+    
     "TJR Villian #3 - Room 1, Bomb silver door, then go in heated room and solve puzzle":      LegoBatman1LocationData("The Joker's Masterpiece",   45035996332),
     "TJR Villian #3 - Room 1, Shoot laser generator":                                          LegoBatman1LocationData("The Joker's Masterpiece",   45035996333),
     "TJR Villian #3 - Room 1, Double jump and push, then ball falls down":                     LegoBatman1LocationData("The Joker's Masterpiece",   45035996334),
@@ -416,7 +415,7 @@ location_table: Dict[str, LegoBatman1LocationData] = {
 
     # The Lure of the Night
     "TJR Villian #4 - Room 1, Mind control guy to push silver object, then blow it up":        LegoBatman1LocationData("The Lure of the Night",   45035996341),
-    "TJR Villian #4 - Room 1, Build rails, then double jump up and deafet enemies":            LegoBatman1LocationData("The Lure of the Night",   45035996342),
+    
     "TJR Villian #4 - Room 1, Build rails, then double jump up and then blow up silver objects, then build and double jump to switch, break plants then build ?":LegoBatman1LocationData("The Lure of the Night",   45035996343),
     "TJR Villian #4 - Room 1, Build rails, then double jump up then glide, build and push battery":LegoBatman1LocationData("The Lure of the Night",   45035996344),
     "TJR Villian #4 - Room 1, Pull boxes then build turnstile and put boat in sea, then ride boat around 3 times":LegoBatman1LocationData("The Lure of the Night",   45035996345),
@@ -435,14 +434,19 @@ location_table: Dict[str, LegoBatman1LocationData] = {
     "TJR Villian #5 - Room 1, Pull both sides of table":                                       LegoBatman1LocationData("Dying of Laughter",   45035996356),
     "TJR Villian #5 - Room 2, Blow up silver gate, build ladder, then climb up":               LegoBatman1LocationData("Dying of Laughter",   45035996357),
     "TJR Villian #5 - Room 2, Double jump onto 2 man button cage next to elevator":            LegoBatman1LocationData("Dying of Laughter",   45035996358),
-    "TJR Villian #5 - Room 2, Glide from cage and defeat enemy":                               LegoBatman1LocationData("Dying of Laughter",   45035996359),
+    
     "TJR Villian #5 - Room 2, Glide from cage":                                                LegoBatman1LocationData("Dying of Laughter",   45035996360),
     "TJR Villian #5 - Room 2, Use magnet wall near elevator":                                  LegoBatman1LocationData("Dying of Laughter",   45035996361),
     "TJR Villian #5 - Room 2, Freeze water near bridge, then break ice statue":                LegoBatman1LocationData("Dying of Laughter",   45035996362),
     "TJR Villian #5 - Room 3, Jump repeatly on left 2 man button and hit bell repeatly":       LegoBatman1LocationData("Dying of Laughter",   45035996363),
     "TJR Villian #5 - Room 3, Blow up silver ladders, build both turrets, then shoot bells":   LegoBatman1LocationData("Dying of Laughter",   45035996364),
 
-    # Status Screen, suit unlocks then true status
+    
+}
+
+
+basic_locations = {
+   # Status Screen, suit unlocks then true status
     "Status Screen - Unlock Detonation Suit":                                                               LegoBatman1LocationData("Status Screen",    45035996365),
     "Status Screen - Unlock Sonic Suit":                                                                    LegoBatman1LocationData("Status Screen",    45035996366),
     "Status Screen - Unlock Heat Protection Suit":                                                          LegoBatman1LocationData("Status Screen",    45035996367),
@@ -517,21 +521,10 @@ location_table: Dict[str, LegoBatman1LocationData] = {
     "Buy Silhouettes":                              LegoBatman1LocationData("Shop", 45035996434),
     "Buy Extra Toggle":                             LegoBatman1LocationData("Shop", 45035996435),
     "Buy Disguise":                                 LegoBatman1LocationData("Shop", 45035996436),
-    "Buy Ice Rink":                                 LegoBatman1LocationData("Shop", 45035996437),
+    "Buy Ice Rink":                                 LegoBatman1LocationData("Shop", 45035996437), 
 }
 
-event_location_table: Dict[str, LegoBatman1LocationData] = {
-    "Unlocked Wayne Mannor":                    LegoBatman1LocationData("Event"),
-    "Unlocked Arkham Asylum":                   LegoBatman1LocationData("Event"),
-    "Received All Levels":                      LegoBatman1LocationData("Event"),
-    "Received All Hostages":                    LegoBatman1LocationData("Event"),
-    "Buy Ra Sha Guul":                          LegoBatman1LocationData("Event"),
-    "Buy Hush":                                 LegoBatman1LocationData("Event"),
-    "100%":                                     LegoBatman1LocationData("Event"),
-}
-
-if world.options.char_shop_sanity:
-location_table: Dict[str, LegoBatman1LocationData] = {
+charshop_sanity_locations = {
     "Buy Bruce Wayne":                              LegoBatman1LocationData("Shop", 45035996438),
     "Buy Alfred":                                   LegoBatman1LocationData("Shop", 45035996439),
     "Buy Batgirl":                                  LegoBatman1LocationData("Shop", 45035996440),
@@ -584,3 +577,59 @@ location_table: Dict[str, LegoBatman1LocationData] = {
     "Buy Riddler Jet":                              LegoBatman1LocationData("Shop", 45035996486),
     "Buy Harbor Helicopter":                        LegoBatman1LocationData("Shop", 45035996487),
 }
+
+hostagesanity_locations = {
+    "TRR Hero #1 - Room 1, Break window near spawn and defeat enemeies ":                   LegoBatman1LocationData("You Can Bank On Batman",   45035996003),
+    "TRR Hero #2 - Room 1, Inside Mind Control Door left of spawn, defeat enemies":         LegoBatman1LocationData("An Icy Reception",   45035996015),
+    "TRR Hero #4 - Room 2, Break glass wall and defeat enemies":                            LegoBatman1LocationData("A Poisonous Appointment",   45035996038),
+    "TRR Hero #5 - Room 1, Use Attract Machine and Double Jump on Leaves, defeat enemies":  LegoBatman1LocationData("The Face-Off",   45035996051),
+    "PCP Hero #1 - Room 2, Fall down rails and defeat enemies, after first Catwoman fight": LegoBatman1LocationData("There She Goes Again",   45035996067),
+    "PCP Hero #3 - Room 1, Far Right of room, defeat enemy":                                LegoBatman1LocationData("Under The City",   45035996083),
+    "PCP Hero #4 - Room 2, Near batman suit in glass wall, defeat enemies":                 LegoBatman1LocationData("Zoo's Company",   45035996102),
+    "PCP Hero #5 - Room 1, On the far right side of room, defeat enemies":                  LegoBatman1LocationData("Penguin's Lair",   45035996109),
+    "TJR Hero #1 - Room 3, Use generator far right of room and use elevator and defeat enemies":LegoBatman1LocationData("Joker's Home Turf",   45035996127),
+    "TJR Hero #2 - Room 2, Defeat enemies top right of tea cups":                           LegoBatman1LocationData("Little Fun at the Big Top",   45035996136),
+    "TJR Hero #4 - Room 3, Defeat enemies south of spawn":                                  LegoBatman1LocationData("In the Dark Night",   45035996159),
+    "TJR Hero #5 - Room 1, Bottom left of spawn, defeat enemies":                           LegoBatman1LocationData("To the Top of the Tower",   45035996165),
+    "TRR Villian #1 - Room 2, Break Glass and defeat enemies":                              LegoBatman1LocationData("The Ridler Makes a Withdrawal",   45035996180),
+    "TRR Villian #2 - Room 2, Break silver handle then go inside and defeat enemies":       LegoBatman1LocationData("On the Rocks",   45035996191),
+    "TRR Villian #3 - Room 2, Bomb silver door, then go in and defeat enemy":               LegoBatman1LocationData("Green Fingers",   45035996204),
+    "TRR Villian #4 - Room 1, Break glass door to meeting room then defeat enemy":          LegoBatman1LocationData("An Enterprising Theft",   45035996214),
+    "TRR Villian #5 - Room 3, Break silver door then defeat enemy in sub room":             LegoBatman1LocationData("Breaking Blocks",   45035996239),
+    "PCP Villian #1 - Room 1, Break glass window and defeat enemy":                         LegoBatman1LocationData("Rockin' the Docks",   45035996246),
+    "PCP Villian #2 - Room 1, Break strength box, then build magnet wall, break window and defeat enemy":LegoBatman1LocationData("Stealing the Show",   45035996258),
+    "PCP Villian #4 - Room 2, Use generator and go in sub room, then defeat enemies":       LegoBatman1LocationData("A Daring Rescue",   45035996283),
+    "PCP Villian #5 - Room 1, Swim across toxic water and defeat enemies":                  LegoBatman1LocationData("Arctic World",   45035996293),
+    "TJR Villian #1 - Room 1, Blow up silver gate and defeat enemies":                      LegoBatman1LocationData("A Surprise for the Commissioner",   45035996308),
+    "TJR Villian #3 - Room 1, Bomb silver door, then go in heated room, and defeat enemies":LegoBatman1LocationData("The Joker's Masterpiece",   45035996331),
+    "TJR Villian #4 - Room 1, Build rails, then double jump up and defeat enemies":         LegoBatman1LocationData("The Lure of the Night",   45035996342),
+    "TJR Villian #5 - Room 2, Glide from cage and defeat enemy":                            LegoBatman1LocationData("Dying of Laughter",   45035996359),
+}
+
+kitsanity_locations = {
+     ....
+}
+event_location_table: Dict[str, LegoBatman1LocationData] = {
+    "Unlocked Wayne Mannor":                    LegoBatman1LocationData("Event"),
+    "Unlocked Arkham Asylum":                   LegoBatman1LocationData("Event"),
+    "Received All Levels":                      LegoBatman1LocationData("Event"),
+    "Buy Ra Sha Guul":                          LegoBatman1LocationData("Event"),
+    "Buy Hush":                                 LegoBatman1LocationData("Event"),
+    "100%":                                     LegoBatman1LocationData("Event"),
+
+}
+
+
+def get_locations(world):
+    locations_table = basic_locations.copy()
+    
+    if world.options.char_shop_sanity:
+        locations_table.update(charshopsanity_locations)
+
+    if world.options.hostage_sanity:
+        locations_table.update(hostagesanity_locations)
+
+    if world.options.kit_sanity:
+        locations_table.update(kitsanity_locations)
+    
+    return locations_table

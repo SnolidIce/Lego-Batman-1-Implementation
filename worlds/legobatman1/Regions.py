@@ -1,18 +1,25 @@
-from typing import Dict, List, Set
+from typing import Dict, List, NamedTuple, Optional
+
+from BaseClasses import MultiWorld, Region, Entrance
+from .Locations import RLLocation, location_table, get_locations_by_category
 
 
-REGION_CONNECTIONS: Dict[str, Set[str]] = {
-        "Menu":                            {"Batcave"},
-        "Batcave":                         {"Arkham Asylum", "Shop", "You Can Bank on Batman","An Icy Reception","Two-Face Chase","A Poisonous Appointment","The Face-Off","There She Goes Again","Batboat Battle","Under the City","Zoo's Company","Penguin's Lair","Joker's Home Turf","Little Fun at Big Top","Flight of the Bat","In the Dark Night","To the Top of the Tower"},
-        "Shop":                            {"Batcave", "Arkham Asylum"},
-        "Arkham Asylum":                   {"Shop","The Riddler Makes a Withdrawl","On the Rocks","Green Fingers","An Enterprising Theft", "Breaking Blocks","Rocking the Docks","Stealing the Show","Harboring a Grudge","A Daring Rescue","Artic World","A Surpise for the Commissioner","Biplane Blast","The Joker's Masterpiece","The Lure of the Night","Dying of Laughter"},
-        "You Can Bank on Batman":          {"Status Screen"},
-        "An Icy Reception":                {"Status Screen"},
-        "Two-Face Chase":                  {"Status Screen"},
-        "A Poisonous Appointment":         {"Status Screen"},
-        "The Face-Off":                    {"Status Screen"},
-        "There She Goes Again":            {"Status Screen"},
-        "Batboat Battle":                  {"Status Screen"},
+class LegoBatman1RegionData(NamedTuple):
+    locations: Optional[List[str]]
+    region_exits: Optional[List[str]]
+
+regions: Dict[str, LegoBatman1RegionData] = {
+        "Menu":                            LegoBatman1RegionData(None, ["Batcave"]),
+        "Batcave":                         LegoBatman1RegionData(None, ["Arkham Asylum", "Shop", "You Can Bank on Batman","An Icy Reception","Two-Face Chase","A Poisonous Appointment","The Face-Off","There She Goes Again","Batboat Battle","Under the City","Zoo's Company","Penguin's Lair","Joker's Home Turf","Little Fun at Big Top","Flight of the Bat","In the Dark Night","To the Top of the Tower"]),
+        "Shop":                            LegoBatman1RegionData([], ["Batcave", "Arkham Asylum"]),
+        "Arkham Asylum":                   LegoBatman1RegionData([], ["Batcave","Shop","The Riddler Makes a Withdrawl","On the Rocks","Green Fingers","An Enterprising Theft", "Breaking Blocks","Rocking the Docks","Stealing the Show","Harboring a Grudge","A Daring Rescue","Artic World","A Surpise for the Commissioner","Biplane Blast","The Joker's Masterpiece","The Lure of the Night","Dying of Laughter"]),
+        "You Can Bank on Batman":          LegoBatman1RegionData([], ["Status Screen"]),
+        "An Icy Reception":                LegoBatman1RegionData([], ["Status Screen"]),
+        "Two-Face Chase":                  LegoBatman1RegionData([], ["Status Screen"]),
+        "A Poisonous Appointment":         LegoBatman1RegionData([], ["Status Screen"]),
+        "The Face-Off":                    LegoBatman1RegionData(None, ["Status Screen"]),
+        "There She Goes Again":            LegoBatman1RegionData(None, ["Status Screen"]),
+        "Batboat Battle":                  LegoBatman1RegionData(None, ["Status Screen"]),
         "Under the City":                  {"Status Screen"},
         "Zoo's Company":                   {"Status Screen"},
         "Penguin's Lair":                  {"Status Screen"},
@@ -39,38 +46,36 @@ REGION_CONNECTIONS: Dict[str, Set[str]] = {
         "Status Screen":                   {"Batcave", "Arkham Asylum"},
     }
 REGIONS: Dict[str, List[str]] = {
-"Shop": {"Buy Beep Beep","Buy Silhouettes","Buy Extra Toggle","Buy Disguise","Buy Ice Rink"},
-"Status Screen": {"Status Screen - Unlock Detonation Suit", "Status Screen - Unlock Sonic Suit", "Status Screen - Unlock Heat Protection Suit","Status Screen - Unlock Glide Suit","Status Screen - Unlock Technology Suit","Status Screen - Unlock Attraction Suit","Status Screen - Unlock Magnet Suit","Status Screen - Unlock Water Suit"},
-"You Can Bank on Batman": { "TRR Hero #1 - Boss Room, Break the bank darwer","Status Screen - You Can Bank On Batman True Status","Status Screen - You Can Bank On Batman Completed"},
-"An Icy Reception": {"Status Screen - An Icy Reception Completed","Status Screen - An Icy Reception True Status","TRR Hero #2 - Room 2, Press on switch while other character goes in cage."},
-"Two-Face Chase": {"TRR Hero #3 - Room 3, Destroy trash can in the far back left cornor","Status Screen - Two-Face Chase True Status", "Status Screen - Two-Face Chase Completed"},
-"A Poisonous Appointment": {"TRR Hero #4 - Room 4, Use the switch, blow up the silver object and use the generator","Status Screen - A Poisonous Appointment Completed","Status Screen - A Poisonous Appointment True Status"},
-"The Face-Off": {"Status Screen - The Face-Off True Status","Status Screen - The Face-Off Completed","TRR Hero #5 - Room 2, After Two Face Fight, Push Colored Buttons on left side"},
-"There She Goes Again":  {"PCP Hero #1 - Boss Room, Break wall near entrance","Status Screen - There She Goes Again True Status","Status Screen - There She Goes Again Completed"},
-"Batboat Battle": {"Status Screen - Batboat Battle Completed", "Status Screen - Batboat Battle True Status","PCP Hero #2 - Boss Room, Submerge and shoot targets"},
-"Under the City": {"PCP Hero #3 - Room 1, Use Tech Pannel and run over bouys","Status Screen - Under the City Completed","Status Screen - Under the City True Status"},
-"Zoo's Company":  {"Status Screen - Zoo's Company True Status","Status Screen - Zoo's Company Completed","PCP Hero #4 - Room 2, Break Silver gate and go in water"},
-"Penguin's Lair": {"Status Screen - Penguin's Lair True Status", "Status Screen - Penguin's Lair Completed","PCP Hero #5 - Boss Room, Break glass near treadmil, graple and jump to rail and run on tredmil then push button"},
-"Joker's Home Turf": {"Status Screen - Joker's Home Turf Completed","Status Screen - Joker's Home Turf True Status","TJR Hero #1 - Room 3, Freeze water near entrance then double jump up, then break glass and solve puzzle"},
-"Little Fun at Big Top": {"TJR Hero #2 - Room 1, Use Tech Pannel on Crane Game, grab and break all 3 pink prizes", "Status Screen - Little Fun at the Big Top True Status","Status Screen - Little Fun at the Big Top Completed"},
-"Flight of the Bat": {"Status Screen - Flight of the Bat Completed","Status Screen - Flight of the Bat True Status","TJR Hero #3 - Room 2, Go through toxic gas and shoot turnstiles"},
-"In the Dark Night": {"TJR Hero #4 - Room 3, Build heated ladder then climb, glide and double jump","Status Screen - In the Dark Night Completed","Status Screen - In the Dark Night True Status"},
-"To the Top of the Tower": {"Status Screen - To the Top of the Tower True Status","Status Screen - To the Top of the Tower Completed", "TJR Hero #5 - Room 2, Push organ out of hiding, then press button to get guy to play it"},
-"The Riddler Makes a Withdrawl": {"TRR Villian #1 - Room 2, Climb magnet wall then double jump and bring down green sign, build it and bring it to crusher in sub room","Status Screen - The Ridler Makes a Withdrawal Completed","Status Screen - The Ridler Makes a Withdrawal True Status"},
-"On the Rocks": {"TRR Villian #2 - Room 2, Break silver handle then go inside, break object, build switch, go across and build object","Status Screen - On the Rocks True Status","Status Screen - On the Rocks Completed"},
-"Green Fingers": {"Status Screen - Green Fingers Completed","Status Screen - Green Fingers True Status", "TRR Villian #3 - Room 2, Bomb silver door, then go in and use attract machine, use tech pannel to bake cake"},
-"An Enterprising Theft": {"TRR Villian #4 - Room 3, Blow up silver door, then build movie player, go in door and solve puzzle","Status Screen - An Enterprising Theft True Status"},
-"Breaking Blocks": {"Status Screen - Breaking Blocks True Status","Status Screen - Breaking Blocks Completed","TRR Villian #5 - Room 3, Break silver door then build and push gold block, break glass, break pannel, then blow up silver door"},
-"Rockin' the Docks": {"PCP Villian #1 - Room 2, Use female door pannel and solve puzzle", "Status Screen - Rockin' the Docks Completed","Status Screen - Rockin' the Docks True Status"},
-"Stealing the Show": {"Status Screen - Stealing the Show True Status","Status Screen - Stealing the Show Completed","PCP Villian #2 - Room 2, Use attract machine then build helicopter then push buttons and blow up silver object"},
-"Harboring a Grudge": {"PCP Villian #3 - Boss Room, Torpedo Red Green Yellow wall and drive to left corner","Status Screen - Harboring a Grudge Completed","Status Screen - Harboring a Grudge True Status"}
-"A Daring Rescue": {"PCP Villian #4 - Room 5, Build canon to enter sub room, strong push platform, use tech suit to make another platform, jump across"},
-"Artic World": {"Status Screen - Arctic World Completed","PCP Villian #5 - Room 1, Use attract machine and play fishing mini game","Status Screen - Arctic World True Status"},
-"A Surpise for the Commissioner": {"TJR Villian #1 - Room 2, Glide across from near generator then grapple up and blow up silver object", "Status Screen - A Surprise for the Commissioner True Status","Status Screen - A Surprise for the Commissioner Completed"},
-"Biplane Blast": {"TJR Villian #2 - Destroy 5 police copters throughout the level","Status Screen - Biplane Blast True Status","Status Screen - Biplane Blast Completed"},
-"The Joker's Masterpiece": {"TJR Villian #3 - Room 1, Bomb silver door, then go in heated room and solve puzzle","Status Screen - The Joker's Masterpiece True Status","Status Screen - The Joker's Masterpiece Completed"},
-"The Lure of the Night": {"TJR Villian #4 - Room 2, Use attract machine in playground and grow plants","Status Screen - The Lure of the Night True Status","Status Screen - The Lure of the Night Completed"},
-"Dying of Laughter": {"TJR Villian #5 - Room 1, Batarang chandelures then build sweeper and clean church", "Status Screen - Dying of Laughter True Status","Status Screen - Dying of Laughter Completed"},
+ regions["Status Screen"].locations.append("Status Screen - Flight of the Bat Completed"),
+    regions["Status Screen"].locations.append("Status Screen - In the Dark Night Completed"),
+    regions["Status Screen"].locations.append("Status Screen - To the Top of the Tower Completed"),
+    regions["Status Screen"].locations.append("Status Screen - The Ridler Makes a Withdrawal Completed"),
+    regions["Status Screen"].locations.append("Status Screen - On the Rocks Completed"),
+    regions["Status Screen"].locations.append("Status Screen - Green Fingers Completed"),
+    regions["Status Screen"].locations.append("Status Screen - An Enterprising Theft Completed"),
+    regions["Status Screen"].locations.append("Status Screen - Breaking Blocks Completed"),
+    regions["Status Screen"].locations.append("Status Screen - Rockin' the Docks Completed"),
+    regions["Status Screen"].locations.append("Status Screen - Stealing the Show Completed"),
+    regions["Status Screen"].locations.append("Status Screen - Harboring a Grudge Completed"),
+    regions["Status Screen"].locations.append("Status Screen - A Daring Rescue Completed"),
+    regions["Status Screen"].locations.append("Status Screen - Arctic World Completed"),
+    regions["Status Screen"].locations.append("Status Screen - A Surprise for the Commissioner Completed"),
+    regions["Status Screen"].locations.append("Status Screen - Biplane Blast Completed"),
+    regions["Status Screen"].locations.append("Status Screen - The Joker's Masterpiece Completed"),
+    regions["Status Screen"].locations.append("Status Screen - The Lure of the Night Completed"),
+    regions["Status Screen"].locations.append("Status Screen - Dying of Laughter Completed"),
+    regions["Shop"].locations.append("Buy Beep Beep"),
+    regions["Shop"].locations.append("Buy Silhouettes"),
+    regions["Shop"].locations.append("Buy Extra Toggle"),
+    regions["Shop"].locations.append("Buy Disguise"),
+    regions["Shop"].locations.append("Buy Ice Rink"),
+    regions["The Face-Off"].locations.append("TRR Hero #5 - Room 2, After Two Face Fight, Push Colored Buttons on left side"),
+    regions["Joker's Home Turf"].locations.append("TJR Hero #1 - Room 3, Freeze water near entrance then double jump up, then break glass and solve puzzle"),
+    regions["Little Fun at the Big Top"].locations.append("TJR Hero #2 - Room 1, Use Tech Pannel on Crane Game, grab and break all 3 pink prizes"),
+    regions["You Can Bank On Batman"].locations.append("TRR Hero #1 - Boss Room, Break the bank darwer"),
+    regions["Flight of the Bat"].locations.append("TJR Hero #3 - Room 2, Go through toxic gas and shoot turnstiles"),
+    regions["In the Dark Night"].locations.append("TJR Hero #4 - Room 3, Build heated ladder then climb, glide and double jump"),
+    regions["To the Top of the Tower"].locations.append("TJR Hero #5 - Room 2, Push organ out of hiding, then play it"),
 }
 
 CHAR_SHOP: Dict[str, List[str]] = {
