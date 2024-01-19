@@ -518,6 +518,20 @@ location_table: Dict[str, LegoBatman1LocationData] = {
     "Buy Extra Toggle":                             LegoBatman1LocationData("Shop", 45035996435),
     "Buy Disguise":                                 LegoBatman1LocationData("Shop", 45035996436),
     "Buy Ice Rink":                                 LegoBatman1LocationData("Shop", 45035996437),
+}
+
+event_location_table: Dict[str, LegoBatman1LocationData] = {
+    "Unlocked Wayne Mannor":                    LegoBatman1LocationData("Event"),
+    "Unlocked Arkham Asylum":                   LegoBatman1LocationData("Event"),
+    "Received All Levels":                      LegoBatman1LocationData("Event"),
+    "Received All Hostages":                    LegoBatman1LocationData("Event"),
+    "Buy Ra Sha Guul":                          LegoBatman1LocationData("Event"),
+    "Buy Hush":                                 LegoBatman1LocationData("Event"),
+    "100%":                                     LegoBatman1LocationData("Event"),
+}
+
+if world.options.char_shop_sanity:
+location_table: Dict[str, LegoBatman1LocationData] = {
     "Buy Bruce Wayne":                              LegoBatman1LocationData("Shop", 45035996438),
     "Buy Alfred":                                   LegoBatman1LocationData("Shop", 45035996439),
     "Buy Batgirl":                                  LegoBatman1LocationData("Shop", 45035996440),
@@ -569,14 +583,4 @@ location_table: Dict[str, LegoBatman1LocationData] = {
     "Buy Mad Hatter's Glider":                      LegoBatman1LocationData("Shop", 45035996485),
     "Buy Riddler Jet":                              LegoBatman1LocationData("Shop", 45035996486),
     "Buy Harbor Helicopter":                        LegoBatman1LocationData("Shop", 45035996487),
-}
-
-event_location_table: Dict[str, LegoBatman1LocationData] = {
-    "Unlocked Wayne Mannor":                    LegoBatman1LocationData("Event"),
-    "Unlocked Arkham Asylum":                   LegoBatman1LocationData("Event"),
-    "Received All Levels":                      LegoBatman1LocationData("Event"),
-    "Received All Hostages":                    LegoBatman1LocationData("Event"),
-    "Buy Ra Sha Guul":                          LegoBatman1LocationData("Event"),
-    "Buy Hush":                                 LegoBatman1LocationData("Event"),
-    "100%":                                     LegoBatman1LocationData("Event"),
 }

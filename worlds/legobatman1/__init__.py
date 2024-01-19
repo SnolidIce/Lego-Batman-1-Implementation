@@ -1,15 +1,13 @@
 import string
 
-from .items import RiskOfRainItem, item_table, item_pool_weights, offset, filler_table, environment_offset
-from .locations import RiskOfRainLocation, item_pickups, get_locations
+from .items import LegoBatman1Item, item_table, item_pool_weights, offset, filler_table
+from .locations import LegoBatman1Location
 from .rules import set_rules
-from .ror2environments import environment_vanilla_table, environment_vanilla_orderedstages_table, \
-    environment_sotv_orderedstages_table, environment_sotv_table, collapse_dict_list_vertical, shift_by_offset
 
 from BaseClasses import Item, ItemClassification, Tutorial
-from .options import ItemWeights, ROR2Options
+from .options import ItemWeights, LegoBatman1Options
 from worlds.AutoWorld import World, WebWorld
-from .regions import create_explore_regions, create_classic_regions
+from .regions 
 from typing import List, Dict, Any
 
 
