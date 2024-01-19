@@ -48,19 +48,6 @@ class MessengerShopLocation(MessengerLocation):
         name = self.name.replace("The Shop - ", "")  # TODO use `remove_prefix` when 3.8 finally gets dropped
         world = cast("MessengerWorld", self.parent_region.multiworld.worlds[self.player])
         shop_data = SHOP_ITEMS[name]
-        if shop_data.prerequisite:
-            prereq_cost = 0
-            if isinstance(shop_data.prerequisite, set):
-                for prereq in shop_data.prerequisite:
-                    prereq_cost +=\
-                        cast(MessengerShopLocation,
-                             world.multiworld.get_location(prereq, self.player)).cost
-            else:
-                prereq_cost +=\
-                    cast(MessengerShopLocation,
-                         world.multiworld.get_location(shop_data.prerequisite, self.player)).cost
-            return world.shop_prices[name] + prereq_cost
-        return world.shop_prices[name]
 
     def access_rule(self, state: CollectionState) -> bool:
         world = cast("MessengerWorld", state.multiworld.worlds[self.player])
