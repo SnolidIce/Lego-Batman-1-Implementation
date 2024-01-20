@@ -21,9 +21,8 @@ class LegoBatman1Item(Item):
 
 
 item_table: Dict[str, LegoBatman1ItemData] = {
-    #Kits
-    "Mini-Kit":                             LegoBatman1ItemData("Mini-Kits",    45035996200, ItemClassification.progression,300),
-
+basic_item = {
+   
     #Suits
     "Demolition Suit":                      LegoBatman1ItemData("Suits",        45035996201, ItemClassification.progression),
     "Glide Suit":                           LegoBatman1ItemData("Suits",        45035996202, ItemClassification.progression),
@@ -104,6 +103,18 @@ item_table: Dict[str, LegoBatman1ItemData] = {
     "The Lure of the Night":                LegoBatman1ItemData("Levels",       45035996270, ItemClassification.progression),
     "Dying of Laughter":                    LegoBatman1ItemData("Levels",       45035996271, ItemClassification.progression),
 
+
+
+    #True Status
+    "True Status":                         LegoBatman1ItemData("True Status",450359962123, ItemClassification.progression_skip_balancing,30),
+
+    #Junk
+    "Power Up":                            LegoBatman1ItemData("Junk",       450359962124, ItemClassification.filler,60),
+    "Ice Trap":                            LegoBatman1ItemData("Junk",       450359962125, ItemClassification.trap),
+    "Ice Rink Trap":                       LegoBatman1ItemData("Junk",       450359962126, ItemClassification.trap),
+}
+
+charshopsanity_item = {
     #Shop Chars
     "Bruce Wayne":                          LegoBatman1ItemData("Shop Chars",   45035996272, ItemClassification.filler),
     "Alfred":                               LegoBatman1ItemData("Shop Chars",   45035996273, ItemClassification.filler),
@@ -156,18 +167,19 @@ item_table: Dict[str, LegoBatman1ItemData] = {
     "Mad Hatter's Glider":                  LegoBatman1ItemData("Shop Chars",   450359962119, ItemClassification.filler),
     "Riddler Jet":                          LegoBatman1ItemData("Shop Chars",   450359962120, ItemClassification.filler),
     "Harbor Helicopter":                    LegoBatman1ItemData("Shop Chars",   450359962121, ItemClassification.filler),   
+}
 
-    #True Status
-    "True Status":                         LegoBatman1ItemData("True Status",450359962123, ItemClassification.progression_skip_balancing,30),
-
-    #Junk
-    "Power Up":                            LegoBatman1ItemData("Junk",       450359962124, ItemClassification.filler,60),
-    "Ice Trap":                            LegoBatman1ItemData("Junk",       450359962125, ItemClassification.trap),
-    "Ice Rink Trap":                       LegoBatman1ItemData("Junk",       450359962126, ItemClassification.trap),
-
-    #Hostages 30
+hostagesanity_item = {
+    #Hostages 
     "Hostage":                             LegoBatman1ItemData("Hostage",    450359962127, ItemClassification.progression,25),
+}
+
+kitsanity_item = {
+    #Kits
+    "Mini-Kit":                             LegoBatman1ItemData("Mini-Kits",    45035996200, ItemClassification.progression,300),
+}
 } 
+
 
 event_item_table: Dict[str, LegoBatman1ItemData] = {
     "Completed All Levels":     LegoBatman1ItemData("Event", classification=ItemClassification.progression),
@@ -175,6 +187,19 @@ event_item_table: Dict[str, LegoBatman1ItemData] = {
     "Completed Wayne Mannor":   LegoBatman1ItemData("Event", classification=ItemClassification.progression),
     "Ra Sha Guul":              LegoBatman1ItemData("Event", classification=ItemClassification.progression),
     "Hush":                     LegoBatman1ItemData("Event", classification=ItemClassification.progression),
-    "All Hostages Obtained":    LegoBatman1ItemData("Event", classification=ItemClassification.progression),
     "100% Obtained":            LegoBatman1ItemData("Event", classification=ItemClassification.progression),
 }
+
+def get_items(world):
+    item_table = basic_item.copy()
+    
+    if world.options.char_shop_sanity:
+        item_table.update(charshopsanity_item)
+
+    if world.options.hostage_sanity:
+        item_table.update(hostagesanity_item)
+
+    if world.options.kit_sanity:
+        item_table.update(kitsanity_item)
+    
+    return item_table
