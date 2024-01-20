@@ -10,11 +10,7 @@ class LegoBatman1temData(NamedTuple):
     weight: int = 1
 
 
-def get_items_by_category(category: str) -> Dict[str, RLItemData]:
-    item_dict: Dict[str, LegoBatman1ItemData] = {}
-    for name, data in item_table.items():
-        if data.category == category:
-            item_dict.setdefault(name, data)
+return {name: data for name, data in item_table.items() if data.category == category}
 
 class LegoBatman1Item(Item):
     game: str = "Lego Batman: The Video Game"
