@@ -25,113 +25,28 @@ location_table: Dict[str, LegoBatman1LocationData] = {
 
 
     # You Can Bank On Batman
-    "TRR Hero #1 - Room 1, Top Of ladder near switch and grapple":                          LegoBatman1LocationData("You Can Bank On Batman",   45035996000),
-    "TRR Hero #1 - Room 1, Garage Door from switch near grapple and ladder":                LegoBatman1LocationData("You Can Bank On Batman",   45035996001),
-    "TRR Hero #1 - Break 5 Telephone Booths through out level":                             LegoBatman1LocationData("You Can Bank On Batman",   45035996002),
-    
-    "TRR Hero #1 - Room 1, Glass Window near spawn":                                        LegoBatman1LocationData("You Can Bank On Batman",   45035996004),
-    "TRR Hero #1 - Room 1, Mind Control Pannel near Toxins":                                LegoBatman1LocationData("You Can Bank On Batman",   45035996005),
-    "TRR Hero #1 - Room 1, In the sewer lid with garbage can on it":                        LegoBatman1LocationData("You Can Bank On Batman",   45035996006),
-    "TRR Hero #1 - Room 1, Grapple under garbage can to silver window":                     LegoBatman1LocationData("You Can Bank On Batman",   45035996007),
-    "TRR Hero #1 - Room 2, Stregth window to stairs":                                       LegoBatman1LocationData("You Can Bank On Batman",   45035996008),
-    "TRR Hero #1 - Room 2, 2 cars in the garage near toxins":                               LegoBatman1LocationData("You Can Bank On Batman",   45035996009),
-    "TRR Hero #1 - Room 2, Attract Suit machine behind glass wall":                         LegoBatman1LocationData("You Can Bank On Batman",   45035996010),
     "TRR Hero #1 - Boss Room, Break the bank darwer":                                       LegoBatman1LocationData("You Can Bank On Batman",   45035996011),
 
     # An Icy Reception
-    "TRR Hero #2 - Room 1, Build and Climb rails on the right of spawn":                    LegoBatman1LocationData("An Icy Reception",   45035996012),
-    "TRR Hero #2 - Room 1, Destroy Wood Barrier right of spawn after climbing rails":       LegoBatman1LocationData("An Icy Reception",   45035996013),
-    "TRR Hero #2 - Room 1, Strength behind truck left of spawn":                            LegoBatman1LocationData("An Icy Reception",   45035996014),
-   
-    "TRR Hero #2 - Room 1, Climb Rails inside Mind Control Door left of spawn":             LegoBatman1LocationData("An Icy Reception",   45035996016),
-    "TRR Hero #2 - Room 1, Silver object above rails behind gate north of spawn":           LegoBatman1LocationData("An Icy Reception",   45035996017),
-    "TRR Hero #2 - Room 1, Drive truck to platform by spawn and blow up silver objects":    LegoBatman1LocationData("An Icy Reception",   45035996018),
-    "TRR Hero #2 - Room 2, Use female door and blow up silver objects":                     LegoBatman1LocationData("An Icy Reception",   45035996019),
     "TRR Hero #2 - Room 2, Press on switch while other character goes in cage.":            LegoBatman1LocationData("An Icy Reception",   45035996020),
-    "TRR Hero #2 - Room 3, Press switch near toxic gas and blow up silver object":          LegoBatman1LocationData("An Icy Reception",   45035996021),
-    "TRR Hero #2 - Room 3, Glide across, blow up vent near fan and ride fan":               LegoBatman1LocationData("An Icy Reception",   45035996022),
-    "TRR Hero #2 - Room 3, Glide across, mind control guy to pull switch":                  LegoBatman1LocationData("An Icy Reception",   45035996023),
-
+    
     # Two-Face Chase
-    "TRR Hero #3 - Room 1, Destroy 3 dumpsters":                                            LegoBatman1LocationData("Two-Face Chase",   45035996024),
-    "TRR Hero #3 - Room 1, Destroy the manhole cover south of spawn":                       LegoBatman1LocationData("Two-Face Chase",   45035996025),
-    "TRR Hero #3 - Room 2, Destroy trash dumpster, southwest of entrance":                  LegoBatman1LocationData("Two-Face Chase",   45035996026),
-    "TRR Hero #3 - Room 2, Destroy 3 blue cars":                                            LegoBatman1LocationData("Two-Face Chase",   45035996027),
-    "TRR Hero #3 - Room 2, Down the ramp, press the pannel with Joker's Van":               LegoBatman1LocationData("Two-Face Chase",   45035996028),
-    "TRR Hero #3 - Room 2, Down the ramp, press the pannel with Harley's Truck":            LegoBatman1LocationData("Two-Face Chase",   45035996029),
-    "TRR Hero #3 - Room 2, Destroy the north set of supports":                              LegoBatman1LocationData("Two-Face Chase",   45035996030),
     "TRR Hero #3 - Room 3, Destroy trash can in the far back left cornor":                  LegoBatman1LocationData("Two-Face Chase",   45035996031),
-    "TRR Hero #3 - Room 2, Destroy the south set of supports":                              LegoBatman1LocationData("Two-Face Chase",   45035996033),
-    "TRR Hero #3 - Room 3, Destroy telephon booth in the far back left cornor":             LegoBatman1LocationData("Two-Face Chase",   45035996034),
-    "TRR Hero #3 - Destroy 3 food carts across level":                                      LegoBatman1LocationData("Two-Face Chase",   45035996035),
-
+    
     # A Poisonous Appointment
-    "TRR Hero #4 - Room 1, Build and destroy all carrots":                                  LegoBatman1LocationData("A Poisonous Appointment",   45035996036),
-    "TRR Hero #4 - Room 1, Jump on the tree off of the tractor, jump to the right tree":    LegoBatman1LocationData("A Poisonous Appointment",   45035996036),
-    "TRR Hero #4 - Room 2, Go through the heat gas and use the tech pad":                   LegoBatman1LocationData("A Poisonous Appointment",   45035996037),
-    
-    "TRR Hero #4 - Room 2, push the glass box and jump on flowers":                         LegoBatman1LocationData("A Poisonous Appointment",   45035996039),
-    "TRR Hero #4 - Room 2, Build potted plant and double jump to rail":                     LegoBatman1LocationData("A Poisonous Appointment",   45035996040),
-    "TRR Hero #4 - Build 3 carrots":                                                        LegoBatman1LocationData("A Poisonous Appointment",   45035996041),
-    "TRR Hero #4 - Room 3, sink down near entrance":                                        LegoBatman1LocationData("A Poisonous Appointment",   45035996042),
-    "TRR Hero #4 - Room 3, Magnet walk up from rail and blow up silver object":             LegoBatman1LocationData("A Poisonous Appointment",   45035996043),
     "TRR Hero #4 - Room 4, Use the switch, blow up the silver object and use the generator":LegoBatman1LocationData("A Poisonous Appointment",   45035996044),
-    "TRR Hero #4 - Room 4, Jump on the back pipe and walk right":                           LegoBatman1LocationData("A Poisonous Appointment",   45035996045),
-    "TRR Hero #4 - Room 5, jump from rail":                                                 LegoBatman1LocationData("A Poisonous Appointment",   45035996046),
-    
+
     # The Face-Off
-    "TRR Hero #5 - Room 1, After gap Jump on all 5 poles":                                  LegoBatman1LocationData("The Face-Off",   45035996047),
-    "TRR Hero #5 - Room 1, Far Right side of room grapple":                                 LegoBatman1LocationData("The Face-Off",   45035996048),
-    "TRR Hero #5 - Room 1, Use Tech Pad and go through rotating door":                      LegoBatman1LocationData("The Face-Off",   45035996049),
-    "TRR Hero #5 - Room 1, Build Neon Giant Dollar Sign":                                   LegoBatman1LocationData("The Face-Off",   45035996050),
-    
-    "TRR Hero #5 - Room 1, Use Attract Machine and Double Jump on Leaves and Double jump":  LegoBatman1LocationData("The Face-Off",   45035996052),
     "TRR Hero #5 - Room 2, After Two Face Fight, Push Colored Buttons on left side":        LegoBatman1LocationData("The Face-Off",   45035996053),
-    "TRR Hero #5 - Room 2, After Two Face Fight, jump down bridge into toxin":              LegoBatman1LocationData("The Face-Off",   45035996054),
-    "TRR Hero #5 - Room 2, After Two Face Fight, right side grow plant":                    LegoBatman1LocationData("The Face-Off",   45035996055),
-    "TRR Hero #5 - Room 4, Use the switch, blow up the silver object and use the generator":LegoBatman1LocationData("The Face-Off",   45035996056),
-    "TRR Hero #5 - Boss Room, Right side opening":                                          LegoBatman1LocationData("The Face-Off",   45035996057),
-    "TRR Hero #5 - Boss Room, Destroy 5 large containers of money":                         LegoBatman1LocationData("The Face-Off",   45035996058),
 
     # There She Goes Again
-    "PCP Hero #1 - Room 1, Inside Female Pannel Door, South Magnet Wall":                   LegoBatman1LocationData("There She Goes Again",   45035996059),
-    "PCP Hero #1 - Room 1, Break South Purple Box, build car, drive car in garage by robin suit":LegoBatman1LocationData("There She Goes Again",   45035996060),
-    "PCP Hero #1 - Room 1, Blow Up silver barrels then build telephone pole, pull switch and sink":LegoBatman1LocationData("There She Goes Again",   45035996061),
-    "PCP Hero #1 - Room 1, Find 3 Carrots":                                                 LegoBatman1LocationData("There She Goes Again",   45035996062),
-    "PCP Hero #1 - Room 1, Build Blue Machine near dock and sink":                          LegoBatman1LocationData("There She Goes Again",   45035996063),
-    "PCP Hero #1 - Room 2, Build and Destroy flowers near bridge":                          LegoBatman1LocationData("There She Goes Again",   45035996064),
-    "PCP Hero #1 - Room 2, Remove Trash Can near bridge and grapple":                       LegoBatman1LocationData("There She Goes Again",   45035996065),
-    "PCP Hero #1 - Room 2, Remove Trash Can near fan and go under":                         LegoBatman1LocationData("There She Goes Again",   45035996066),
-    "PCP Hero #1 - Room 2, Use tech pad to push buttons, blow up silver, fly to glass pannel up left":LegoBatman1LocationData("There She Goes Again",   45035996068),
-    "PCP Hero #1 - Room 2, Use tech pad to push buttons, blow up silver, fly to glass pannel right and sink":LegoBatman1LocationData("There She Goes Again",   45035996069),
-    "PCP Hero #1 - Boss Room, Break wall near entrance":                                    LegoBatman1LocationData("There She Goes Again",   45035996070),
+    "PCP Hero #1 - Boss Room, Break glass wall near entrance":                               LegoBatman1LocationData("There She Goes Again",   45035996070),
     
     # Batboat Battle
-    "PCP Hero #2 - Room 1, Power Light House and use ramp":                                 LegoBatman1LocationData("Batboat Battle",   45035996071),
-    "PCP Hero #2 - Room 1, Blow up wall near silver gate, blow bomb into silver box":       LegoBatman1LocationData("Batboat Battle",   45035996072),
-    "PCP Hero #2 - Room 1, Submerge and hit 2 buttons, then sink ship with torpedos":       LegoBatman1LocationData("Batboat Battle",   45035996073),
-    "PCP Hero #2 - Room 1, Pull pipe near door":                                            LegoBatman1LocationData("Batboat Battle",   45035996074),
-    "PCP Hero #2 - Room 2, Submerge under ice":                                             LegoBatman1LocationData("Batboat Battle",   45035996075),
-    "PCP Hero #2 - Room 2, Destroy Silver Box on Toxic Water":                              LegoBatman1LocationData("Batboat Battle",   45035996076),
-    "PCP Hero #2 - Room 2, Blow Up Silver around pipe":                                     LegoBatman1LocationData("Batboat Battle",   45035996078),
-    "PCP Hero #2 - Shoot 3 buoys with torpedo":                                             LegoBatman1LocationData("Batboat Battle",   45035996077),
     "PCP Hero #2 - Boss Room, Submerge and shoot targets":                                  LegoBatman1LocationData("Batboat Battle",   45035996079),
-    "PCP Hero #2 - Boss Room, Submerge under ice again":                                    LegoBatman1LocationData("Batboat Battle",   45035996080),
-    "PCP Hero #2 - Boss Room, Destroy Silver Boxes on Toxic Water again":                   LegoBatman1LocationData("Batboat Battle",   45035996081),
-
+    
     # Under The City
     "PCP Hero #3 - Room 1, Use Tech Pannel and run over bouys":                             LegoBatman1LocationData("Under The City",   45035996082),
-    
-    "PCP Hero #3 - Room 1, Glide from robin suit and use mind control door, open cage":     LegoBatman1LocationData("Under The City",   45035996084),
-    "PCP Hero #3 - Room 1, Double Jump from rail near middle of room":                      LegoBatman1LocationData("Under The City",   45035996085),
-    "PCP Hero #3 - Room 2, Pull Blue Garbage can and break glass":                          LegoBatman1LocationData("Under The City",   45035996086),
-    "PCP Hero #3 - Room 2, Double jump from robin suit to rail and walk left":              LegoBatman1LocationData("Under The City",   45035996087),
-    "PCP Hero #3 - Room 2, Use Attract Machine near rails from far right of room, use boat and hit buoys":LegoBatman1LocationData("Under The City",  45035996088),
-    "PCP Hero #3 - Room 3, Walk through toxins and pull switch":                            LegoBatman1LocationData("Under The City",   45035996089),
-    "PCP Hero #3 - Room 3, Near silver gate, build Toilet and push it, then double jump up":LegoBatman1LocationData("Under The City",   45035996090),
-    "PCP Hero #3 - Room 3, Use extention platform to blow up silver object and jump":       LegoBatman1LocationData("Under The City",   45035996091),
-    "PCP Hero #3 - Room 3, Sink in sewer water after raising it":                           LegoBatman1LocationData("Under The City",   45035996092),
-    "PCP Hero #3 - Room 3, Build Machine and use generator":                                LegoBatman1LocationData("Under The City",   45035996093),
     
     # Zoo's Company
     "PCP Hero #4 - Room 1, Use Female Pannel, blow up silver objects and run over bouys":   LegoBatman1LocationData("Zoo's Company",   45035996094),
@@ -607,7 +522,95 @@ hostagesanity_locations = {
 }
 
 kitsanity_locations = {
-     ....
+    # You Can Bank On Batman
+    "TRR Hero #1 - Room 1, Top Of ladder near switch and grapple":                          LegoBatman1LocationData("You Can Bank On Batman",   45035996000),
+    "TRR Hero #1 - Room 1, Garage Door from switch near grapple and ladder":                LegoBatman1LocationData("You Can Bank On Batman",   45035996001),
+    "TRR Hero #1 - Break 5 Telephone Booths through out level":                             LegoBatman1LocationData("You Can Bank On Batman",   45035996002),
+    "TRR Hero #1 - Room 1, Glass Window near spawn":                                        LegoBatman1LocationData("You Can Bank On Batman",   45035996004),
+    "TRR Hero #1 - Room 1, Mind Control Pannel near Toxins":                                LegoBatman1LocationData("You Can Bank On Batman",   45035996005),
+    "TRR Hero #1 - Room 1, In the sewer lid with garbage can on it":                        LegoBatman1LocationData("You Can Bank On Batman",   45035996006),
+    "TRR Hero #1 - Room 1, Grapple under garbage can to silver window":                     LegoBatman1LocationData("You Can Bank On Batman",   45035996007),
+    "TRR Hero #1 - Room 2, Stregth window to stairs":                                       LegoBatman1LocationData("You Can Bank On Batman",   45035996008),
+    "TRR Hero #1 - Room 2, 2 cars in the garage near toxins":                               LegoBatman1LocationData("You Can Bank On Batman",   45035996009),
+    "TRR Hero #1 - Room 2, Attract Suit machine behind glass wall":                         LegoBatman1LocationData("You Can Bank On Batman",   45035996010),
+    # An Icy Reception
+    "TRR Hero #2 - Room 1, Build and Climb rails on the right of spawn":                    LegoBatman1LocationData("An Icy Reception",   45035996012),
+    "TRR Hero #2 - Room 1, Destroy Wood Barrier right of spawn after climbing rails":       LegoBatman1LocationData("An Icy Reception",   45035996013),
+    "TRR Hero #2 - Room 1, Strength behind truck left of spawn":                            LegoBatman1LocationData("An Icy Reception",   45035996014),
+    "TRR Hero #2 - Room 1, Climb Rails inside Mind Control Door left of spawn":             LegoBatman1LocationData("An Icy Reception",   45035996016),
+    "TRR Hero #2 - Room 1, Silver object above rails behind gate north of spawn":           LegoBatman1LocationData("An Icy Reception",   45035996017),
+    "TRR Hero #2 - Room 1, Drive truck to platform by spawn and blow up silver objects":    LegoBatman1LocationData("An Icy Reception",   45035996018),
+    "TRR Hero #2 - Room 2, Use female door and blow up silver objects":                     LegoBatman1LocationData("An Icy Reception",   45035996019),
+    "TRR Hero #2 - Room 3, Press switch near toxic gas and blow up silver object":          LegoBatman1LocationData("An Icy Reception",   45035996021),
+    "TRR Hero #2 - Room 3, Glide across, blow up vent near fan and ride fan":               LegoBatman1LocationData("An Icy Reception",   45035996022),
+    "TRR Hero #2 - Room 3, Glide across, mind control guy to pull switch":                  LegoBatman1LocationData("An Icy Reception",   45035996023),
+    # Two-Face Chase
+    "TRR Hero #3 - Room 1, Destroy 3 dumpsters":                                            LegoBatman1LocationData("Two-Face Chase",   45035996024),
+    "TRR Hero #3 - Room 1, Destroy the manhole cover south of spawn":                       LegoBatman1LocationData("Two-Face Chase",   45035996025),
+    "TRR Hero #3 - Room 2, Destroy trash dumpster, southwest of entrance":                  LegoBatman1LocationData("Two-Face Chase",   45035996026),
+    "TRR Hero #3 - Room 2, Destroy 3 blue cars":                                            LegoBatman1LocationData("Two-Face Chase",   45035996027),
+    "TRR Hero #3 - Room 2, Down the ramp, press the pannel with Joker's Van":               LegoBatman1LocationData("Two-Face Chase",   45035996028),
+    "TRR Hero #3 - Room 2, Down the ramp, press the pannel with Harley's Truck":            LegoBatman1LocationData("Two-Face Chase",   45035996029),
+    "TRR Hero #3 - Room 2, Destroy the north set of supports":                              LegoBatman1LocationData("Two-Face Chase",   45035996030),
+    "TRR Hero #3 - Room 2, Destroy the south set of supports":                              LegoBatman1LocationData("Two-Face Chase",   45035996033),
+    "TRR Hero #3 - Room 3, Destroy telephon booth in the far back left":                    LegoBatman1LocationData("Two-Face Chase",   45035996034),
+    "TRR Hero #3 - Destroy 3 food carts across level":                                      LegoBatman1LocationData("Two-Face Chase",   45035996035),
+    # A Poisonous Appointment
+    "TRR Hero #4 - Room 1, Build and destroy all carrots":                                  LegoBatman1LocationData("A Poisonous Appointment",   45035996036),
+    "TRR Hero #4 - Room 1, Jump on the tree off of the tractor, jump to the right tree":    LegoBatman1LocationData("A Poisonous Appointment",   45035996036),
+    "TRR Hero #4 - Room 2, Go through the heat gas and use the tech pad":                   LegoBatman1LocationData("A Poisonous Appointment",   45035996037),    
+    "TRR Hero #4 - Room 2, push the glass box and jump on flowers":                         LegoBatman1LocationData("A Poisonous Appointment",   45035996039),
+    "TRR Hero #4 - Room 2, Build potted plant and double jump to rail":                     LegoBatman1LocationData("A Poisonous Appointment",   45035996040),
+    "TRR Hero #4 - Build 3 carrots":                                                        LegoBatman1LocationData("A Poisonous Appointment",   45035996041),
+    "TRR Hero #4 - Room 3, sink down near entrance":                                        LegoBatman1LocationData("A Poisonous Appointment",   45035996042),
+    "TRR Hero #4 - Room 3, Magnet walk up from rail and blow up silver object":             LegoBatman1LocationData("A Poisonous Appointment",   45035996043),    
+    "TRR Hero #4 - Room 4, Jump on the back pipe and walk right":                           LegoBatman1LocationData("A Poisonous Appointment",   45035996045),
+    "TRR Hero #4 - Room 5, jump from rail":                                                 LegoBatman1LocationData("A Poisonous Appointment",   45035996046),
+    # The Face-Off
+    "TRR Hero #5 - Room 1, After gap Jump on all 5 poles":                                  LegoBatman1LocationData("The Face-Off",   45035996047),
+    "TRR Hero #5 - Room 1, Far Right side of room grapple":                                 LegoBatman1LocationData("The Face-Off",   45035996048),
+    "TRR Hero #5 - Room 1, Use Tech Pad and go through rotating door":                      LegoBatman1LocationData("The Face-Off",   45035996049),
+    "TRR Hero #5 - Room 1, Build Neon Giant Dollar Sign":                                   LegoBatman1LocationData("The Face-Off",   45035996050),
+    "TRR Hero #5 - Room 1, Use Attract Machine and Double Jump on Leaves and Double jump":  LegoBatman1LocationData("The Face-Off",   45035996052),
+    "TRR Hero #5 - Room 2, After Two Face Fight, jump down bridge into toxin":              LegoBatman1LocationData("The Face-Off",   45035996054),
+    "TRR Hero #5 - Room 2, After Two Face Fight, right side grow plant":                    LegoBatman1LocationData("The Face-Off",   45035996055),
+    "TRR Hero #5 - Room 4, Use the switch, blow up the silver object and use the generator":LegoBatman1LocationData("The Face-Off",   45035996056),
+    "TRR Hero #5 - Boss Room, Right side opening":                                          LegoBatman1LocationData("The Face-Off",   45035996057),
+    "TRR Hero #5 - Boss Room, Destroy 5 large containers of money":                         LegoBatman1LocationData("The Face-Off",   45035996058),
+    # There She Goes Again
+    "PCP Hero #1 - Room 1, Inside Female Pannel Door, South Magnet Wall":                   LegoBatman1LocationData("There She Goes Again",   45035996059),
+    "PCP Hero #1 - Room 1, Break South Purple Box, build car, drive car in garage by robin suit":LegoBatman1LocationData("There She Goes Again",   45035996060),
+    "PCP Hero #1 - Room 1, Blow Up silver barrels then build telephone pole, pull switch and sink":LegoBatman1LocationData("There She Goes Again",   45035996061),
+    "PCP Hero #1 - Room 1, Find 3 Carrots":                                                 LegoBatman1LocationData("There She Goes Again",   45035996062),
+    "PCP Hero #1 - Room 1, Build Blue Machine near dock and sink":                          LegoBatman1LocationData("There She Goes Again",   45035996063),
+    "PCP Hero #1 - Room 2, Build and Destroy flowers near bridge":                          LegoBatman1LocationData("There She Goes Again",   45035996064),
+    "PCP Hero #1 - Room 2, Remove Trash Can near bridge and grapple":                       LegoBatman1LocationData("There She Goes Again",   45035996065),
+    "PCP Hero #1 - Room 2, Remove Trash Can near fan and go under":                         LegoBatman1LocationData("There She Goes Again",   45035996066),
+    "PCP Hero #1 - Room 2, Use tech pad to push buttons, blow up silver, fly to glass pannel up left":LegoBatman1LocationData("There She Goes Again",   45035996068),
+    "PCP Hero #1 - Room 2, Use tech pad to push buttons, blow up silver, fly to glass pannel right and sink":LegoBatman1LocationData("There She Goes Again",   45035996069),
+    # Batboat Battle
+    "PCP Hero #2 - Room 1, Power Light House and use ramp":                                 LegoBatman1LocationData("Batboat Battle",   45035996071),
+    "PCP Hero #2 - Room 1, Blow up wall near silver gate, blow bomb into silver box":       LegoBatman1LocationData("Batboat Battle",   45035996072),
+    "PCP Hero #2 - Room 1, Submerge and hit 2 buttons, then sink ship with torpedos":       LegoBatman1LocationData("Batboat Battle",   45035996073),
+    "PCP Hero #2 - Room 1, Pull pipe near door":                                            LegoBatman1LocationData("Batboat Battle",   45035996074),
+    "PCP Hero #2 - Room 2, Submerge under ice":                                             LegoBatman1LocationData("Batboat Battle",   45035996075),
+    "PCP Hero #2 - Room 2, Destroy Silver Box on Toxic Water":                              LegoBatman1LocationData("Batboat Battle",   45035996076),
+    "PCP Hero #2 - Room 2, Blow Up Silver around pipe":                                     LegoBatman1LocationData("Batboat Battle",   45035996078),
+    "PCP Hero #2 - Shoot 3 buoys with torpedo":                                             LegoBatman1LocationData("Batboat Battle",   45035996077),
+    "PCP Hero #2 - Boss Room, Submerge under ice again":                                    LegoBatman1LocationData("Batboat Battle",   45035996080),
+    "PCP Hero #2 - Boss Room, Destroy Silver Boxes on Toxic Water again":                   LegoBatman1LocationData("Batboat Battle",   45035996081),
+    # Under the City
+    "PCP Hero #3 - Room 1, Glide from robin suit and use mind control door, open cage":     LegoBatman1LocationData("Under The City",   45035996084),
+    "PCP Hero #3 - Room 1, Double Jump from rail near middle of room":                      LegoBatman1LocationData("Under The City",   45035996085),
+    "PCP Hero #3 - Room 2, Pull Blue Garbage can and break glass":                          LegoBatman1LocationData("Under The City",   45035996086),
+    "PCP Hero #3 - Room 2, Double jump from robin suit to rail and walk left":              LegoBatman1LocationData("Under The City",   45035996087),
+    "PCP Hero #3 - Room 2, Use Attract Machine near rails from far right of room, use boat and hit buoys":LegoBatman1LocationData("Under The City",  45035996088),
+    "PCP Hero #3 - Room 3, Walk through toxins and pull switch":                            LegoBatman1LocationData("Under The City",   45035996089),
+    "PCP Hero #3 - Room 3, Near silver gate, build Toilet and push it, then double jump up":LegoBatman1LocationData("Under The City",   45035996090),
+    "PCP Hero #3 - Room 3, Use extention platform to blow up silver object and jump":       LegoBatman1LocationData("Under The City",   45035996091),
+    "PCP Hero #3 - Room 3, Sink in sewer water after raising it":                           LegoBatman1LocationData("Under The City",   45035996092),
+    "PCP Hero #3 - Room 3, Build Machine and use generator":                                LegoBatman1LocationData("Under The City",   45035996093),
+    # Zoo's Company
 }
 event_location_table: Dict[str, LegoBatman1LocationData] = {
     "Unlocked Wayne Mannor":                    LegoBatman1LocationData("Event"),
