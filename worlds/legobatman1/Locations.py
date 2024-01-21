@@ -524,7 +524,7 @@ basic_locations = {
     "Buy Ice Rink":                                 LegoBatman1LocationData("Shop", 45035996437), 
 }
 
-charshop_sanity_locations = {
+charshopsanity_locations = {
     "Buy Bruce Wayne":                              LegoBatman1LocationData("Shop", 45035996438),
     "Buy Alfred":                                   LegoBatman1LocationData("Shop", 45035996439),
     "Buy Batgirl":                                  LegoBatman1LocationData("Shop", 45035996440),
