@@ -65,23 +65,23 @@ class StartingLevels(Choice):
     Vanillia: Start with only the first level of hero campaign 
     Withdraw: Start with only the first level of villain campaign
     Bank & Withdraw: Start with the first level of hero and villain Campaign (Gives more in Sphere 1)
-    Random: Start with a random level from any campaign
+    Random Level: Start with a random level from any campaign
     Random Both: Start with 2 random  levels, one from each campaign
     Random Any: Start with 2 random levels
     Random Vehicle: Start with a random vehicle level
     Random Non Vehicle: Start with a random non vehicle level
-    Random Both: Start with a random vechile level and a random non vechile level
+    Random Both Vechile & Non Vechile: Start with a random vechile level and a random non vechile level
     """
     display_name = "Starting Levels"
     option_vanillia = 0
     option_withdraw = 1
     option_bank_withdraw = 2
-    option_random = 3
+    option_random_lvl = 3
     option_random_both = 4
     option_random_any = 5
     option_random_vehicle = 6
     option_random_non_vehicle = 7
-    option_random_both = 8
+    option_random_vechile_non = 8
     default = 0
 
 class DectectorLogic(Toggle):
@@ -139,7 +139,7 @@ class TrapApperance(Choice):
     """
     What trap items look like. 
     """
-    display_name = "Hint Trap Apperance"
+    display_name = "Trap Apperance"
     option_important = 0
     option_anything = 1
     option_ap_item_only = 2
