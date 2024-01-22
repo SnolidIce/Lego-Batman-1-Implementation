@@ -51,7 +51,7 @@ class MiniKitSanity(Toggle):
 
 
 class HostageSanity(Toggle):
-    """Puts all 30 Hostages into the pool. 
+    """Puts all 25 Hostages into the pool. 
     This setting is forced on Unlock Hush Goal
     """
     display_name = "HostageSanity"

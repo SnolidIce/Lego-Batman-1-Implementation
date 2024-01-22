@@ -10,7 +10,6 @@ class LegoBatman1Location(Location):
 class LegoBatman1LocationData(NamedTuple):
     category: str
     code: Optional[int] = None
-    can_create: Callable[[MultiWorld, int], bool] = lambda multiworld, player: True
 
 def get_locations_by_category(category: str) -> Dict[str, LegoBatman1LocationData]:
     location_dict: Dict[str, LegoBatman1LocationData] = {}
@@ -70,217 +69,51 @@ location_table: Dict[str, LegoBatman1LocationData] = {
     "TJR Hero #5 - Room 2, Push organ out of hiding, then press button to get guy to play it":LegoBatman1LocationData("To the Top of the Tower",   45035996174),
 
     # The Ridler Makes a Withdrawal
-    "TRR Villian #1 - Room 1, Pull garbage cans with strong character":                        LegoBatman1LocationData("The Ridler Makes a Withdrawal",   45035996178),
-    "TRR Villian #1 - Room 1, Pull white truck in parking lot then double jump up":            LegoBatman1LocationData("The Ridler Makes a Withdrawal",   45035996177),
-    "TRR Villian #1 - Room 1, Drive Blue car to machine in bottom right of parking lot":       LegoBatman1LocationData("The Ridler Makes a Withdrawal",   45035996179),
-    
-    "TRR Villian #1 - Room 2, Break silver window near glass":                                 LegoBatman1LocationData("The Ridler Makes a Withdrawal",   45035996181),
-    "TRR Villian #1 - Room 2, Batarang window then grapple up to it":                          LegoBatman1LocationData("The Ridler Makes a Withdrawal",   45035996182),
-    "TRR Villian #1 - Room 2, Break glass window with tv after silver gate":                   LegoBatman1LocationData("The Ridler Makes a Withdrawal",   45035996183),
     "TRR Villian #1 - Room 2, Climb magnet wall then double jump and bring down green sign, build it and bring it to crusher in sub room":LegoBatman1LocationData("The Ridler Makes a Withdrawal",   45035996184),
-    "TRR Villian #1 - Room 3, Double jump on rails near entrance":                             LegoBatman1LocationData("The Ridler Makes a Withdrawal",   45035996185),
-    "TRR Villian #1 - Room 3, Break barrels left side of bank":                                LegoBatman1LocationData("The Ridler Makes a Withdrawal",   45035996186),
-    "TRR Villian #1 - Room 3, Break glass window near ladder":                                 LegoBatman1LocationData("The Ridler Makes a Withdrawal",   45035996187),
-    "TRR Villian #1 - Room 3, Blow up silver object near police car":                          LegoBatman1LocationData("The Ridler Makes a Withdrawal",   45035996188),
+
 
     # On the Rocks
-    "TRR Villian #2 - Room 1, Drive Ice Cream truck into garage":                              LegoBatman1LocationData("On the Rocks",   45035996189),
-    "TRR Villian #2 - Room 1, Break 3 snowmen (One is in glass door sub room)":                LegoBatman1LocationData("On the Rocks",   45035996200),
-    "TRR Villian #2 - Room 1, Pull window near fan":                                           LegoBatman1LocationData("On the Rocks",   45035996190),
-    
-    "TRR Villian #2 - Room 2, Break silver handle then go inside near ladder":                 LegoBatman1LocationData("On the Rocks",   45035996192),
     "TRR Villian #2 - Room 2, Break silver handle then go inside, break object, build switch, go across and build object":LegoBatman1LocationData("On the Rocks",   45035996193),
-    "TRR Villian #2 - Room 2, Walk up magnet wall then go down":                               LegoBatman1LocationData("On the Rocks",   45035996194),
-    "TRR Villian #2 - Room 3, Go up elevator then go left, jump down rails":                   LegoBatman1LocationData("On the Rocks",   45035996195),
-    "TRR Villian #2 - Room 3, Use attract machine":                                            LegoBatman1LocationData("On the Rocks",   45035996196),
-    "TRR Villian #2 - Room 3, Blow up silver handle then blow up silver object inside with guy":LegoBatman1LocationData("On the Rocks",  45035996197),
-    "TRR Villian #2 - Room 4, Walk up magnet wall then glide":                                 LegoBatman1LocationData("On the Rocks",   45035996198),
-    "TRR Villian #2 - Room 4, Mind control guy to the left side":                              LegoBatman1LocationData("On the Rocks",   45035996199),
-    
+
     # Green Fingers
-    "TRR Villian #3 - Room 1, Use tech pannel at spawn then drive car through flags":          LegoBatman1LocationData("Green Fingers",   45035996201),
-    "TRR Villian #3 - Room 1, Blow up 2 silver gates, then grapple twice, then double jump":   LegoBatman1LocationData("Green Fingers",   45035996202),
-    "TRR Villian #3 - Room 1, Left side jump on rails":                                        LegoBatman1LocationData("Green Fingers",   45035996203),
-    
-    "TRR Villian #3 - Room 2, Bomb silver door, then go in and use attract machine, use tech pannel to bake cake":LegoBatman1LocationData("Green Fingers",   45035996205),
-    "TRR Villian #3 - Room 3, Blow up silver door then solve pushing puzzle":                  LegoBatman1LocationData("Green Fingers",   45035996206),
-    "TRR Villian #3 - Room 4, Sink in hole in fountain then break glass and pull switch":      LegoBatman1LocationData("Green Fingers",   45035996207),
-    "TRR Villian #3 - Room 5, Break glass then build magnet wall":                             LegoBatman1LocationData("Green Fingers",   45035996208),
-    "TRR Villian #3 - Room 6, Blow up silver door, break machine, build magnet wall, push it, walk on wall":LegoBatman1LocationData("Green Fingers",   45035996209),
-    "TRR Villian #3 - Room 6, Grapple onto heated pipe, then go in hole near heated pipe":     LegoBatman1LocationData("Green Fingers",   45035996210),
-    "TRR Villian #3 - Room 6, Break glass door then sink, walk forward then swim up":          LegoBatman1LocationData("Green Fingers",   45035996211),
-    "TRR Villian #3 - Room 7, Blow up silver object left side of room":                        LegoBatman1LocationData("Green Fingers",   45035996112),
+    "TRR Villian #3 - Room 2, Bomb silver door, then go in and use attract machine, use tech pannel to bake cake":LegoBatman1LocationData("Green Fingers",   45035996205),    
 
     # An Enterprising Theft
-    "TRR Villian #4 - Room 1, Break glass, build switches, double jump to item":               LegoBatman1LocationData("An Enterprising Theft",   45035996213),
-   
-    "TRR Villian #4 - Room 1, Break glass door to scientist room, build contraptions, ride dog to open door near spawn, use tech suit in sub room":LegoBatman1LocationData("An Enterprising Theft",   45035996215),
-    "TRR Villian #4 - Room 1, Blow up silver object then open door":                           LegoBatman1LocationData("An Enterprising Theft",   45035996216),
-    "TRR Villian #4 - Room 1, Break glass on top floor":                                       LegoBatman1LocationData("An Enterprising Theft",   45035996217),
-    "TRR Villian #4 - Room 2, Blow up silver gate, then build helicopter, use tech suit and fly to middle of room":LegoBatman1LocationData("An Enterprising Theft",   45035996218),
-    "TRR Villian #4 - Room 2, Raise toxin level in main room, then mind control guy, pull switch, then jump in capsule":LegoBatman1LocationData("An Enterprising Theft",   45035996219),
-    "TRR Villian #4 - Room 3, Use batarang on grate then double jump up":                      LegoBatman1LocationData("An Enterprising Theft",   45035996220),
-    "TRR Villian #4 - Room 3, Break glass door then build weight":                             LegoBatman1LocationData("An Enterprising Theft",   45035996221),
-    "TRR Villian #4 - Room 3, Walk on heated pipe and ride on fan":                            LegoBatman1LocationData("An Enterprising Theft",   45035996222),
     "TRR Villian #4 - Room 3, Blow up silver door, then build movie player, go in door and solve puzzle":LegoBatman1LocationData("An Enterprising Theft",   45035996223),
-    "TRR Villian #4 - Room 4, Item buy laser canon":                                           LegoBatman1LocationData("An Enterprising Theft",   45035996224),
 
     # Breaking Blocks
-    "TRR Villian #5 - Room 1, Jump down on vine leafs":                                        LegoBatman1LocationData("Breaking Blocks",   45035996225),
-    "TRR Villian #5 - Room 1, Shoot 3 cameras with the helicopter":                            LegoBatman1LocationData("Breaking Blocks",   45035996226),
-    "TRR Villian #5 - Room 2, Batarang 3 paintings then build and pull switch":                LegoBatman1LocationData("Breaking Blocks",   45035996227),
-    "TRR Villian #5 - Room 2, Break glass pane, then use attract machine, then walk up magnet wall":LegoBatman1LocationData("Breaking Blocks",   45035996228),
-    "TRR Villian #5 - Room 3, Push bookshelf then break boxes":                                LegoBatman1LocationData("Breaking Blocks",   45035996229),
-    
-    "TRR Villian #5 - Room 3, Break silver door then blow up silver cage":                     LegoBatman1LocationData("Breaking Blocks",   45035996240),
     "TRR Villian #5 - Room 3, Break silver door then build and push gold block, break glass, break pannel, then blow up silver door":LegoBatman1LocationData("Breaking Blocks",   45035996241),
-    "TRR Villian #5 - Room 4, Destroy 4 gold items":                                           LegoBatman1LocationData("Breaking Blocks",   45035996242),
-    "TRR Villian #5 - Room 4, Blow up silver cage near pushable block":                        LegoBatman1LocationData("Breaking Blocks",   45035996243),
-    "TRR Villian #5 - Room 5, Break glass, build magnet wall, climb magnet wall, push cage":   LegoBatman1LocationData("Breaking Blocks",   45035996244),
-    "TRR Villian #5 - Room 5, Blow up silver door, go up ladder, blow up silver cage":         LegoBatman1LocationData("Breaking Blocks",   45035996245),
-
+   
 
     # Rockin' the Docks
-    
-    "PCP Villian #1 - Room 1, Break glass window and jump up rails":                           LegoBatman1LocationData("Rockin' the Docks",   45035996247),
-    "PCP Villian #1 - Room 1, Grow 3 carrots from breaking red canisters":                     LegoBatman1LocationData("Rockin' the Docks",   45035996248),
-    "PCP Villian #1 - Room 1, Drive 2 trucks onto orange buttons":                             LegoBatman1LocationData("Rockin' the Docks",   45035996249),
-    "PCP Villian #1 - Room 1, Break open ship":                                                LegoBatman1LocationData("Rockin' the Docks",   45035996250),
-    "PCP Villian #1 - Room 2, Grow plant ladder and walk right":                               LegoBatman1LocationData("Rockin' the Docks",   45035996251),
     "PCP Villian #1 - Room 2, Use female door pannel and solve puzzle":                        LegoBatman1LocationData("Rockin' the Docks",   45035996252),
-    "PCP Villian #1 - Room 2, Break 5 objects on edge of dock":                                LegoBatman1LocationData("Rockin' the Docks",   45035996253),
-    "PCP Villian #1 - Room 3, Use generator then use tech pannel to ride boats through barrels":LegoBatman1LocationData("Rockin' the Docks",  45035996254),
-    "PCP Villian #1 - Room 3, Swim in toxic water":                                            LegoBatman1LocationData("Rockin' the Docks",   45035996255),
-    "PCP Villian #1 - Room 3, Use Female Door then go in sub room and use attract machine then break jukebox":LegoBatman1LocationData("Rockin' the Docks",   45035996256),
-    "PCP Villian #1 - Room 3, Go up elevator then walk left":                                  LegoBatman1LocationData("Rockin' the Docks",   45035996257),
 
     # Stealing the Show
-    
-    "PCP Villian #2 - Room 1, Break strength box, then build magnet wall then go to left side and jump":LegoBatman1LocationData("Stealing the Show",   45035996259),
-    "PCP Villian #2 - Room 1, Break 3 neon signs":                                             LegoBatman1LocationData("Stealing the Show",   45035996260),
-    "PCP Villian #2 - Room 1, Grow plants and climb up":                                       LegoBatman1LocationData("Stealing the Show",   45035996261),
-    "PCP Villian #2 - Room 1, Walk behind glass after helicopter fight":                       LegoBatman1LocationData("Stealing the Show",   45035996262),
-    "PCP Villian #2 - Room 1, Jump down near 2 man switch after helicopter fight":             LegoBatman1LocationData("Stealing the Show",   45035996263),
-    "PCP Villian #2 - Room 1, Walk up magnet wall near gargoyle statue after helicopter fight":LegoBatman1LocationData("Stealing the Show",   45035996264),
-    "PCP Villian #2 - Room 2, Break glass container on left side floor 1":                     LegoBatman1LocationData("Stealing the Show",   45035996265),
-    "PCP Villian #2 - Room 2, Break right box in skeleton dinosaurs area":                     LegoBatman1LocationData("Stealing the Show",   45035996266),
     "PCP Villian #2 - Room 2, Use attract machine then build helicopter then push buttons and blow up silver object":LegoBatman1LocationData("Stealing the Show",   45035996267),
-    "PCP Villian #2 - Room 2, Break glass continers and build catapult and use it":            LegoBatman1LocationData("Stealing the Show",   45035996268),
-    "PCP Villian #2 - Room 2, Pull statue, then double jump to ladder and wlak left":          LegoBatman1LocationData("Stealing the Show",   45035996269),
 
     # Harboring a Grudge
-    "PCP Villian #3 - Room 1, Use torpedo on toxic canister":                                  LegoBatman1LocationData("Harboring a Grudge",   45035996270),
-    "PCP Villian #3 - Room 1, Destroy 3 brown structures":                                     LegoBatman1LocationData("Harboring a Grudge",   45035996271),
-    "PCP Villian #3 - Room 1, Tow 2 bombs into 2 silver objects then shoot 3 sewer lids":      LegoBatman1LocationData("Harboring a Grudge",   45035996272),
-    "PCP Villian #3 - Room 2, Destroy 5 buoys in the water":                                   LegoBatman1LocationData("Harboring a Grudge",   45035996273),
-    "PCP Villian #3 - Room 1, Blow up silver object and pop 3 joker balloons":                 LegoBatman1LocationData("Harboring a Grudge",   45035996274),
-    "PCP Villian #3 - Room 2, Shoot bridges on corner near entrance":                          LegoBatman1LocationData("Harboring a Grudge",   45035996275),
-    "PCP Villian #3 - Room 2, Drive off of ramp":                                              LegoBatman1LocationData("Harboring a Grudge",   45035996276),
-    "PCP Villian #3 - Room 2, Shoot police boat in toxic water":                               LegoBatman1LocationData("Harboring a Grudge",   45035996277),
-    "PCP Villian #3 - Room 2, Tow 2 bombs to 2 silver objects near end of room then shoot crate":LegoBatman1LocationData("Harboring a Grudge", 45035996278),
-    "PCP Villian #3 - Boss Room, Submerge and collect item infront of dock infront button on the left side of room":LegoBatman1LocationData("Harboring a Grudge",   45035996279),
-    "PCP Villian #3 - Boss Room, Torpedo Red Green Yellow wall":                               LegoBatman1LocationData("Harboring a Grudge",   45035996280),
-    "PCP Villian #3 - Boss Room, Torpedo Red Green Yellow wall and drive to left corner":      LegoBatman1LocationData("Harboring a Grudge",   45035996281),
+    "PCP Villian #3 - Boss Room, Use Robin Torpedo on colored wall and drive to left corner":  LegoBatman1LocationData("Harboring a Grudge",   45035996281),
 
     # A Daring Rescue
-    "PCP Villian #4 - Room 1, Bomb silver sewer lid then walk along toxins":                   LegoBatman1LocationData("A Daring Rescue",   45035996282),
-    
-    "PCP Villian #4 - Room 2, Use generator and go in sub room, then build instruments and wait":LegoBatman1LocationData("A Daring Rescue",   45035996284),
-    "PCP Villian #4 - Room 2, Go through heat pipe to enter sub room, then solve puzzle":      LegoBatman1LocationData("A Daring Rescue",   45035996285),
-    "PCP Villian #4 - Room 3, Destroy 5 TVs during the alligator sequence":                    LegoBatman1LocationData("A Daring Rescue",   45035996286),
-    "PCP Villian #4 - Room 3, Break glass door then pull switch, and then go up steps":        LegoBatman1LocationData("A Daring Rescue",   45035996287),
-    "PCP Villian #4 - Room 5, Go in top left stall":                                           LegoBatman1LocationData("A Daring Rescue",   45035996288),
     "PCP Villian #4 - Room 5, Build canon to enter sub room, strong push platform, use tech suit to make another platform, jump across":LegoBatman1LocationData("A Daring Rescue",   45035996289),
-    "PCP Villian #4 - Room 6, Use attract machine":                                            LegoBatman1LocationData("A Daring Rescue",   45035996289),
-    "PCP Villian #4 - Room 6, Use mind control pannel to enter sub room, then park 3 cars":    LegoBatman1LocationData("A Daring Rescue",   45035996290),
-    "PCP Villian #4 - Room 7, Walk up magnet wall bottom left of room":                        LegoBatman1LocationData("A Daring Rescue",   45035996291),
-    "PCP Villian #4 - Room 8, Open jail door bottom right of room":                            LegoBatman1LocationData("A Daring Rescue",   45035996292),
 
     # Arctic World
-    
     "PCP Villian #5 - Room 1, Use attract machine and play fishing mini game":                 LegoBatman1LocationData("Arctic World",   45035996294),
-    "PCP Villian #5 - Room 1, Slide on ice, then sink and pull switch":                         LegoBatman1LocationData("Arctic World",   45035996295),
-    "PCP Villian #5 - Room 1, Climb up magnet wall, pull gate, use generator, grapple and wait":LegoBatman1LocationData("Arctic World",   45035996296),
-    "PCP Villian #5 - Room 1, Break glass next to falling platform":                           LegoBatman1LocationData("Arctic World",   45035996297),
-    "PCP Villian #5 - Room 1, Double jump on right side, build gate, use female pannel and ski":LegoBatman1LocationData("Arctic World",   45035996298),
-    "PCP Villian #5 - Room 2, Use sonic suit near glass mirror and see shark":                 LegoBatman1LocationData("Arctic World",   45035996299),
-    "PCP Villian #5 - Room 2, Cross toxins, pull heavy object on button, press other 2 buttons":LegoBatman1LocationData("Arctic World",   45035996300),
-    "PCP Villian #5 - Room 3, Slide through all of the gates":                                 LegoBatman1LocationData("Arctic World",   45035996301),
-    "PCP Villian #5 - Room 4, Blow up silver door, left side, then double jump on trampoline": LegoBatman1LocationData("Arctic World",   45035996302),
-    "PCP Villian #5 - Room 4, Sink down into ice berg":                                        LegoBatman1LocationData("Arctic World",   45035996303),
-    "PCP Villian #5 - Room 4, Freeze ice cube, push it, double jump to switch, blow up silver cage":LegoBatman1LocationData("Arctic World",   45035996304),
 
     # A Surprise for the Commissioner
-    "TJR Villian #1 - Room 1, Push block then double jump up":                                 LegoBatman1LocationData("A Surprise for the Commissioner",   45035996305),
-    "TJR Villian #1 - Room 1, Break glass after cooperative puzzle":                           LegoBatman1LocationData("A Surprise for the Commissioner",   45035996306),
-    "TJR Villian #1 - Freeze 3 waters into ice cream (2 in room one, 1 in room 3)":            LegoBatman1LocationData("A Surprise for the Commissioner",   45035996307),
-    
-    "TJR Villian #1 - Room 1, Blow up silver gate, build switch, pull switch":                 LegoBatman1LocationData("A Surprise for the Commissioner",   45035996309),
-    "TJR Villian #1 - Room 1, Walk up magnet wall then pull switchs and grapple":              LegoBatman1LocationData("A Surprise for the Commissioner",   45035996310),
-    "TJR Villian #1 - Room 1, Double jump on rollercoaster":                                   LegoBatman1LocationData("A Surprise for the Commissioner",   45035996311),
-    "TJR Villian #1 - Room 2, Blow up silver object, build grapple, climb magnet wall":        LegoBatman1LocationData("A Surprise for the Commissioner",   45035996312),
     "TJR Villian #1 - Room 2, Glide across from near generator then grapple up and blow up silver object":LegoBatman1LocationData("A Surprise for the Commissioner",   45035996313),
-    "TJR Villian #1 - Room 3, Sink in duck pound":                                             LegoBatman1LocationData("A Surprise for the Commissioner",   45035996314),
-    "TJR Villian #1 - Room 3, Use attract machine then use tech pannel and race cars":         LegoBatman1LocationData("A Surprise for the Commissioner",   45035996315),
-    "TJR Villian #1 - Room 3, Bring ice cream truck to garage":                                LegoBatman1LocationData("A Surprise for the Commissioner",   45035996316),
 
     # Biplane Blast
-    "TJR Villian #2 - Break 10 towers throughout the level":                                   LegoBatman1LocationData("Biplane Blast",   45035996317),
     "TJR Villian #2 - Destroy 5 police copters throughout the level":                            LegoBatman1LocationData("Biplane Blast",   45035996318),
-    "TJR Villian #2 - Room 1, Pull top of chapel":                                             LegoBatman1LocationData("Biplane Blast",   45035996319),
-    "TJR Villian #2 - Room 1, Break Batman gate with torpedo then activate signal tower":      LegoBatman1LocationData("Biplane Blast",   45035996320),
-    "TJR Villian #2 - Room 1, Blow up silver object and pop 3 joker balloons":                 LegoBatman1LocationData("Biplane Blast",   45035996321),
-    "TJR Villian #2 - Room 2, Shoot 3 joker faces on shields":                                 LegoBatman1LocationData("Biplane Blast",   45035996322),
-    "TJR Villian #2 - Room 2, Blow up silver machine":                                         LegoBatman1LocationData("Biplane Blast",   45035996323),
-    "TJR Villian #2 - Room 2, Break silver billboard and fly bottom right":                    LegoBatman1LocationData("Biplane Blast",   45035996324),
-    "TJR Villian #2 - Room 2, Get Batman torpedos, break box on crane, pull crane":            LegoBatman1LocationData("Biplane Blast",   45035996325),
-    "TJR Villian #2 - Boss Room, Go through toxic gas and shoot stuff":                        LegoBatman1LocationData("Biplane Blast",   45035996326),
-    "TJR Villian #2 - Boss Room, Shoot all 3 near toxic gas":                                  LegoBatman1LocationData("Biplane Blast",   45035996327),
-    "TJR Villian #2 - Boss Room, Fly south and grab item":                                     LegoBatman1LocationData("Biplane Blast",   45035996328),
 
     # The Joker's Masterpiece
-    "TJR Villian #3 - Room 1, Batarang bat statue on pillar and press both buttons":           LegoBatman1LocationData("The Joker's Masterpiece",   45035996329),
-    "TJR Villian #3 - Break 3 containers throughout level (2 in room two, 1 in room one)":     LegoBatman1LocationData("The Joker's Masterpiece",   45035996330),
-    
     "TJR Villian #3 - Room 1, Bomb silver door, then go in heated room and solve puzzle":      LegoBatman1LocationData("The Joker's Masterpiece",   45035996332),
-    "TJR Villian #3 - Room 1, Shoot laser generator":                                          LegoBatman1LocationData("The Joker's Masterpiece",   45035996333),
-    "TJR Villian #3 - Room 1, Double jump and push, then ball falls down":                     LegoBatman1LocationData("The Joker's Masterpiece",   45035996334),
-    "TJR Villian #3 - Room 2, Break glasss container":                                         LegoBatman1LocationData("The Joker's Masterpiece",   45035996335),
-    "TJR Villian #3 - Room 3, Push vault open":                                                LegoBatman1LocationData("The Joker's Masterpiece",   45035996336),
-    "TJR Villian #3 - Room 3, Pull switch protected by heat, then break silver and glass object and build joker face":LegoBatman1LocationData("The Joker's Masterpiece",   45035996337),
-    "TJR Villian #3 - Room 4, Double jump on rail, mind control guy then break box":           LegoBatman1LocationData("The Joker's Masterpiece",   45035996338),
-    "TJR Villian #3 - Room 4, Double jump to small opening on right side":                     LegoBatman1LocationData("The Joker's Masterpiece",   45035996339),
-    "TJR Villian #3 - Room 4, Pull switch and push box to conver and use generator twice":     LegoBatman1LocationData("The Joker's Masterpiece",   45035996340),
 
     # The Lure of the Night
-    "TJR Villian #4 - Room 1, Mind control guy to push silver object, then blow it up":        LegoBatman1LocationData("The Lure of the Night",   45035996341),
-    
-    "TJR Villian #4 - Room 1, Build rails, then double jump up and then blow up silver objects, then build and double jump to switch, break plants then build ?":LegoBatman1LocationData("The Lure of the Night",   45035996343),
-    "TJR Villian #4 - Room 1, Build rails, then double jump up then glide, build and push battery":LegoBatman1LocationData("The Lure of the Night",   45035996344),
-    "TJR Villian #4 - Room 1, Pull boxes then build turnstile and put boat in sea, then ride boat around 3 times":LegoBatman1LocationData("The Lure of the Night",   45035996345),
-    "TJR Villian #4 - Room 2, Blow up silver object and build magnet wall then walk up":       LegoBatman1LocationData("The Lure of the Night",   45035996346),
-    "TJR Villian #4 - Room 2, Break 5 fire hydrents":                                          LegoBatman1LocationData("The Lure of the Night",   45035996347),
-    "TJR Villian #4 - Room 2, Blow up silver door, then press both buttons and climb ladder":  LegoBatman1LocationData("The Lure of the Night",   45035996348),
-    "TJR Villian #4 - Room 2, Behind of left tree in playground":                              LegoBatman1LocationData("The Lure of the Night",   45035996349),
     "TJR Villian #4 - Room 2, Use attract machine in playground and grow plants":              LegoBatman1LocationData("The Lure of the Night",   45035996350),
-    "TJR Villian #4 - Room 3, Blow up silver door":                                            LegoBatman1LocationData("The Lure of the Night",   45035996351),
-    "TJR Villian #4 - Room 3, Blow up silver gate and then sink down and push buttons, break glass":LegoBatman1LocationData("The Lure of the Night",   45035996352),
 
     # Dying of Laughter
-    "TJR Villian #5 - Room 1, Grow plants right side of spawn":                                LegoBatman1LocationData("Dying of Laughter",   45035996353),
-    "TJR Villian #5 - Room 1, Double jump from collum then break glass":                       LegoBatman1LocationData("Dying of Laughter",   45035996354),
     "TJR Villian #5 - Room 1, Batarang chandelures then build sweeper and clean church":       LegoBatman1LocationData("Dying of Laughter",   45035996355),
-    "TJR Villian #5 - Room 1, Pull both sides of table":                                       LegoBatman1LocationData("Dying of Laughter",   45035996356),
-    "TJR Villian #5 - Room 2, Blow up silver gate, build ladder, then climb up":               LegoBatman1LocationData("Dying of Laughter",   45035996357),
-    "TJR Villian #5 - Room 2, Double jump onto 2 man button cage next to elevator":            LegoBatman1LocationData("Dying of Laughter",   45035996358),
-    
-    "TJR Villian #5 - Room 2, Glide from cage":                                                LegoBatman1LocationData("Dying of Laughter",   45035996360),
-    "TJR Villian #5 - Room 2, Use magnet wall near elevator":                                  LegoBatman1LocationData("Dying of Laughter",   45035996361),
-    "TJR Villian #5 - Room 2, Freeze water near bridge, then break ice statue":                LegoBatman1LocationData("Dying of Laughter",   45035996362),
-    "TJR Villian #5 - Room 3, Jump repeatly on left 2 man button and hit bell repeatly":       LegoBatman1LocationData("Dying of Laughter",   45035996363),
-    "TJR Villian #5 - Room 3, Blow up silver ladders, build both turrets, then shoot bells":   LegoBatman1LocationData("Dying of Laughter",   45035996364),
-
-    
 }
 
 
@@ -611,7 +444,174 @@ kitsanity_locations = {
     "TJR Hero #5 - Room 2, Climb up magnet wall then walk a little past switch":            LegoBatman1LocationData("To the Top of the Tower",   45035996173),
     "TJR Hero #5 - Boss Room, Cause train crash from Batman Torpedo in back then blow up silver pipe":LegoBatman1LocationData("To the Top of the Tower",   45035996175),
     "TJR Hero #5 - Boss Room, Blow up silver object right side":                            LegoBatman1LocationData("To the Top of the Tower",   45035996176),
-    
+    # The Ridler Makes a Withdrawal
+    "TRR Villian #1 - Room 1, Pull garbage cans with strong character":                     LegoBatman1LocationData("The Ridler Makes a Withdrawal",   45035996178),
+    "TRR Villian #1 - Room 1, Pull white truck in parking lot then double jump up":         LegoBatman1LocationData("The Ridler Makes a Withdrawal",   45035996177),
+    "TRR Villian #1 - Room 1, Drive Blue car to machine in bottom right of parking lot":    LegoBatman1LocationData("The Ridler Makes a Withdrawal",   45035996179),    
+    "TRR Villian #1 - Room 2, Break silver window near glass":                              LegoBatman1LocationData("The Ridler Makes a Withdrawal",   45035996181),
+    "TRR Villian #1 - Room 2, Batarang window then grapple up to it":                       LegoBatman1LocationData("The Ridler Makes a Withdrawal",   45035996182),
+    "TRR Villian #1 - Room 2, Break glass window with tv after silver gate":                LegoBatman1LocationData("The Ridler Makes a Withdrawal",   45035996183),
+    "TRR Villian #1 - Room 3, Double jump on rails near entrance":                          LegoBatman1LocationData("The Ridler Makes a Withdrawal",   45035996185),
+    "TRR Villian #1 - Room 3, Break barrels left side of bank":                             LegoBatman1LocationData("The Ridler Makes a Withdrawal",   45035996186),
+    "TRR Villian #1 - Room 3, Break glass window near ladder":                              LegoBatman1LocationData("The Ridler Makes a Withdrawal",   45035996187),
+    "TRR Villian #1 - Room 3, Blow up silver object near police car":                       LegoBatman1LocationData("The Ridler Makes a Withdrawal",   45035996188),
+    # On the Rocks
+    "TRR Villian #2 - Room 1, Drive Ice Cream truck into garage":                              LegoBatman1LocationData("On the Rocks",   45035996189),
+    "TRR Villian #2 - Room 1, Break 3 snowmen (One is in glass door sub room)":                LegoBatman1LocationData("On the Rocks",   45035996200),
+    "TRR Villian #2 - Room 1, Pull window near fan":                                           LegoBatman1LocationData("On the Rocks",   45035996190),  
+    "TRR Villian #2 - Room 2, Break silver handle then go inside near ladder":                 LegoBatman1LocationData("On the Rocks",   45035996192), 
+    "TRR Villian #2 - Room 2, Walk up magnet wall then go down":                               LegoBatman1LocationData("On the Rocks",   45035996194),
+    "TRR Villian #2 - Room 3, Go up elevator then go left, jump down rails":                   LegoBatman1LocationData("On the Rocks",   45035996195),
+    "TRR Villian #2 - Room 3, Use attract machine":                                            LegoBatman1LocationData("On the Rocks",   45035996196),
+    "TRR Villian #2 - Room 3, Blow up silver handle then blow up silver object inside with guy":LegoBatman1LocationData("On the Rocks",  45035996197),
+    "TRR Villian #2 - Room 4, Walk up magnet wall then glide":                                 LegoBatman1LocationData("On the Rocks",   45035996198),
+    "TRR Villian #2 - Room 4, Mind control guy to the left side":                              LegoBatman1LocationData("On the Rocks",   45035996199),
+    # Green Fingers
+    "TRR Villian #3 - Room 1, Use tech pannel at spawn then drive car through flags":          LegoBatman1LocationData("Green Fingers",   45035996201),
+    "TRR Villian #3 - Room 1, Blow up 2 silver gates, then grapple twice, then double jump":   LegoBatman1LocationData("Green Fingers",   45035996202),
+    "TRR Villian #3 - Room 1, Left side jump on rails":                                        LegoBatman1LocationData("Green Fingers",   45035996203),
+    "TRR Villian #3 - Room 3, Blow up silver door then solve pushing puzzle":                  LegoBatman1LocationData("Green Fingers",   45035996206),
+    "TRR Villian #3 - Room 4, Sink in hole in fountain then break glass and pull switch":      LegoBatman1LocationData("Green Fingers",   45035996207),
+    "TRR Villian #3 - Room 5, Break glass then build magnet wall":                             LegoBatman1LocationData("Green Fingers",   45035996208),
+    "TRR Villian #3 - Room 6, Blow up silver door, break machine, build magnet wall, push it, walk on wall":LegoBatman1LocationData("Green Fingers",   45035996209),
+    "TRR Villian #3 - Room 6, Grapple onto heated pipe, then go in hole near heated pipe":     LegoBatman1LocationData("Green Fingers",   45035996210),
+    "TRR Villian #3 - Room 6, Break glass door then sink, walk forward then swim up":          LegoBatman1LocationData("Green Fingers",   45035996211),
+    "TRR Villian #3 - Room 7, Blow up silver object left side of room":                        LegoBatman1LocationData("Green Fingers",   45035996112),
+    # An Enterprising Theft
+    "TRR Villian #4 - Room 1, Break glass, build switches, double jump to item":               LegoBatman1LocationData("An Enterprising Theft",   45035996213),
+    "TRR Villian #4 - Room 1, Break glass door to scientist room, build contraptions, ride dog to open door near spawn, use tech suit in sub room":LegoBatman1LocationData("An Enterprising Theft",   45035996215),
+    "TRR Villian #4 - Room 1, Blow up silver object then open door":                           LegoBatman1LocationData("An Enterprising Theft",   45035996216),
+    "TRR Villian #4 - Room 1, Break glass on top floor":                                       LegoBatman1LocationData("An Enterprising Theft",   45035996217),
+    "TRR Villian #4 - Room 2, Blow up silver gate, then build helicopter, use tech suit and fly to middle of room":LegoBatman1LocationData("An Enterprising Theft",   45035996218),
+    "TRR Villian #4 - Room 2, Raise toxin level in main room, then mind control guy, pull switch, then jump in capsule":LegoBatman1LocationData("An Enterprising Theft",   45035996219),
+    "TRR Villian #4 - Room 3, Use batarang on grate then double jump up":                      LegoBatman1LocationData("An Enterprising Theft",   45035996220),
+    "TRR Villian #4 - Room 3, Break glass door then build weight":                             LegoBatman1LocationData("An Enterprising Theft",   45035996221),
+    "TRR Villian #4 - Room 3, Walk on heated pipe and ride on fan":                            LegoBatman1LocationData("An Enterprising Theft",   45035996222),
+    "TRR Villian #4 - Room 4, Item by laser canon":                                            LegoBatman1LocationData("An Enterprising Theft",   45035996224),
+    # Breaking Blocks
+    "TRR Villian #5 - Room 1, Jump down on vine leafs":                                        LegoBatman1LocationData("Breaking Blocks",   45035996225),
+    "TRR Villian #5 - Room 1, Shoot 3 cameras with the helicopter":                            LegoBatman1LocationData("Breaking Blocks",   45035996226),
+    "TRR Villian #5 - Room 2, Batarang 3 paintings then build and pull switch":                LegoBatman1LocationData("Breaking Blocks",   45035996227),
+    "TRR Villian #5 - Room 2, Break glass pane, then use attract machine, then walk up magnet wall":LegoBatman1LocationData("Breaking Blocks",   45035996228),
+    "TRR Villian #5 - Room 3, Push bookshelf then break boxes":                                LegoBatman1LocationData("Breaking Blocks",   45035996229),
+    "TRR Villian #5 - Room 3, Break silver door then blow up silver cage":                     LegoBatman1LocationData("Breaking Blocks",   45035996240),
+    "TRR Villian #5 - Room 4, Destroy 4 gold items":                                           LegoBatman1LocationData("Breaking Blocks",   45035996242),
+    "TRR Villian #5 - Room 4, Blow up silver cage near pushable block":                        LegoBatman1LocationData("Breaking Blocks",   45035996243),
+    "TRR Villian #5 - Room 5, Break glass, build magnet wall, climb magnet wall, push cage":   LegoBatman1LocationData("Breaking Blocks",   45035996244),
+    "TRR Villian #5 - Room 5, Blow up silver door, go up ladder, blow up silver cage":         LegoBatman1LocationData("Breaking Blocks",   45035996245),
+    # Rockin' the Docks
+    "PCP Villian #1 - Room 1, Break glass window and jump up rails":                           LegoBatman1LocationData("Rockin' the Docks",   45035996247),
+    "PCP Villian #1 - Room 1, Grow 3 carrots from breaking red canisters":                     LegoBatman1LocationData("Rockin' the Docks",   45035996248),
+    "PCP Villian #1 - Room 1, Drive 2 trucks onto orange buttons":                             LegoBatman1LocationData("Rockin' the Docks",   45035996249),
+    "PCP Villian #1 - Room 1, Break open ship":                                                LegoBatman1LocationData("Rockin' the Docks",   45035996250),
+    "PCP Villian #1 - Room 2, Grow plant ladder and walk right":                               LegoBatman1LocationData("Rockin' the Docks",   45035996251),
+    "PCP Villian #1 - Room 2, Break 5 objects on edge of dock":                                LegoBatman1LocationData("Rockin' the Docks",   45035996253),
+    "PCP Villian #1 - Room 3, Use generator then use tech pannel to ride boats through barrels":LegoBatman1LocationData("Rockin' the Docks",  45035996254),
+    "PCP Villian #1 - Room 3, Swim in toxic water":                                            LegoBatman1LocationData("Rockin' the Docks",   45035996255),
+    "PCP Villian #1 - Room 3, Use Female Door then go in sub room and use attract machine then break jukebox":LegoBatman1LocationData("Rockin' the Docks",   45035996256),
+    "PCP Villian #1 - Room 3, Go up elevator then walk left":                                  LegoBatman1LocationData("Rockin' the Docks",   45035996257),
+    # Stealing the Show
+    "PCP Villian #2 - Room 1, Break strength box, then build magnet wall then go to left side and jump":LegoBatman1LocationData("Stealing the Show",   45035996259),
+    "PCP Villian #2 - Room 1, Break 3 neon signs":                                             LegoBatman1LocationData("Stealing the Show",   45035996260),
+    "PCP Villian #2 - Room 1, Grow plants and climb up":                                       LegoBatman1LocationData("Stealing the Show",   45035996261),
+    "PCP Villian #2 - Room 1, Walk behind glass after helicopter fight":                       LegoBatman1LocationData("Stealing the Show",   45035996262),
+    "PCP Villian #2 - Room 1, Jump down near 2 man switch after helicopter fight":             LegoBatman1LocationData("Stealing the Show",   45035996263),
+    "PCP Villian #2 - Room 1, Walk up magnet wall near gargoyle statue after helicopter fight":LegoBatman1LocationData("Stealing the Show",   45035996264),
+    "PCP Villian #2 - Room 2, Break glass container on left side floor 1":                     LegoBatman1LocationData("Stealing the Show",   45035996265),
+    "PCP Villian #2 - Room 2, Break right box in skeleton dinosaurs area":                     LegoBatman1LocationData("Stealing the Show",   45035996266),
+    "PCP Villian #2 - Room 2, Break glass continers and build catapult and use it":            LegoBatman1LocationData("Stealing the Show",   45035996268),
+    "PCP Villian #2 - Room 2, Pull statue, then double jump to ladder and wlak left":          LegoBatman1LocationData("Stealing the Show",   45035996269),
+    # Harboring a Grudge
+    "PCP Villian #3 - Room 1, Use torpedo on toxic canister":                                  LegoBatman1LocationData("Harboring a Grudge",   45035996270),
+    "PCP Villian #3 - Room 1, Destroy 3 brown structures":                                     LegoBatman1LocationData("Harboring a Grudge",   45035996271),
+    "PCP Villian #3 - Room 1, Tow 2 bombs into 2 silver objects then shoot 3 sewer lids":      LegoBatman1LocationData("Harboring a Grudge",   45035996272),
+    "PCP Villian #3 - Room 2, Destroy 5 buoys in the water":                                   LegoBatman1LocationData("Harboring a Grudge",   45035996273),
+    "PCP Villian #3 - Room 1, Blow up silver object and pop 3 joker balloons":                 LegoBatman1LocationData("Harboring a Grudge",   45035996274),
+    "PCP Villian #3 - Room 2, Shoot bridges on corner near entrance":                          LegoBatman1LocationData("Harboring a Grudge",   45035996275),
+    "PCP Villian #3 - Room 2, Drive off of ramp":                                              LegoBatman1LocationData("Harboring a Grudge",   45035996276),
+    "PCP Villian #3 - Room 2, Shoot police boat in toxic water":                               LegoBatman1LocationData("Harboring a Grudge",   45035996277),
+    "PCP Villian #3 - Room 2, Tow 2 bombs to 2 silver objects near end of room then shoot crate":LegoBatman1LocationData("Harboring a Grudge", 45035996278),
+    "PCP Villian #3 - Boss Room, Submerge and collect item infront of dock infront button on the left side of room":LegoBatman1LocationData("Harboring a Grudge",   45035996279),
+    "PCP Villian #3 - Boss Room, Use Robin Torpedo on colored wall":                           LegoBatman1LocationData("Harboring a Grudge",   45035996280),
+    # A Daring Rescue
+    "PCP Villian #4 - Room 1, Bomb silver sewer lid then walk along toxins":                   LegoBatman1LocationData("A Daring Rescue",   45035996282),
+    "PCP Villian #4 - Room 2, Use generator and go in sub room, then build instruments and wait":LegoBatman1LocationData("A Daring Rescue",   45035996284),
+    "PCP Villian #4 - Room 2, Go through heat pipe to enter sub room, then solve puzzle":      LegoBatman1LocationData("A Daring Rescue",   45035996285),
+    "PCP Villian #4 - Room 3, Destroy 5 TVs during the alligator sequence":                    LegoBatman1LocationData("A Daring Rescue",   45035996286),
+    "PCP Villian #4 - Room 3, Break glass door then pull switch, and then go up steps":        LegoBatman1LocationData("A Daring Rescue",   45035996287),
+    "PCP Villian #4 - Room 5, Go in top left stall":                                           LegoBatman1LocationData("A Daring Rescue",   45035996288),
+    "PCP Villian #4 - Room 6, Use attract machine":                                            LegoBatman1LocationData("A Daring Rescue",   45035996289),
+    "PCP Villian #4 - Room 6, Use mind control pannel to enter sub room, then park 3 cars":    LegoBatman1LocationData("A Daring Rescue",   45035996290),
+    "PCP Villian #4 - Room 7, Walk up magnet wall bottom left of room":                        LegoBatman1LocationData("A Daring Rescue",   45035996291),
+    "PCP Villian #4 - Room 8, Open jail door bottom right of room":                            LegoBatman1LocationData("A Daring Rescue",   45035996292),
+    # Artic World
+    "PCP Villian #5 - Room 1, Slide on ice, then sink and pull switch":                         LegoBatman1LocationData("Arctic World",   45035996295),
+    "PCP Villian #5 - Room 1, Climb up magnet wall, pull gate, use generator, grapple and wait":LegoBatman1LocationData("Arctic World",   45035996296),
+    "PCP Villian #5 - Room 1, Break glass next to falling platform":                           LegoBatman1LocationData("Arctic World",   45035996297),
+    "PCP Villian #5 - Room 1, Double jump on right side, build gate, use female pannel and ski":LegoBatman1LocationData("Arctic World",   45035996298),
+    "PCP Villian #5 - Room 2, Use sonic suit near glass mirror and see shark":                 LegoBatman1LocationData("Arctic World",   45035996299),
+    "PCP Villian #5 - Room 2, Cross toxins, pull heavy object on button, press other 2 buttons":LegoBatman1LocationData("Arctic World",   45035996300),
+    "PCP Villian #5 - Room 3, Slide through all of the gates":                                 LegoBatman1LocationData("Arctic World",   45035996301),
+    "PCP Villian #5 - Room 4, Blow up silver door, left side, then double jump on trampoline": LegoBatman1LocationData("Arctic World",   45035996302),
+    "PCP Villian #5 - Room 4, Sink down into ice berg":                                        LegoBatman1LocationData("Arctic World",   45035996303),
+    "PCP Villian #5 - Room 4, Freeze ice cube, push it, double jump to switch, blow up silver cage":LegoBatman1LocationData("Arctic World",   45035996304),
+    # A Surprise for the Commissioner
+    "TJR Villian #1 - Room 1, Push block then double jump up":                                 LegoBatman1LocationData("A Surprise for the Commissioner",   45035996305),
+    "TJR Villian #1 - Room 1, Break glass after cooperative puzzle":                           LegoBatman1LocationData("A Surprise for the Commissioner",   45035996306),
+    "TJR Villian #1 - Freeze 3 waters into ice cream (2 in room one, 1 in room 3)":            LegoBatman1LocationData("A Surprise for the Commissioner",   45035996307),
+    "TJR Villian #1 - Room 1, Blow up silver gate, build switch, pull switch":                 LegoBatman1LocationData("A Surprise for the Commissioner",   45035996309),
+    "TJR Villian #1 - Room 1, Walk up magnet wall then pull switchs and grapple":              LegoBatman1LocationData("A Surprise for the Commissioner",   45035996310),
+    "TJR Villian #1 - Room 1, Double jump on rollercoaster":                                   LegoBatman1LocationData("A Surprise for the Commissioner",   45035996311),
+    "TJR Villian #1 - Room 2, Blow up silver object, build grapple, climb magnet wall":        LegoBatman1LocationData("A Surprise for the Commissioner",   45035996312),
+    "TJR Villian #1 - Room 3, Sink in duck pound":                                             LegoBatman1LocationData("A Surprise for the Commissioner",   45035996314),
+    "TJR Villian #1 - Room 3, Use attract machine then use tech pannel and race cars":         LegoBatman1LocationData("A Surprise for the Commissioner",   45035996315),
+    "TJR Villian #1 - Room 3, Bring ice cream truck to garage":                                LegoBatman1LocationData("A Surprise for the Commissioner",   45035996316),
+    # Biplane Blast
+    "TJR Villian #2 - Break 10 towers throughout the level":                                   LegoBatman1LocationData("Biplane Blast",   45035996317),
+    "TJR Villian #2 - Room 1, Pull top of chapel":                                             LegoBatman1LocationData("Biplane Blast",   45035996319),
+    "TJR Villian #2 - Room 1, Break Batman gate with torpedo then activate signal tower":      LegoBatman1LocationData("Biplane Blast",   45035996320),
+    "TJR Villian #2 - Room 1, Blow up silver object and pop 3 joker balloons":                 LegoBatman1LocationData("Biplane Blast",   45035996321),
+    "TJR Villian #2 - Room 2, Shoot 3 joker faces on shields":                                 LegoBatman1LocationData("Biplane Blast",   45035996322),
+    "TJR Villian #2 - Room 2, Blow up silver machine":                                         LegoBatman1LocationData("Biplane Blast",   45035996323),
+    "TJR Villian #2 - Room 2, Break silver billboard and fly bottom right":                    LegoBatman1LocationData("Biplane Blast",   45035996324),
+    "TJR Villian #2 - Room 2, Get Batman torpedos, break box on crane, pull crane":            LegoBatman1LocationData("Biplane Blast",   45035996325),
+    "TJR Villian #2 - Boss Room, Go through toxic gas and shoot stuff":                        LegoBatman1LocationData("Biplane Blast",   45035996326),
+    "TJR Villian #2 - Boss Room, Shoot all 3 near toxic gas":                                  LegoBatman1LocationData("Biplane Blast",   45035996327),
+    "TJR Villian #2 - Boss Room, Fly south and grab item":                                     LegoBatman1LocationData("Biplane Blast",   45035996328),
+    # The Joker's Masterpiece
+    "TJR Villian #3 - Room 1, Batarang bat statue on pillar and press both buttons":           LegoBatman1LocationData("The Joker's Masterpiece",   45035996329),
+    "TJR Villian #3 - Break 3 containers throughout level (2 in room two, 1 in room one)":     LegoBatman1LocationData("The Joker's Masterpiece",   45035996330),
+    "TJR Villian #3 - Room 1, Shoot laser generator":                                          LegoBatman1LocationData("The Joker's Masterpiece",   45035996333),
+    "TJR Villian #3 - Room 1, Double jump and push, then ball falls down":                     LegoBatman1LocationData("The Joker's Masterpiece",   45035996334),
+    "TJR Villian #3 - Room 2, Break glasss container":                                         LegoBatman1LocationData("The Joker's Masterpiece",   45035996335),
+    "TJR Villian #3 - Room 3, Push vault open":                                                LegoBatman1LocationData("The Joker's Masterpiece",   45035996336),
+    "TJR Villian #3 - Room 3, Pull switch protected by heat, then break silver and glass object and build joker face":LegoBatman1LocationData("The Joker's Masterpiece",   45035996337),
+    "TJR Villian #3 - Room 4, Double jump on rail, mind control guy then break box":           LegoBatman1LocationData("The Joker's Masterpiece",   45035996338),
+    "TJR Villian #3 - Room 4, Double jump to small opening on right side":                     LegoBatman1LocationData("The Joker's Masterpiece",   45035996339),
+    "TJR Villian #3 - Room 4, Pull switch and push box to conver and use generator twice":     LegoBatman1LocationData("The Joker's Masterpiece",   45035996340),
+    # The Lure of the Night
+    "TJR Villian #4 - Room 1, Mind control guy to push silver object, then blow it up":        LegoBatman1LocationData("The Lure of the Night",   45035996341),
+    "TJR Villian #4 - Room 1, Build rails, then double jump up and then blow up silver objects, then build and double jump to switch, break plants then build ?":LegoBatman1LocationData("The Lure of the Night",   45035996343),
+    "TJR Villian #4 - Room 1, Build rails, then double jump up then glide, build and push battery":LegoBatman1LocationData("The Lure of the Night",   45035996344),
+    "TJR Villian #4 - Room 1, Pull boxes then build turnstile and put boat in sea, then ride boat around 3 times":LegoBatman1LocationData("The Lure of the Night",   45035996345),
+    "TJR Villian #4 - Room 2, Blow up silver object and build magnet wall then walk up":       LegoBatman1LocationData("The Lure of the Night",   45035996346),
+    "TJR Villian #4 - Room 2, Break 5 fire hydrents":                                          LegoBatman1LocationData("The Lure of the Night",   45035996347),
+    "TJR Villian #4 - Room 2, Blow up silver door, then press both buttons and climb ladder":  LegoBatman1LocationData("The Lure of the Night",   45035996348),
+    "TJR Villian #4 - Room 2, Behind of left tree in playground":                              LegoBatman1LocationData("The Lure of the Night",   45035996349),
+    "TJR Villian #4 - Room 3, Blow up silver door":                                            LegoBatman1LocationData("The Lure of the Night",   45035996351),
+    "TJR Villian #4 - Room 3, Blow up silver gate and then sink down and push buttons, break glass":LegoBatman1LocationData("The Lure of the Night",   45035996352),
+    # Dying of Laughter
+    "TJR Villian #5 - Room 1, Grow plants right side of spawn":                                LegoBatman1LocationData("Dying of Laughter",   45035996353),
+    "TJR Villian #5 - Room 1, Double jump from collum then break glass":                       LegoBatman1LocationData("Dying of Laughter",   45035996354),
+    "TJR Villian #5 - Room 1, Pull both sides of table":                                       LegoBatman1LocationData("Dying of Laughter",   45035996356),
+    "TJR Villian #5 - Room 2, Blow up silver gate, build ladder, then climb up":               LegoBatman1LocationData("Dying of Laughter",   45035996357),
+    "TJR Villian #5 - Room 2, Double jump onto 2 man button cage next to elevator":            LegoBatman1LocationData("Dying of Laughter",   45035996358),
+    "TJR Villian #5 - Room 2, Glide from cage":                                                LegoBatman1LocationData("Dying of Laughter",   45035996360),
+    "TJR Villian #5 - Room 2, Use magnet wall near elevator":                                  LegoBatman1LocationData("Dying of Laughter",   45035996361),
+    "TJR Villian #5 - Room 2, Freeze water near bridge, then break ice statue":                LegoBatman1LocationData("Dying of Laughter",   45035996362),
+    "TJR Villian #5 - Room 3, Jump repeatly on left 2 man button and hit bell repeatly":       LegoBatman1LocationData("Dying of Laughter",   45035996363),
+    "TJR Villian #5 - Room 3, Blow up silver ladders, build both turrets, then shoot bells":   LegoBatman1LocationData("Dying of Laughter",   45035996364),
+
 }
 event_location_table: Dict[str, LegoBatman1LocationData] = {
     "Unlocked Wayne Mannor":                    LegoBatman1LocationData("Event"),
