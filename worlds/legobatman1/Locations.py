@@ -282,7 +282,7 @@ kitsanity_locations = {
     "TRR Hero #1 - Room 1, Garage Door from switch near grapple and ladder":                LegoBatman1LocationData("You Can Bank On Batman",   45035996001),
     "TRR Hero #1 - Break 5 Telephone Booths through out level":                             LegoBatman1LocationData("You Can Bank On Batman",   45035996002),
     "TRR Hero #1 - Room 1, Glass Window near spawn":                                        LegoBatman1LocationData("You Can Bank On Batman",   45035996004),
-    "TRR Hero #1 - Room 1, Mind Control Pannel near Toxins":                                LegoBatman1LocationData("You Can Bank On Batman",   45035996005),
+    "TRR Hero #1 - Room 1, Mind Control pannel near toxins":                                LegoBatman1LocationData("You Can Bank On Batman",   45035996005),
     "TRR Hero #1 - Room 1, In the sewer lid with garbage can on it":                        LegoBatman1LocationData("You Can Bank On Batman",   45035996006),
     "TRR Hero #1 - Room 1, Grapple under garbage can to silver window":                     LegoBatman1LocationData("You Can Bank On Batman",   45035996007),
     "TRR Hero #1 - Room 2, Stregth window to stairs":                                       LegoBatman1LocationData("You Can Bank On Batman",   45035996008),
