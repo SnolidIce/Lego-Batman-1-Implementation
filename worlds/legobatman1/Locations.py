@@ -27,7 +27,7 @@ location_table: Dict[str, LegoBatman1LocationData] = {
     "TRR Hero #1 - Boss Room, Break the bank darwer":                                       LegoBatman1LocationData("You Can Bank On Batman",   45035996011),
 
     # An Icy Reception
-    "TRR Hero #2 - Room 2, Press on switch while other character goes in cage.":            LegoBatman1LocationData("An Icy Reception",   45035996020),
+    "TRR Hero #2 - Room 2, Press on switch while other character goes in cage":            LegoBatman1LocationData("An Icy Reception",   45035996020),
     
     # Two-Face Chase
     "TRR Hero #3 - Room 3, Destroy trash can in the far back left cornor":                  LegoBatman1LocationData("Two-Face Chase",   45035996031),

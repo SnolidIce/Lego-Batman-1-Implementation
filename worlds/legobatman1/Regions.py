@@ -8,7 +8,7 @@ class LegoBatman1RegionData(NamedTuple):
     locations: Optional[List[str]]
     region_exits: Optional[List[str]]
 
-regions: Dict[str, LegoBatman1RegionData] = {
+ regions: Dict[str, LegoBatman1RegionData] = {
         "Menu":                            LegoBatman1RegionData(None, ["Batcave"]),
         "Batcave":                         LegoBatman1RegionData(None, ["Arkham Asylum", "Shop", "You Can Bank on Batman","An Icy Reception","Two-Face Chase","A Poisonous Appointment","The Face-Off","There She Goes Again","Batboat Battle","Under the City","Zoo's Company","Penguin's Lair","Joker's Home Turf","Little Fun at Big Top","Flight of the Bat","In the Dark Night","To the Top of the Tower"]),
         "Shop":                            LegoBatman1RegionData([], ["Batcave", "Arkham Asylum"]),
@@ -45,7 +45,7 @@ regions: Dict[str, LegoBatman1RegionData] = {
         "Dying of Laughter":               LegoBatman1RegionData([], ["Status Screen"]),
         "Status Screen":                   LegoBatman1RegionData([], ["Batcave", "Arkham Asylum"]),
     }
-REGIONS: Dict[str, List[str]] = {
+
     regions["You Can Bank on Batman"].locations.append("Status Screen - You Can Bank on Batman Completed"),
     regions["An Icy Reception"].locations.append("Status Screen - An Icy Reception Completed"),    
     regions["Two-Face Chase"].locations.append("Status Screen - Two-Face Chase Completed"),
@@ -81,11 +81,19 @@ REGIONS: Dict[str, List[str]] = {
     regions["Shop"].locations.append("Buy Extra Toggle"),
     regions["Shop"].locations.append("Buy Disguise"),
     regions["Shop"].locations.append("Buy Ice Rink"),
+    regions["You Can Bank On Batman"].locations.append("TRR Hero #1 - Boss Room, Break the bank darwer"),
+    regions["An Icy Reception"].locations.append("TRR Hero #2 - Room 2, Press on switch while other character goes in cage"),
+    regions["Two-Face Chase"].locations.append("TRR Hero #3 - Room 3, Destroy trash can in the far back left cornor"),
+    regions["A Poisonous Appointment"].locations.append("TRR Hero #4 - Room 4, Use the switch, blow up the silver object and use the generator"),
     regions["The Face-Off"].locations.append("TRR Hero #5 - Room 2, After Two Face Fight, Push Colored Buttons on left side"),
+    regions["There She Goes Again"].locations.append("PCP Hero #1 - Boss Room, Break glass wall near entrance"),
+    regions["Batboat Battle"].locations.append("PCP Hero #2 - Boss Room, Submerge and shoot targets"),
+    regions["Under The City"].locations.append("PCP Hero #3 - Room 1, Use Tech Pannel and run over bouys"),
+    regions["Zoo's Company"].locations.append("PCP Hero #4 - Room 2, Break Silver grate and go in water"),
+    regions["Penguin's Lair"].locations.append("PCP Hero #5 - Boss Room, Break glass near treadmil, graple and jump to rail and run on tredmil then push button"),
     regions["Joker's Home Turf"].locations.append("TJR Hero #1 - Room 3, Freeze water near entrance then double jump up, then break glass and solve puzzle"),
     regions["Little Fun at the Big Top"].locations.append("TJR Hero #2 - Room 1, Use Tech Pannel on Crane Game, grab and break all 3 pink prizes"),
-    regions["You Can Bank On Batman"].locations.append("TRR Hero #1 - Boss Room, Break the bank darwer"),
     regions["Flight of the Bat"].locations.append("TJR Hero #3 - Room 2, Go through toxic gas and shoot turnstiles"),
     regions["In the Dark Night"].locations.append("TJR Hero #4 - Room 3, Build heated ladder then climb, glide and double jump"),
     regions["To the Top of the Tower"].locations.append("TJR Hero #5 - Room 2, Push organ out of hiding, then play it"),
-}
+
