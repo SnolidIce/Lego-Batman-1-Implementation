@@ -71,7 +71,6 @@ location_table: Dict[str, LegoBatman1LocationData] = {
     # The Ridler Makes a Withdrawal
     "TRR Villian #1 - Room 2, Climb magnet wall then double jump and bring down green sign, build it and bring it to crusher in sub room":LegoBatman1LocationData("The Ridler Makes a Withdrawal",   45035996184),
 
-
     # On the Rocks
     "TRR Villian #2 - Room 2, Break silver handle then go inside, break object, build switch, go across and build object":LegoBatman1LocationData("On the Rocks",   45035996193),
 
@@ -84,7 +83,6 @@ location_table: Dict[str, LegoBatman1LocationData] = {
     # Breaking Blocks
     "TRR Villian #5 - Room 3, Break silver door then build and push gold block, break glass, break pannel, then blow up silver door":LegoBatman1LocationData("Breaking Blocks",   45035996241),
    
-
     # Rockin' the Docks
     "PCP Villian #1 - Room 2, Use female door pannel and solve puzzle":                        LegoBatman1LocationData("Rockin' the Docks",   45035996252),
 
