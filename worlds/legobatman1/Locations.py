@@ -249,7 +249,7 @@ charshopsanity_locations = {
 }
 
 hostagesanity_locations = {
-    "TRR Hero #1 - Room 1, Break window near spawn and defeat enemeies ":                   LegoBatman1LocationData("You Can Bank On Batman",   45035996003),
+    "TRR Hero #1 - Room 1, Break window near spawn and defeat enemeies":                    LegoBatman1LocationData("You Can Bank On Batman",   45035996003),
     "TRR Hero #2 - Room 1, Inside Mind Control Door left of spawn, defeat enemies":         LegoBatman1LocationData("An Icy Reception",   45035996015),
     "TRR Hero #4 - Room 2, Break glass wall and defeat enemies":                            LegoBatman1LocationData("A Poisonous Appointment",   45035996038),
     "TRR Hero #5 - Room 1, Use Attract Machine and Double Jump on Leaves, defeat enemies":  LegoBatman1LocationData("The Face-Off",   45035996051),
