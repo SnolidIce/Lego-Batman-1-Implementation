@@ -19,7 +19,7 @@ def get_locations_by_category(category: str) -> Dict[str, LegoBatman1LocationDat
 
     return location_dict
 
-
+# NEXT ID IS 45035996274
 location_table: Dict[str, LegoBatman1LocationData] = {
 
 
@@ -522,9 +522,8 @@ kitsanity_locations = {
     # Harboring a Grudge
     "PCP Villian #3 - Room 1, Use torpedo on toxic canister":                                  LegoBatman1LocationData("Harboring a Grudge",   45035996270),
     "PCP Villian #3 - Room 1, Destroy 3 brown structures":                                     LegoBatman1LocationData("Harboring a Grudge",   45035996271),
-    "PCP Villian #3 - Room 1, Tow 2 bombs into 2 silver objects then shoot 3 sewer lids":      LegoBatman1LocationData("Harboring a Grudge",   45035996272),
+    "PCP Villian #3 - Room 1, Tow 2 bombs into 2 silver objects":                              LegoBatman1LocationData("Harboring a Grudge",   45035996272),
     "PCP Villian #3 - Room 2, Destroy 5 buoys in the water":                                   LegoBatman1LocationData("Harboring a Grudge",   45035996273),
-    "PCP Villian #3 - Room 1, Blow up silver object and pop 3 joker balloons":                 LegoBatman1LocationData("Harboring a Grudge",   45035996274),
     "PCP Villian #3 - Room 2, Shoot bridges on corner near entrance":                          LegoBatman1LocationData("Harboring a Grudge",   45035996275),
     "PCP Villian #3 - Room 2, Drive off of ramp":                                              LegoBatman1LocationData("Harboring a Grudge",   45035996276),
     "PCP Villian #3 - Room 2, Shoot police boat in toxic water":                               LegoBatman1LocationData("Harboring a Grudge",   45035996277),
