@@ -485,7 +485,7 @@ kitsanity_locations = {
     "TRR Villian #4 - Room 3, Use batarang on grate then double jump up":                      LegoBatman1LocationData("An Enterprising Theft",   45035996220),
     "TRR Villian #4 - Room 3, Break glass door then build weight":                             LegoBatman1LocationData("An Enterprising Theft",   45035996221),
     "TRR Villian #4 - Room 3, Walk on heated pipe and ride on fan":                            LegoBatman1LocationData("An Enterprising Theft",   45035996222),
-    "TRR Villian #4 - Room 4, Item by laser canon":                                            LegoBatman1LocationData("An Enterprising Theft",   45035996224),
+    "TRR Villian #4 - Room 4, Freestanding item by laser canon":                                            LegoBatman1LocationData("An Enterprising Theft",   45035996224),
     # Breaking Blocks
     "TRR Villian #5 - Room 1, Jump down on vine leafs":                                        LegoBatman1LocationData("Breaking Blocks",   45035996225),
     "TRR Villian #5 - Room 1, Shoot 3 cameras with the helicopter":                            LegoBatman1LocationData("Breaking Blocks",   45035996226),
@@ -518,7 +518,7 @@ kitsanity_locations = {
     "PCP Villian #2 - Room 2, Break glass container on left side floor 1":                     LegoBatman1LocationData("Stealing the Show",   45035996265),
     "PCP Villian #2 - Room 2, Break right box in skeleton dinosaurs area":                     LegoBatman1LocationData("Stealing the Show",   45035996266),
     "PCP Villian #2 - Room 2, Break glass continers and build catapult and use it":            LegoBatman1LocationData("Stealing the Show",   45035996268),
-    "PCP Villian #2 - Room 2, Pull statue, then double jump to ladder and wlak left":          LegoBatman1LocationData("Stealing the Show",   45035996269),
+    "PCP Villian #2 - Room 2, Pull statue, then double jump to ladder and walk left":          LegoBatman1LocationData("Stealing the Show",   45035996269),
     # Harboring a Grudge
     "PCP Villian #3 - Room 1, Use torpedo on toxic canister":                                  LegoBatman1LocationData("Harboring a Grudge",   45035996270),
     "PCP Villian #3 - Room 1, Destroy 3 brown structures":                                     LegoBatman1LocationData("Harboring a Grudge",   45035996271),
