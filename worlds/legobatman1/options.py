@@ -34,7 +34,7 @@ class Logic(Choice):
     Glitched: WARNING VERY HARD AND REQUIRES A LOT OF PRACTICE. Puts all glitches from Lego Batman into logic.
     These glitches require a lot of hard work to be consitant at.
 
-    Story Pickups: A more advanced version of glitched logic, this adds logic for all the glitches you can use to grab items in story. 
+    Story Pickups: A more advanced version of glitched logic, this adds logic for all the glitches you can use to grab items in story. Also requires extra visits to story levels
     """
     display_name = "Logic"
     option_glitchless = 0
