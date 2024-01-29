@@ -19,7 +19,7 @@ def get_locations_by_category(category: str) -> Dict[str, LegoBatman1LocationDat
 
     return location_dict
 
-# NEXT ID IS 45035996274
+# NEXT ID IS 45035996274 and 45035996328
 location_table: Dict[str, LegoBatman1LocationData] = {
 
 
@@ -570,11 +570,10 @@ kitsanity_locations = {
     "TJR Villian #2 - Room 1, Blow up silver object and pop 3 joker balloons":                 LegoBatman1LocationData("Biplane Blast",   45035996321),
     "TJR Villian #2 - Room 2, Shoot 3 joker faces on shields":                                 LegoBatman1LocationData("Biplane Blast",   45035996322),
     "TJR Villian #2 - Room 2, Blow up silver machine":                                         LegoBatman1LocationData("Biplane Blast",   45035996323),
-    "TJR Villian #2 - Room 2, Break silver billboard and fly bottom right":                    LegoBatman1LocationData("Biplane Blast",   45035996324),
+    "TJR Villian #2 - Room 2, Break billboard with torpedo and fly bottom right":              LegoBatman1LocationData("Biplane Blast",   45035996324),
     "TJR Villian #2 - Room 2, Get Batman torpedos, break box on crane, pull crane":            LegoBatman1LocationData("Biplane Blast",   45035996325),
-    "TJR Villian #2 - Boss Room, Go through toxic gas and shoot stuff":                        LegoBatman1LocationData("Biplane Blast",   45035996326),
-    "TJR Villian #2 - Boss Room, Shoot all 3 near toxic gas":                                  LegoBatman1LocationData("Biplane Blast",   45035996327),
-    "TJR Villian #2 - Boss Room, Fly south and grab item":                                     LegoBatman1LocationData("Biplane Blast",   45035996328),
+    "TJR Villian #2 - Boss Room, Use batman torpedo on train then blow up silver tank":        LegoBatman1LocationData("Biplane Blast",   45035996326),
+    "TJR Villian #2 - Boss Room, Blow up silver cage infront of batman locked gate":           LegoBatman1LocationData("Biplane Blast",   45035996327),
     # The Joker's Masterpiece
     "TJR Villian #3 - Room 1, Batarang bat statue on pillar and press both buttons":           LegoBatman1LocationData("The Joker's Masterpiece",   45035996329),
     "TJR Villian #3 - Break 3 containers throughout level (2 in room two, 1 in room one)":     LegoBatman1LocationData("The Joker's Masterpiece",   45035996330),
