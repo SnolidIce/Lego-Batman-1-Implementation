@@ -1,7 +1,10 @@
 from worlds.generic.Rules import add_rule, set_rule, forbid_item, add_item_rule
 from .items import get_item_type
 
-has_sink(state.has_any("A Daring Rescue","Water Suit")) 
+sub = state.has(["Harboring a Grudge"])
+has_sub(sub or "Penguin Goon Submarine", "Robin's Submarine")
+
+has_sink(state.has_any(["A Daring Rescue","Water Suit"])) 
 
 toxic = state.has_any(["A Surpise for the Commissioner", "On the Rocks","Green Fingers","An Enterprising Theft", "Breaking Blocks","The Joker's Masterpiece","Rockin' the Docks", "A Daring Rescue"])
 has_toxic(toxic or "Joker (Tropical)")
@@ -109,3 +112,30 @@ if self.options.glitched or self.options.story_pickups:
   trrh5_status.access_rule = lambda state: state.has_all(player, "The Face-Off", "Glide Suit")
 else:
   trrh5_status.access_rule = lambda state: state.has_all(player, "The Face-Off", "Glide Suit", "Magnet Suit", "Attract Suit")
+
+pcph1_red_brick = multiworld.get_location("PCP Hero #1 - Boss Room, Break glass wall near entrance", player)
+if self.options.glitched or self.options.story_pickups:
+  pcph1_red_brick.access_rule = lambda state: state.has_all(player, "There She Goes Again", "Glide Suit")
+else:
+  pcph1_red_brick.access_rule = lambda state: state.has_all(player, "There She Goes Again", "Sonic Suit", "Magnet Suit", "Glide Suit")
+
+pcph1_win = multiworld.get_location("Status Screen - There She Goes Again Completed", player)
+if self.options.glitched or self.options.story_pickups:
+  pcph1_win.access_rule = lambda state: state.has_all(player, "There She Goes Again", "Glide Suit")
+else:
+  pcph1_win.access_rule = lambda state: state.has_all(player, "There She Goes Again", "Magnet Suit", "Glide Suit")
+
+pcph1_status = multiworld.get_location("Status Screen - There She Goes Again True Status", player)
+if self.options.glitched or self.options.story_pickups:
+  pcph1_status.access_rule = lambda state: state.has_all(player, "There She Goes Again", "Glide Suit")
+else:
+  pcph1_status.access_rule = lambda state: state.has_all(player, "There She Goes Again", "Magnet Suit", "Glide Suit")
+
+pcph2_red_brick = multiworld.get_location("PCP Hero #2 - Boss Room, Submerge and shoot targets", player)
+if self.options.char_shop_sanity:
+  pcph2_red_brick.access_rule = lambda state: state.has_all(player, "Batboat Battle", has_sub)
+else:
+  pcph2_red_brick.access_rule = lambda state: state.has_all(player, "Batboat Battle")
+
+multiworld.get_location("Status Screen - Batboat Battle True Status", player).access_rule = lambda state: state.has_all(player, "Batboat Battle")
+multiworld.get_location("Status Screen - Batboat Battle Completed", player).access_rule = lambda state: state.has_all(player, "Batboat Battle")
