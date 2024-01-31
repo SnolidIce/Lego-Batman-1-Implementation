@@ -87,18 +87,6 @@ class StartingLevels(Choice):
     option_random_vechile_non = 8
     default = 0
 
-class DectectorLogic(Toggle):
-    """Adds a rule where Mini Kit Dector and Red Brick Dector are required for Mini Kits and Red Bricks to be in logic"""
-    display_name = "Dectctors Required?"
-
-class RequireMultipliers(Toggle):
-    """Requires atleast a stud multipler for True Statuses and characters in shop to be in logic. 
-    The ammount required for true status and purchases are turned up.
-    6x Studs becomes progression instead of useful.
-    """
-    display_name = "Require Stud Multipliers?"
-
-
 class IncreaseCharSpeed(Toggle):
     """
     Makes the character speed slightly faster. Can help making sync games not as long
@@ -163,8 +151,6 @@ class LegoBatman1Options(PerGameCommonOptions):
     hostage_sanity: HostageSanity
     char_shop_sanity: CharacterShopSanity
     start_level: StartingLevels
-    multipler_req: RequireMultipliers
-    dector_req: DectectorLogic
     speed_up: IncreaseCharSpeed
     hints: Hints
     hint_items: HintItems

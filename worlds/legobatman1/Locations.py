@@ -23,7 +23,11 @@ def get_locations_by_category(category: str) -> Dict[str, LegoBatman1LocationDat
 location_table: Dict[str, LegoBatman1LocationData] = {
 
 
-    # You Can Bank On Batman
+
+
+
+basic_locations = {
+        # You Can Bank On Batman
     "TRR Hero #1 - Boss Room, Break the bank darwer":                                       LegoBatman1LocationData("You Can Bank On Batman",   45035996011),
 
     # An Icy Reception
@@ -112,10 +116,7 @@ location_table: Dict[str, LegoBatman1LocationData] = {
 
     # Dying of Laughter
     "TJR Villian #5 - Room 1, Batarang chandelures then build sweeper and clean church":       LegoBatman1LocationData("Dying of Laughter",   45035996355),
-}
 
-
-basic_locations = {
    # Status Screen, suit unlocks then true status
     "Status Screen - Unlock Detonation Suit":                                                               LegoBatman1LocationData("Status Screen",    45035996365),
     "Status Screen - Unlock Sonic Suit":                                                                    LegoBatman1LocationData("Status Screen",    45035996366),
@@ -608,7 +609,7 @@ kitsanity_locations = {
     "TJR Villian #5 - Room 3, Jump repeatly on left 2 man button and hit bell repeatly":       LegoBatman1LocationData("Dying of Laughter",   45035996363),
     "TJR Villian #5 - Room 3, Blow up silver ladders, build both turrets, then shoot bells":   LegoBatman1LocationData("Dying of Laughter",   45035996364),
 
-}
+}}
 event_location_table: Dict[str, LegoBatman1LocationData] = {
     "Unlocked Wayne Mannor":                    LegoBatman1LocationData("Event"),
     "Unlocked Arkham Asylum":                   LegoBatman1LocationData("Event"),
