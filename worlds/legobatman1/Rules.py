@@ -71,3 +71,41 @@ else:
 multiworld.get_location("TRR Hero #3 - Room 3, Destroy trash can in the far back left cornor", player).access_rule = lambda state: state.has_all(player, "Two-Face Chase")
 multiworld.get_location("Status Screen - Two-Face Chase True Status", player).access_rule = lambda state: state.has_all(player, "Two-Face Chase")
 multiworld.get_location("Status Screen - Two-Face Chase Completed", player).access_rule = lambda state: state.has_all(player, "Two-Face Chase")
+
+trrh4_red_brick = multiworld.get_location("TRR Hero #4 - Room 4, Use the switch, blow up the silver object and use the generator", player)
+if self.options.glitched or self.options.story_pickups:
+  trrh4_red_brick.access_rule = lambda state: state.has_all(player, "A Poisonous Appointment", has_joker, has_bomb)
+else:
+  trrh4_red_brick.access_rule = lambda state: state.has_all(player, "A Poisonous Appointment", has_joker, has_bomb, "Sonic Suit", "Heat Protection Suit", "Attract Suit")
+
+trrh4_win = multiworld.get_location("Status Screen - A Poisonous Appointment Completed", player)
+if self.options.glitched or self.options.story_pickups:
+  trrh4_win.access_rule = lambda state: state.has_all(player, "A Poisonous Appointment")
+else:
+  trrh4_win.access_rule = lambda state: state.has_all(player, "A Poisonous Appointment", "Sonic Suit", "Heat Protection Suit", "Attract Suit")
+
+trrh4_status = multiworld.get_location("Status Screen - A Poisonous Appointment True Status", player)
+if self.options.glitched or self.options.story_pickups:
+  trrh4_status.access_rule = lambda state: state.has_all(player, "A Poisonous Appointment")
+else:
+  trrh4_status.access_rule = lambda state: state.has_all(player, "A Poisonous Appointment", "Sonic Suit", "Heat Protection Suit", "Attract Suit")
+
+trrh5_red_brick = multiworld.get_location("TRR Hero #5 - Room 2, After Two Face Fight, Push Colored Buttons on left side", player)
+if self.options.story_pickups:
+  trrh5_red_brick.access_rule = lambda state: state.has_all(player, "The Face-Off", "Glide Suit")
+  if self.options.glitched:
+  trrh5_red_brick.access_rule = lambda state: state.has_all(player, "The Face-Off", "Glide Suit", has_toxic)
+else:
+  trrh5_red_brick.access_rule = lambda state: state.has_all(player, "The Face-Off", "Glide Suit", "Magnet Suit", "Attract Suit", has_toxic)
+
+trrh5_win = multiworld.get_location("Status Screen - The Face-Off Completed", player)
+if self.options.glitched or self.options.story_pickups:
+  trrh5_win.access_rule = lambda state: state.has_all(player, "The Face-Off", "Glide Suit")
+else:
+  trrh5_win.access_rule = lambda state: state.has_all(player, "The Face-Off", "Glide Suit", "Magnet Suit", "Attract Suit")
+
+trrh5_status = multiworld.get_location("Status Screen - The Face-Off True Status", player)
+if self.options.glitched or self.options.story_pickups:
+  trrh5_status.access_rule = lambda state: state.has_all(player, "The Face-Off", "Glide Suit")
+else:
+  trrh5_status.access_rule = lambda state: state.has_all(player, "The Face-Off", "Glide Suit", "Magnet Suit", "Attract Suit")
