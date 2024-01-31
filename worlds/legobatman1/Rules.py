@@ -30,3 +30,39 @@ has_bomb(state.has_any(["Rockin' the Docks", "Stealing the Show", "A Daring Resc
 
 def set_rules(multiworld: MultiWorld, player: int, bool):
 
+trrh1_red_brick = multiworld.get_location("TRR Hero #1 - Boss Room, Break the bank darwer", player)
+if self.options.glitched or self.options.story_pickups:
+  boss_room.access_rule = lambda state: state.has_all(player, "You Can Bank on Batman", "Demolition Suit")
+else:
+  boss_room.access_rule = lambda state: state.has_all(player, "You Can Bank on Batman", "Demolition Suit", "Technology Suit")
+
+trrh1_win = multiworld.get_location("Status Screen - You Can Bank On Batman Completed", player)
+if self.options.glitched or self.options.story_pickups:
+  boss_room.access_rule = lambda state: state.has_all(player, "You Can Bank on Batman", "Demolition Suit")
+else:
+  boss_room.access_rule = lambda state: state.has_all(player, "You Can Bank on Batman", "Demolition Suit", "Technology Suit")
+
+trrh1_status = multiworld.get_location("Status Screen - You Can Bank On Batman True Status", player)
+if self.options.glitched or self.options.story_pickups:
+  boss_room.access_rule = lambda state: state.has_all(player, "You Can Bank on Batman", "Demolition Suit")
+else:
+  boss_room.access_rule = lambda state: state.has_all(player, "You Can Bank on Batman", "Demolition Suit", "Technology Suit")
+
+trrh2_red_brick = multiworld.get_location("TRR Hero #2 - Room 2, Press on switch while other character goes in cage", player)
+if self.options.glitched or self.options.story_pickups:
+  boss_room.access_rule = lambda state: state.has_all(player, "An Icy Reception", "Glide Suit")
+else:
+  boss_room.access_rule = lambda state: state.has_all(player, "An Icy Reception", "Glide Suit", "Magnet Suit")
+
+trrh2_win = multiworld.get_location("Status Screen - An Icy Reception Completed", player)
+if self.options.glitched or self.options.story_pickups:
+  boss_room.access_rule = lambda state: state.has_all(player, "An Icy Reception", "Glide Suit")
+else:
+  boss_room.access_rule = lambda state: state.has_all(player, "An Icy Reception", "Glide Suit", "Magnet Suit")
+
+trrh2_status = multiworld.get_location("Status Screen - An Icy Reception True Status", player)
+if self.options.glitched or self.options.story_pickups:
+  boss_room.access_rule = lambda state: state.has_all(player, "An Icy Reception", "Glide Suit")
+else:
+  boss_room.access_rule = lambda state: state.has_all(player, "An Icy Reception", "Glide Suit", "Magnet Suit")
+

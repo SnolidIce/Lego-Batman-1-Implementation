@@ -9,7 +9,7 @@ class LegoBatman1temData(NamedTuple):
     max_quantity: int = 1
     weight: int = 1
 
-
+def get_items_by_category(category: str) -> Dict[str, LegoBatman1ItemData]:
 return {name: data for name, data in item_table.items() if data.category == category}
 
 class LegoBatman1Item(Item):
