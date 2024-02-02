@@ -140,22 +140,60 @@ else:
 multiworld.get_location("Status Screen - Batboat Battle True Status", player).access_rule = lambda state: state.has_all(player, "Batboat Battle")
 multiworld.get_location("Status Screen - Batboat Battle Completed", player).access_rule = lambda state: state.has_all(player, "Batboat Battle")
 
-pcph3_red_brick = multiworld.get_location("TRR Hero #2 - Room 2, Press on switch while other character goes in cage", player)
+pcph3_red_brick = multiworld.get_location("PCP Hero #3 - Room 1, Use Tech Pannel and run over bouys", player)
 if self.options.story_pickups:
   pcph3_red_brick.access_rule = lambda state: state.has_all(player, "Under the City")
 else if self.options.glitched:
   pcph3_red_brick.access_rule = lambda state: state.has_all(player, "Under the City", "Glide Suit", "Technology Suit")
 else:
-  pcph3_red_brick.access_rule = lambda state: state.has_all(player, "Under the City", "Glide Suit", "Magnet Suit", "Water Suit", "Technology Suit")
+  pcph3_red_brick.access_rule = lambda state: state.has_all(player, "Under the City", "Glide Suit", "Magnet Suit", "Water Suit", "Technology Suit", "Demolition Suit")
 
 pcph3_win = multiworld.get_location("Status Screen - Under the City Completed", player)
 if self.options.glitched or self.options.story_pickups:
   pcph3_win.access_rule = lambda state: state.has_all(player, "Under the City", "Glide Suit")
 else:
-  pcph3_win.access_rule = lambda state: state.has_all(player, "Under the City", "Glide Suit", "Magnet Suit", "Water Suit")
+  pcph3_win.access_rule = lambda state: state.has_all(player, "Under the City", "Glide Suit", "Magnet Suit", "Water Suit", "Demolition Suit")
 
 pcph3_status = multiworld.get_location("Status Screen - Under the City True Status", player)
 if self.options.glitched or self.options.story_pickups:
   pcph3_status.access_rule = lambda state: state.has_all(player, "Under the City", "Glide Suit")
 else:
-  pcph3_status.access_rule = lambda state: state.has_all(player, "Under the City", "Glide Suit", "Magnet Suit", "Water Suit")
+  pcph3_status.access_rule = lambda state: state.has_all(player, "Under the City", "Glide Suit", "Magnet Suit", "Water Suit", "Demolition Suit")
+
+pcph4_red_brick = multiworld.get_location("PCP Hero #4 - Room 2, Break Silver grate and go in water", player)
+if self.options.story_pickups or self.options.story_pickups:
+  pcph4_red_brick.access_rule = lambda state: state.has_all(player, "Zoo's Company", "Sonic Suit", "Demolition Suit")
+else:
+  pcph4_red_brick.access_rule = lambda state: state.has_all(player, "Zoo's Company", "Glide Suit", "Sonic Suit", "Magnet Suit", "Demolition Suit", "Technology Suit")
+
+pcph4_win = multiworld.get_location("Status Screen - Zoo's Company Completed", player)
+if self.options.glitched or self.options.story_pickups:
+  pcph4_win.access_rule = lambda state: state.has_all(player, "Zoo's Company", "Demolition Suit", "Sonic Suit")
+else:
+  pcph4_win.access_rule = lambda state: state.has_all(player, "Zoo's Company", "Glide Suit", "Sonic Suit", "Magnet Suit", "Demolition Suit", "Technology Suit")
+
+pcph4_status = multiworld.get_location("Status Screen - Zoo's Company True Status", player)
+if self.options.glitched or self.options.story_pickups:
+  pcph4_status.access_rule = lambda state: state.has_all(player, "Zoo's Company", "Demolition Suit", "Sonic Suit")
+else:
+  pcph4_status.access_rule = lambda state: state.has_all(player, "Zoo's Company", "Glide Suit", "Sonic Suit", "Magnet Suit", "Demolition Suit", "Technology Suit")
+
+pcph5_red_brick = multiworld.get_location("PCP Hero #5 - Boss Room, Break glass near treadmil, graple and jump to rail and run on tredmil then push button", player)
+if self.options.story_pickups:
+  pcph5_red_brick.access_rule = lambda state: state.has_all(player, "Penguin's Lair", "Glide Suit")
+else if self.options.glitched:
+  pcph5_red_brick.access_rule = lambda state: state.has_all(player, "Penguin's Lair", "Glide Suit")
+else:
+  pcph5_red_brick.access_rule = lambda state: state.has_all(player, "Penguin's Lair", "Glide Suit", "Sonic Suit", "Water Suit")
+
+pcph5_win = multiworld.get_location("Status Screen - Penguin's Lair Completed", player)
+if self.options.glitched or self.options.story_pickups:
+  pcph5_win.access_rule = lambda state: state.has_all(player, "Penguin's Lair", "Glide Suit")
+else:
+  pcph5_win.access_rule = lambda state: state.has_all(player, "Penguin's Lair", "Glide Suit", "Water Suit")
+
+pcph5_status = multiworld.get_location("Status Screen - Penguin's Lair True Status", player)
+if self.options.glitched or self.options.story_pickups:
+  pcph5_status.access_rule = lambda state: state.has_all(player, "Penguin's Lair", "Glide Suit")
+else:
+  pcph5_status.access_rule = lambda state: state.has_all(player, "Penguin's Lair", "Glide Suit", "Water Suit")
