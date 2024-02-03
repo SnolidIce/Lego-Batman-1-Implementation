@@ -197,3 +197,50 @@ if self.options.glitched or self.options.story_pickups:
   pcph5_status.access_rule = lambda state: state.has_all(player, "Penguin's Lair", "Glide Suit")
 else:
   pcph5_status.access_rule = lambda state: state.has_all(player, "Penguin's Lair", "Glide Suit", "Water Suit")
+
+tjrh1_red_brick = multiworld.get_location("TJR Hero #1 - Room 3, Freeze water near entrance then double jump up, then break glass and solve puzzle", player)
+if self.options.story_pickups:
+  tjrh1_red_brick.access_rule = lambda state: state.has_all(player, "Joker's Home Turf", "Glide Suit", "Magnet Suit")
+else if self.options.glitched:
+  tjrh1_red_brick.access_rule = lambda state: state.has_all(player, "Joker's Home Turf", "Glide Suit", "Slam")
+else:
+  tjrh1_red_brick.access_rule = lambda state: state.has_all(player, "Joker's Home Turf", "Glide Suit", "Attract Suit", "On the Rocks", "Sonic Suit", has_doublejump)
+
+tjrh1_win = multiworld.get_location("Status Screen - Joker's Home Turf Completed", player)
+if self.options.glitched or self.options.story_pickups:
+  tjrh1_win.access_rule = lambda state: state.has_all(player, "Joker's Home Turf", "Glide Suit")
+else:
+  tjrh1_win.access_rule = lambda state: state.has_all(player, "Joker's Home Turf", "Glide Suit", "Magnet Suit")
+
+tjrh1_status = multiworld.get_location("Status Screen - Joker's Home Turf True Status", player)
+if self.options.glitched or self.options.story_pickups:
+  tjrh1_status.access_rule = lambda state: state.has_all(player, "Joker's Home Turf", "Glide Suit")
+else:
+  tjrh1_status.access_rule = lambda state: state.has_all(player, "Joker's Home Turf", "Glide Suit", "Magnet Suit")
+
+tjrh2_red_brick = multiworld.get_location("TJR Hero #2 - Room 1, Use Tech Pannel on Crane Game, grab and break all 3 pink prizes", player)
+if self.options.story_pickups or self.options.glitched:
+  tjrh2_red_brick.access_rule = lambda state: state.has_all(player, "Little Fun at the Big Top", "Technology Suit")
+else:
+  tjrh2_red_brick.access_rule = lambda state: state.has_all(player, "Little Fun at the Big Top", "Glide Suit", "Attract Suit", "Technology Suit", "Sonic Suit")
+
+tjrh2_win = multiworld.get_location("Status Screen - Little Fun at the Big Top Completed", player)
+if self.options.glitched or self.options.story_pickups:
+  tjrh2_win.access_rule = lambda state: state.has_all(player, "Little Fun at the Big Top")
+else:
+  tjrh2_win.access_rule = lambda state: state.has_all(player, "Little Fun at the Big Top", "Demolition Suit", "Sonic Suit", "Attract Suit")
+
+tjrh2_status = multiworld.get_location("Status Screen - Little Fun at the Big Top True Status", player)
+if self.options.glitched or self.options.story_pickups:
+  tjrh2_status.access_rule = lambda state: state.has_all(player, "Little Fun at the Big Top")
+else:
+  tjrh2_status.access_rule = lambda state: state.has_all(player, "Little Fun at the Big Top", "Demolition Suit", "Sonic Suit", "Attract Suit")
+
+tjrh3_red_brick = multiworld.get_location("TJR Hero #2 - Room 1, Use Tech Pannel on Crane Game, grab and break all 3 pink prizes", player)
+if self.options.story_pickups:
+  tjrh3_red_brick.access_rule = lambda state: state.has_all(player, "Flight of the Bat")
+else:
+  tjrh3_red_brick.access_rule = lambda state: state.has_all(player, "Flight of the Bat", "Biplane Blast")
+
+multiworld.get_location("Status Screen - Flight of the Bat True Status", player).access_rule = lambda state: state.has_all(player, "Flight of the Bat")
+multiworld.get_location("Status Screen - Flight of the Bat Completed", player).access_rule = lambda state: state.has_all(player, "Flight of the Bat")
