@@ -244,3 +244,41 @@ else:
 
 multiworld.get_location("Status Screen - Flight of the Bat True Status", player).access_rule = lambda state: state.has_all(player, "Flight of the Bat")
 multiworld.get_location("Status Screen - Flight of the Bat Completed", player).access_rule = lambda state: state.has_all(player, "Flight of the Bat")
+
+tjrh4_red_brick = multiworld.get_location("TJR Hero #4 - Room 3, Build heated ladder then climb, glide and double jump", player)
+if self.options.story_pickups:
+  tjrh4_red_brick.access_rule = lambda state: state.has_all(player, "In the Dark Night", "Glide Suit", "Magnet Suit")
+else if self.options.glitched:
+  tjrh4_red_brick.access_rule = lambda state: state.has_all(player, "In the Dark Night", "Glide Suit", "Slam")
+else:
+  tjrh4_red_brick.access_rule = lambda state: state.has_all(player, "In the Dark Night", "Glide Suit", "Magnet Suit", "Technology Suit", "Demolition Suit", has_doublejump)
+
+tjrh4_win = multiworld.get_location("Status Screen - In the Dark Night Completed", player)
+if self.options.glitched or self.options.story_pickups:
+  tjrh4_win.access_rule = lambda state: state.has_all(player, "In the Dark Night", "Glide Suit")
+else:
+  tjrh4_win.access_rule = lambda state: state.has_all(player, "In the Dark Night", "Glide Suit", "Glide Suit", "Magnet Suit", "Technology Suit", "Demolition Suit")
+
+tjrh4_status = multiworld.get_location("Status Screen - In the Dark Night True Status", player)
+if self.options.glitched or self.options.story_pickups:
+  tjrh4_status.access_rule = lambda state: state.has_all(player, "In the Dark Night", "Glide Suit")
+else:
+  tjrh4_status.access_rule = lambda state: state.has_all(player, "In the Dark Night", "Glide Suit", "Magnet Suit", "Technology Suit", "Demolition Suit")
+
+tjrh5_red_brick = multiworld.get_location("TJR Hero #5 - Room 2, Push organ out of hiding, then press button to get guy to play it", player)
+if self.options.story_pickups or self.options.glitched:
+  tjrh5_red_brick.access_rule = lambda state: state.has_all(player, "To the Top of the Tower", "Glide Suit", has_strong)
+else:
+  tjrh5_red_brick.access_rule = lambda state: state.has_all(player, "To the Top of the Tower", "Glide Suit", "Attract Suit", "Technology Suit", "Sonic Suit", has_strong)
+
+tjrh5_win = multiworld.get_location("Status Screen - To the Top of the Tower Completed", player)
+if self.options.glitched or self.options.story_pickups:
+  tjrh5_win.access_rule = lambda state: state.has_all(player, "To the Top of the Tower", "Glide Suit")
+else:
+  tjrh5_win.access_rule = lambda state: state.has_all(player, "To the Top of the Tower", "Demolition Suit", "Sonic Suit", "Attract Suit")
+
+tjrh5_status = multiworld.get_location("Status Screen - To the Top of the Tower True Status", player)
+if self.options.glitched or self.options.story_pickups:
+  tjrh5_status.access_rule = lambda state: state.has_all(player, "To the Top of the Tower", "Glide Suit")
+else:
+  tjrh5_status.access_rule = lambda state: state.has_all(player, "To the Top of the Tower", "Glide Suit", "Demolition Suit", "Sonic Suit", "Attract Suit")
