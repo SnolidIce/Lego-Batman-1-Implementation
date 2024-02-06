@@ -260,7 +260,7 @@ multiworld.get_location("Status Screen - Flight of the Bat Completed", player).a
 
 tjrh4_red_brick = multiworld.get_location("TJR Hero #4 - Room 3, Build heated ladder then climb, glide and double jump", player)
 if self.options.story_pickups:
-  tjrh4_red_brick.access_rule = lambda state: state.has_all(player, "In the Dark Night", "Glide Suit", "Magnet Suit","Technology Suit", "Demolition Suit")
+  tjrh4_red_brick.access_rule = lambda state: state.has_all(player, "In the Dark Night", "Technology Suit", "Demolition Suit")
 else if self.options.glitched:
   tjrh4_red_brick.access_rule = lambda state: state.has_all(player, "In the Dark Night", "Glide Suit", "Slam","Technology Suit", "Demolition Suit")
 else:
