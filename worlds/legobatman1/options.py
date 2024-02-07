@@ -5,7 +5,7 @@ class Goal(Choice):
     """
     Hero Levels: Unlock and complete all hero campaigns levels to win.
 
-    Villain Levels: Unlock and complete all hero campaigns levels to win.
+    Villain Levels: Unlock and complete all villain campaigns levels to win.
 
     All Levels: Unlock and complete both campaigns to win.
 
