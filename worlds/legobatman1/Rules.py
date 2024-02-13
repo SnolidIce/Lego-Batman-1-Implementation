@@ -1,6 +1,6 @@
 from worlds.generic.Rules import add_rule, set_rule, forbid_item, add_item_rule
 from .items import get_item_type
-
+#varibles that make my life better
 sub = state.has(["Harboring a Grudge"])
 has_sub(sub or "Penguin Goon Submarine", "Robin's Submarine")
 
@@ -43,7 +43,7 @@ else: state.has_all("To the Top of the Tower", "Glide Suit", "Demolition Suit", 
 any_hero = state.has_any(ch3h, ch2h, ch1h)
 
 all_hero = state.has_all (ch1h, ch2h, ch3h)
-
+#rules
 def set_rules(multiworld: MultiWorld, player: int, bool):
 
 trrh1_red_brick = multiworld.get_location("TRR Hero #1 - Boss Room, Break the bank darwer", player)
@@ -295,3 +295,56 @@ if self.options.glitched or self.options.story_pickups:
   tjrh5_status.access_rule = lambda state: state.has_all(player, "To the Top of the Tower", "Glide Suit")
 else:
   tjrh5_status.access_rule = lambda state: state.has_all(player, "To the Top of the Tower", "Glide Suit", "Demolition Suit", "Magnet Suit")
+
+trrv1_red_brick = multiworld.get_location("TRR Villian #1 - Room 2, Climb magnet wall then double jump and bring down green sign, build it and bring it to crusher in sub room", player)
+if self.options.story_pickups:
+  trrv1_red_brick.access_rule = lambda state: state.has_all(player, "The Ridler Makes a Withdrawal")
+else if self.options.glitched:  
+  trrv1_red_brick.access_rule = lambda state: state.has_all(player, "The Ridler Makes a Withdrawal", "Glide Suit", "Slam")
+else:
+  trrv1_red_brick.access_rule = lambda state: state.has_all(player, "The Ridler Makes a Withdrawal", "Magnet Suit")
+
+multiworld.get_location("Status Screen - The Ridler Makes a Withdrawal True Status", player).access_rule = lambda state: state.has_all(player, "The Ridler Makes a Withdrawal")
+multiworld.get_location("Status Screen - The Ridler Makes a Withdrawal Completed", player).access_rule = lambda state: state.has_all(player, "The Ridler Makes a Withdrawal")
+
+multiworld.get_location("Status Screen - On the Rocks True Status", player).access_rule = lambda state: state.has_all(player, "On the Rocks")
+multiworld.get_location("Status Screen - On the Rocks Completed", player).access_rule = lambda state: state.has_all(player, "On the Rocks")
+
+multiworld.get_location("Status Screen - Green Fingers True Status", player).access_rule = lambda state: state.has_all(player, "Green Fingers")
+multiworld.get_location("Status Screen - Green Fingers Completed", player).access_rule = lambda state: state.has_all(player, "Green Fingers")
+
+multiworld.get_location("Status Screen - An Enterprising Theft True Status", player).access_rule = lambda state: state.has_all(player, "An Enterprising Theft")
+multiworld.get_location("Status Screen - An Enterprising Theft Completed", player).access_rule = lambda state: state.has_all(player, "An Enterprising Theft")
+
+multiworld.get_location("Status Screen - Breaking Blocks True Status", player).access_rule = lambda state: state.has_all(player, "Breaking Blocks")
+multiworld.get_location("Status Screen - Breaking Blocks Completed", player).access_rule = lambda state: state.has_all(player, "Breaking Blocks")
+
+multiworld.get_location("Status Screen - Rockin' the Docks True Status", player).access_rule = lambda state: state.has_all(player, "Rockin' the Docks")
+multiworld.get_location("Status Screen - Rockin' the Docks Completed", player).access_rule = lambda state: state.has_all(player, "Rockin' the Docks")
+
+multiworld.get_location("Status Screen - Stealing the Show True Status", player).access_rule = lambda state: state.has_all(player, "Stealing the Show")
+multiworld.get_location("Status Screen - Stealing the Show Completed", player).access_rule = lambda state: state.has_all(player, "Stealing the Show")
+
+multiworld.get_location("Status Screen - Harboring a Grudge True Status", player).access_rule = lambda state: state.has_all(player, "Harboring a Grudge")
+multiworld.get_location("Status Screen - Harboring a Grudge Completed", player).access_rule = lambda state: state.has_all(player, "Harboring a Grudge")
+
+multiworld.get_location("Status Screen - A Daring Rescue True Status", player).access_rule = lambda state: state.has_all(player, "A Daring Rescue")
+multiworld.get_location("Status Screen - A Daring Rescue Completed", player).access_rule = lambda state: state.has_all(player, "A Daring Rescue")
+
+multiworld.get_location("Status Screen - Arctic World True Status", player).access_rule = lambda state: state.has_all(player, "Breaking Blocks")
+multiworld.get_location("Status Screen - Arctic World Completed", player).access_rule = lambda state: state.has_all(player, "Breaking Blocks")
+
+multiworld.get_location("Status Screen - A Surprise for the Commissioner True Status", player).access_rule = lambda state: state.has_all(player, "A Surprise for the Commissioner")
+multiworld.get_location("Status Screen - A Surprise for the Commissioner Completed", player).access_rule = lambda state: state.has_all(player, "A Surprise for the Commissioner")
+
+multiworld.get_location("Status Screen - Biplane Blast True Status", player).access_rule = lambda state: state.has_all(player, "Biplane Blast")
+multiworld.get_location("Status Screen - Biplane Blast Completed", player).access_rule = lambda state: state.has_all(player, "Biplane Blast")
+
+multiworld.get_location("Status Screen - The Joker's Masterpiece True Status", player).access_rule = lambda state: state.has_all(player, "The Joker's Masterpiece")
+multiworld.get_location("Status Screen - The Joker's Masterpiece Completed", player).access_rule = lambda state: state.has_all(player, "The Joker's Masterpiece")
+
+multiworld.get_location("Status Screen - The Lure of the Night True Status", player).access_rule = lambda state: state.has_all(player, "The Lure of the Night")
+multiworld.get_location("Status Screen - The Lure of the Night Completed", player).access_rule = lambda state: state.has_all(player, "The Lure of the Night")
+
+multiworld.get_location("Status Screen - Dying of Laughter True Status", player).access_rule = lambda state: state.has_all(player, "Dying of Laughter")
+multiworld.get_location("Status Screen - Dying of Laughter Completed", player).access_rule = lambda state: state.has_all(player, "Dying of Laughter")
