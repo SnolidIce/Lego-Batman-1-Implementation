@@ -309,9 +309,16 @@ else:
 multiworld.get_location("Status Screen - The Ridler Makes a Withdrawal True Status", player).access_rule = lambda state: state.has_all(player, "The Ridler Makes a Withdrawal")
 multiworld.get_location("Status Screen - The Ridler Makes a Withdrawal Completed", player).access_rule = lambda state: state.has_all(player, "The Ridler Makes a Withdrawal")
 
+trrv2_red_brick = multiworld.get_location("TRR Villian #2 - Room 2, Break silver handle then go inside, break object, build switch, go across and build object", player)
+if self.options.story_pickups:
+  trrv2_red_brick.access_rule = lambda state: state.has_all(player, "On the Rocks")
+else:
+  trrv2_red_brick.access_rule = lambda state: state.has_all(player, "On the Rocks", has_bomb)
+
 multiworld.get_location("Status Screen - On the Rocks True Status", player).access_rule = lambda state: state.has_all(player, "On the Rocks")
 multiworld.get_location("Status Screen - On the Rocks Completed", player).access_rule = lambda state: state.has_all(player, "On the Rocks")
 
+multiworld.get_location("TRR Villian #3 - Room 2, Bomb silver door, then go in and use attract machine, use tech pannel to bake cake", player).access_rule = lambda state: state.has_all(player, "Green Fingers", "Attract Suit","Technology Suit", has_bomb)
 multiworld.get_location("Status Screen - Green Fingers True Status", player).access_rule = lambda state: state.has_all(player, "Green Fingers")
 multiworld.get_location("Status Screen - Green Fingers Completed", player).access_rule = lambda state: state.has_all(player, "Green Fingers")
 
@@ -351,3 +358,7 @@ multiworld.get_location("Status Screen - The Lure of the Night Completed", playe
 multiworld.get_location("TJR Villian #5 - Room 1, Batarang chandelures then build sweeper and clean church", player).access_rule = lambda state: state.has_all(player, "Dying of Laughter", has_batarang)
 multiworld.get_location("Status Screen - Dying of Laughter True Status", player).access_rule = lambda state: state.has_all(player, "Dying of Laughter")
 multiworld.get_location("Status Screen - Dying of Laughter Completed", player).access_rule = lambda state: state.has_all(player, "Dying of Laughter")
+
+
+
+multiworld.get_location("TRR Villian #3 - Room 2, Bomb silver door, then go in and defeat enemy", player).access_rule = lambda state: state.has_all(player, "Green Fingers", has_bomb)
