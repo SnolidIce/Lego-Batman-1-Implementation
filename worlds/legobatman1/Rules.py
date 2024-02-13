@@ -40,6 +40,8 @@ else: state.has_all( "Penguin's Lair","Water Suit","There She Goes Again", "Magn
 ch3h = if self.options.glitched or self.options.story_pickups: state.has_all("Joker's Home Turf","To the Top of the Tower", "Glide Suit","In the Dark Night", "Technology Suit", "Demolition Suit","Flight of the Bat","Little Fun at the Big Top")
 else: state.has_all("To the Top of the Tower", "Glide Suit", "Demolition Suit", "Magnet Suit","In the Dark Night", "Technology Suit","Flight of the Bat","Little Fun at the Big Top", "Sonic Suit", "Joker's Home Turf","Attract Suit")
 
+has_batarang = state.has_any("Penguin's Lair","There She Goes Again","To the Top of the Tower","The Face-Off","You Can Bank on Batman","In the Dark Night", "An Icy Reception","Little Fun at the Big Top", "A Poisonous Appointment", "Joker's Home Turf","Zoo's Company","Under the City")
+
 any_hero = state.has_any(ch3h, ch2h, ch1h)
 
 all_hero = state.has_all (ch1h, ch2h, ch3h)
@@ -300,9 +302,9 @@ trrv1_red_brick = multiworld.get_location("TRR Villian #1 - Room 2, Climb magnet
 if self.options.story_pickups:
   trrv1_red_brick.access_rule = lambda state: state.has_all(player, "The Ridler Makes a Withdrawal")
 else if self.options.glitched:  
-  trrv1_red_brick.access_rule = lambda state: state.has_all(player, "The Ridler Makes a Withdrawal", "Glide Suit", "Slam")
+  trrv1_red_brick.access_rule = lambda state: state.has_all(player, "The Ridler Makes a Withdrawal", "Glide Suit", "Slam", has_batarang)
 else:
-  trrv1_red_brick.access_rule = lambda state: state.has_all(player, "The Ridler Makes a Withdrawal", "Magnet Suit")
+  trrv1_red_brick.access_rule = lambda state: state.has_all(player, "The Ridler Makes a Withdrawal", "Magnet Suit", has_batarang)
 
 multiworld.get_location("Status Screen - The Ridler Makes a Withdrawal True Status", player).access_rule = lambda state: state.has_all(player, "The Ridler Makes a Withdrawal")
 multiworld.get_location("Status Screen - The Ridler Makes a Withdrawal Completed", player).access_rule = lambda state: state.has_all(player, "The Ridler Makes a Withdrawal")
@@ -346,5 +348,6 @@ multiworld.get_location("Status Screen - The Joker's Masterpiece Completed", pla
 multiworld.get_location("Status Screen - The Lure of the Night True Status", player).access_rule = lambda state: state.has_all(player, "The Lure of the Night")
 multiworld.get_location("Status Screen - The Lure of the Night Completed", player).access_rule = lambda state: state.has_all(player, "The Lure of the Night")
 
+multiworld.get_location("TJR Villian #5 - Room 1, Batarang chandelures then build sweeper and clean church", player).access_rule = lambda state: state.has_all(player, "Dying of Laughter", has_batarang)
 multiworld.get_location("Status Screen - Dying of Laughter True Status", player).access_rule = lambda state: state.has_all(player, "Dying of Laughter")
 multiworld.get_location("Status Screen - Dying of Laughter Completed", player).access_rule = lambda state: state.has_all(player, "Dying of Laughter")
