@@ -300,14 +300,14 @@ else:
 
 trrv1_red_brick = multiworld.get_location("TRR Villian #1 - Room 2, Climb magnet wall then double jump and bring down green sign, build it and bring it to crusher in sub room", player)
 if self.options.story_pickups:
-  trrv1_red_brick.access_rule = lambda state: state.has_all(player, "The Ridler Makes a Withdrawal")
+  trrv1_red_brick.access_rule = lambda state: state.has_all(player, "The Riddler Makes a Withdrawal")
 else if self.options.glitched:  
-  trrv1_red_brick.access_rule = lambda state: state.has_all(player, "The Ridler Makes a Withdrawal", "Glide Suit", "Slam", has_batarang)
+  trrv1_red_brick.access_rule = lambda state: state.has_all(player, "The Riddler Makes a Withdrawal", "Glide Suit", "Slam", has_batarang)
 else:
-  trrv1_red_brick.access_rule = lambda state: state.has_all(player, "The Ridler Makes a Withdrawal", "Magnet Suit", has_batarang)
+  trrv1_red_brick.access_rule = lambda state: state.has_all(player, "The Riddler Makes a Withdrawal", "Magnet Suit", has_batarang)
 
-multiworld.get_location("Status Screen - The Ridler Makes a Withdrawal True Status", player).access_rule = lambda state: state.has_all(player, "The Ridler Makes a Withdrawal")
-multiworld.get_location("Status Screen - The Ridler Makes a Withdrawal Completed", player).access_rule = lambda state: state.has_all(player, "The Ridler Makes a Withdrawal")
+multiworld.get_location("Status Screen - The Riddler Makes a Withdrawal True Status", player).access_rule = lambda state: state.has_all(player, "The Ridler Makes a Withdrawal")
+multiworld.get_location("Status Screen - The Riddler Makes a Withdrawal Completed", player).access_rule = lambda state: state.has_all(player, "The Ridler Makes a Withdrawal")
 
 trrv2_red_brick = multiworld.get_location("TRR Villian #2 - Room 2, Break silver handle then go inside, break object, build switch, go across and build object", player)
 if self.options.story_pickups:
@@ -340,8 +340,8 @@ multiworld.get_location("Status Screen - Harboring a Grudge Completed", player).
 multiworld.get_location("Status Screen - A Daring Rescue True Status", player).access_rule = lambda state: state.has_all(player, "A Daring Rescue")
 multiworld.get_location("Status Screen - A Daring Rescue Completed", player).access_rule = lambda state: state.has_all(player, "A Daring Rescue")
 
-multiworld.get_location("Status Screen - Arctic World True Status", player).access_rule = lambda state: state.has_all(player, "Breaking Blocks")
-multiworld.get_location("Status Screen - Arctic World Completed", player).access_rule = lambda state: state.has_all(player, "Breaking Blocks")
+multiworld.get_location("Status Screen - Arctic World True Status", player).access_rule = lambda state: state.has_all(player, "Arctic World")
+multiworld.get_location("Status Screen - Arctic World Completed", player).access_rule = lambda state: state.has_all(player, "Arctic World")
 
 multiworld.get_location("Status Screen - A Surprise for the Commissioner True Status", player).access_rule = lambda state: state.has_all(player, "A Surprise for the Commissioner")
 multiworld.get_location("Status Screen - A Surprise for the Commissioner Completed", player).access_rule = lambda state: state.has_all(player, "A Surprise for the Commissioner")

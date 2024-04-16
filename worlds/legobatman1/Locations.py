@@ -373,7 +373,7 @@ kitsanity_locations = {
     "PCP Hero #4 - Room 1, Double Jump from vending machine and blow up silver objects":    LegoBatman1LocationData("Zoo's Company",   45035996097),
     "PCP Hero #4 - Room 2, Build totem then grow plant":                                    LegoBatman1LocationData("Zoo's Company",   45035996098),
     "PCP Hero #4 - Room 2, Break silver rocks in lion enclosure":                           LegoBatman1LocationData("Zoo's Company",   45035996100),
-    "PCP Hero #4 - Room 2, Top right cornor of elephant enclosure":                         LegoBatman1LocationData("Zoo's Company",   45035996101),  
+    "PCP Hero #4 - Room 2, Top right corner of elephant enclosure":                         LegoBatman1LocationData("Zoo's Company",   45035996101),  
     "PCP Hero #4 - Room 3, Jump on big lily pad behind boat":                               LegoBatman1LocationData("Zoo's Company",   45035996103),
     "PCP Hero #4 - Room 3, Freeze water near waterfall and jump up":                        LegoBatman1LocationData("Zoo's Company",   45035996105),
     "PCP Hero #4 - Room 3, Use strength thing near batman suit":                            LegoBatman1LocationData("Zoo's Company",   45035996104),
