@@ -330,7 +330,7 @@ kitsanity_locations = {
     "TRR Hero #5 - Room 1, Use Attract Machine and Double Jump on Leaves and Double jump":  LegoBatman1LocationData("The Face-Off",   45035996052),
     "TRR Hero #5 - Room 2, After Two Face Fight, jump down bridge into toxin":              LegoBatman1LocationData("The Face-Off",   45035996054),
     "TRR Hero #5 - Room 2, After Two Face Fight, right side grow plant":                    LegoBatman1LocationData("The Face-Off",   45035996055),
-    "TRR Hero #5 - Room 4, Use the switch, blow up the silver object and use the generator":LegoBatman1LocationData("The Face-Off",   45035996056),
+    "TRR Hero #5 - Room 2, Inside Pipe near robin suit":                                    LegoBatman1LocationData("The Face-Off",   45035996056),
     "TRR Hero #5 - Boss Room, Right side opening":                                          LegoBatman1LocationData("The Face-Off",   45035996057),
     "TRR Hero #5 - Boss Room, Destroy 5 large containers of money":                         LegoBatman1LocationData("The Face-Off",   45035996058),
     # There She Goes Again
@@ -343,7 +343,7 @@ kitsanity_locations = {
     "PCP Hero #1 - Room 2, Remove Trash Can near bridge and grapple":                       LegoBatman1LocationData("There She Goes Again",   45035996065),
     "PCP Hero #1 - Room 2, Remove Trash Can near fan and go under":                         LegoBatman1LocationData("There She Goes Again",   45035996066),
     "PCP Hero #1 - Room 2, Use tech pad to push buttons, blow up silver, fly to glass pannel up left":LegoBatman1LocationData("There She Goes Again",   45035996068),
-    "PCP Hero #1 - Room 2, Use tech pad to push buttons, blow up silver, fly to glass pannel right and sink":LegoBatman1LocationData("There She Goes Again",   45035996069),
+    "PCP Hero #1 - Room 2, Climb up ladder and break glass, sink and walk in pipe":         LegoBatman1LocationData("There She Goes Again",   45035996069),
     # Batboat Battle
     "PCP Hero #2 - Room 1, Power Light House and use ramp":                                 LegoBatman1LocationData("Batboat Battle",   45035996071),
     "PCP Hero #2 - Room 1, Blow up wall near silver gate, blow bomb into silver box":       LegoBatman1LocationData("Batboat Battle",   45035996072),
@@ -398,7 +398,7 @@ kitsanity_locations = {
     "TJR Hero #1 - Room 2, Use strength and double jump to rails":                          LegoBatman1LocationData("Joker's Home Turf",   45035996124),
     "TJR Hero #1 - Room 2, Swim in toxin waters near the end of the room":                  LegoBatman1LocationData("Joker's Home Turf",   45035996125),
     "TJR Hero #1 - Room 3, Use generator far right of room and use elevator and push turnstile":LegoBatman1LocationData("Joker's Home Turf",   45035996128),
-    "TJR Hero #1 - Boss Room, Climb up magnet wall and push ramp down":                      LegoBatman1LocationData("Joker's Home Turf",   45035996129),
+    "TJR Hero #1 - Boss Room, Climb up magnet wall and push ramp down and blow up silver object":LegoBatman1LocationData("Joker's Home Turf",   45035996129),
     # Little Fun at Big Top
     "TJR Hero #2 - Room 1, Push bus behind spawn then pull trash can, double jump up and build tight rope":LegoBatman1LocationData("Little Fun at the Big Top",   45035996130),
     "TJR Hero #2 - Room 1, Break glass infront of carnival game, break carnival game":      LegoBatman1LocationData("Little Fun at the Big Top",   45035996131),
@@ -411,7 +411,7 @@ kitsanity_locations = {
     "TJR Hero #2 - Room 3, Pull door and ride bumper cars":                                 LegoBatman1LocationData("Little Fun at the Big Top",   45035996140),
     "TJR Hero #2 - Room 3, Go across toxins near boss entrance, grapple and build tightrope":LegoBatman1LocationData("Little Fun at the Big Top",  45035996141),
     # Flight of the Bat
-    "TJR Hero #3 - Room 1, Destroy all 6 missle launchers":                                 LegoBatman1LocationData("Flight of the Bat",   45035996142),
+    "TJR Hero #3 - Room 1, Destroy all 6 missile launchers":                                LegoBatman1LocationData("Flight of the Bat",   45035996142),
     "TJR Hero #3 - Room 1, Fly near silver pipe on the right":                              LegoBatman1LocationData("Flight of the Bat",   45035996143),
     "TJR Hero #3 - Room 1, Fly up on railway":                                              LegoBatman1LocationData("Flight of the Bat",   45035996144),
     "TJR Hero #3 - Room 1, Blow up silver object near hotel sign":                          LegoBatman1LocationData("Flight of the Bat",   45035996145),
@@ -428,7 +428,7 @@ kitsanity_locations = {
     "TJR Hero #4 - Room 1, Destroy 3 cakes":                                                LegoBatman1LocationData("In the Dark Night",   45035996156),
     "TJR Hero #4 - Room 2, Grow 3 plants then sink in fish tank":                           LegoBatman1LocationData("In the Dark Night",   45035996157),
     "TJR Hero #4 - Room 2, Use attract machine to build helicopter, then use tech pannel to fly helicopter into buttons in center of room":LegoBatman1LocationData("In the Dark Night",   45035996158),
-    "TJR Hero #4 - Room 3, Pull truck away from garage and blow up silver obeject":         LegoBatman1LocationData("In the Dark Night",   45035996160),
+    "TJR Hero #4 - Room 3, Pull truck away from garage and blow up silver object":         LegoBatman1LocationData("In the Dark Night",   45035996160),
     "TJR Hero #4 - Room 3, Go across toxins then blow up silver objects, build and walk on magnet wall":LegoBatman1LocationData("In the Dark Night",   45035996161),
     "TJR Hero #4 - Room 3, Blow up 3rd silver sewer lid":                                  LegoBatman1LocationData("In the Dark Night",   45035996163),
     "TJR Hero #4 - Boss Room, Break glass and use generator":                              LegoBatman1LocationData("In the Dark Night",   45035996164),
@@ -438,10 +438,10 @@ kitsanity_locations = {
     "TJR Hero #5 - Room 1, Left side of room, build magnet wall, break glass":              LegoBatman1LocationData("To the Top of the Tower",   45035996168),
     "TJR Hero #5 - Room 1, Use attract machine right side of room":                         LegoBatman1LocationData("To the Top of the Tower",   45035996169),
     "TJR Hero #5 - Room 1, Pull switch then jump to platform, near robin suit":             LegoBatman1LocationData("To the Top of the Tower",   45035996170),
-    "TJR Hero #5 - Room 1, Use generator on right side":                                    LegoBatman1LocationData("To the Top of the Tower",   45035996171),
+    "TJR Hero #5 - Room 2, Use generator on left side":                                     LegoBatman1LocationData("To the Top of the Tower",   45035996171),
     "TJR Hero #5 - Room 2, Climb up magnet wall then walk along edge":                      LegoBatman1LocationData("To the Top of the Tower",   45035996172),
     "TJR Hero #5 - Room 2, Climb up magnet wall then walk a little past switch":            LegoBatman1LocationData("To the Top of the Tower",   45035996173),
-    "TJR Hero #5 - Boss Room, Cause train crash from Batman Torpedo in back then blow up silver pipe":LegoBatman1LocationData("To the Top of the Tower",   45035996175),
+    "TJR Hero #5 - Boss Room, Double Jump on left side near bell switch":                   LegoBatman1LocationData("To the Top of the Tower",   45035996175),
     "TJR Hero #5 - Boss Room, Blow up silver object right side":                            LegoBatman1LocationData("To the Top of the Tower",   45035996176),
     # The Ridler Makes a Withdrawal
     "TRR Villian #1 - Room 1, Pull garbage cans with strong character":                     LegoBatman1LocationData("The Ridler Makes a Withdrawal",   45035996178),
