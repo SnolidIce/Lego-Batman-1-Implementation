@@ -542,7 +542,7 @@ kitsanity_locations = {
     "PCP Villian #4 - Room 6, Use mind control pannel to enter sub room, then park 3 cars":    LegoBatman1LocationData("A Daring Rescue",   45035996290),
     "PCP Villian #4 - Room 7, Walk up magnet wall bottom left of room":                        LegoBatman1LocationData("A Daring Rescue",   45035996291),
     "PCP Villian #4 - Room 8, Open jail door bottom right of room":                            LegoBatman1LocationData("A Daring Rescue",   45035996292),
-    # Artic World
+    # Arctic World
     "PCP Villian #5 - Room 1, Slide on ice, then sink and pull switch":                         LegoBatman1LocationData("Arctic World",   45035996295),
     "PCP Villian #5 - Room 1, Climb up magnet wall, pull gate, use generator, grapple and wait":LegoBatman1LocationData("Arctic World",   45035996296),
     "PCP Villian #5 - Room 1, Break glass next to falling platform":                           LegoBatman1LocationData("Arctic World",   45035996297),
@@ -558,11 +558,11 @@ kitsanity_locations = {
     "TJR Villian #1 - Room 1, Break glass after cooperative puzzle":                           LegoBatman1LocationData("A Surprise for the Commissioner",   45035996306),
     "TJR Villian #1 - Freeze 3 waters into ice cream (2 in room one, 1 in room 3)":            LegoBatman1LocationData("A Surprise for the Commissioner",   45035996307),
     "TJR Villian #1 - Room 1, Blow up silver gate, build switch, pull switch":                 LegoBatman1LocationData("A Surprise for the Commissioner",   45035996309),
-    "TJR Villian #1 - Room 1, Walk up magnet wall then pull switchs and grapple":              LegoBatman1LocationData("A Surprise for the Commissioner",   45035996310),
+    "TJR Villian #1 - Room 1, Walk up magnet wall then pull switches and grapple":              LegoBatman1LocationData("A Surprise for the Commissioner",   45035996310),
     "TJR Villian #1 - Room 1, Double jump on rollercoaster":                                   LegoBatman1LocationData("A Surprise for the Commissioner",   45035996311),
     "TJR Villian #1 - Room 2, Blow up silver object, build grapple, climb magnet wall":        LegoBatman1LocationData("A Surprise for the Commissioner",   45035996312),
     "TJR Villian #1 - Room 3, Sink in duck pound":                                             LegoBatman1LocationData("A Surprise for the Commissioner",   45035996314),
-    "TJR Villian #1 - Room 3, Use attract machine then use tech pannel and race cars":         LegoBatman1LocationData("A Surprise for the Commissioner",   45035996315),
+    "TJR Villian #1 - Room 3, Use attract machine then use tech panel and race cars":         LegoBatman1LocationData("A Surprise for the Commissioner",   45035996315),
     "TJR Villian #1 - Room 3, Bring ice cream truck to garage":                                LegoBatman1LocationData("A Surprise for the Commissioner",   45035996316),
     # Biplane Blast
     "TJR Villian #2 - Break 10 towers throughout the level":                                   LegoBatman1LocationData("Biplane Blast",   45035996317),
@@ -599,14 +599,14 @@ kitsanity_locations = {
     "TJR Villian #4 - Room 3, Blow up silver gate and then sink down and push buttons, break glass":LegoBatman1LocationData("The Lure of the Night",   45035996352),
     # Dying of Laughter
     "TJR Villian #5 - Room 1, Grow plants right side of spawn":                                LegoBatman1LocationData("Dying of Laughter",   45035996353),
-    "TJR Villian #5 - Room 1, Double jump from collum then break glass":                       LegoBatman1LocationData("Dying of Laughter",   45035996354),
+    "TJR Villian #5 - Room 1, Double jump from column then break glass":                       LegoBatman1LocationData("Dying of Laughter",   45035996354),
     "TJR Villian #5 - Room 1, Pull both sides of table":                                       LegoBatman1LocationData("Dying of Laughter",   45035996356),
     "TJR Villian #5 - Room 2, Blow up silver gate, build ladder, then climb up":               LegoBatman1LocationData("Dying of Laughter",   45035996357),
     "TJR Villian #5 - Room 2, Double jump onto 2 man button cage next to elevator":            LegoBatman1LocationData("Dying of Laughter",   45035996358),
     "TJR Villian #5 - Room 2, Glide from cage":                                                LegoBatman1LocationData("Dying of Laughter",   45035996360),
     "TJR Villian #5 - Room 2, Use magnet wall near elevator":                                  LegoBatman1LocationData("Dying of Laughter",   45035996361),
     "TJR Villian #5 - Room 2, Freeze water near bridge, then break ice statue":                LegoBatman1LocationData("Dying of Laughter",   45035996362),
-    "TJR Villian #5 - Room 3, Jump repeatly on left 2 man button and hit bell repeatly":       LegoBatman1LocationData("Dying of Laughter",   45035996363),
+    "TJR Villian #5 - Room 3, Jump repeatedly on left 2 man button and hit bell repeatly":       LegoBatman1LocationData("Dying of Laughter",   45035996363),
     "TJR Villian #5 - Room 3, Blow up silver ladders, build both turrets, then shoot bells":   LegoBatman1LocationData("Dying of Laughter",   45035996364),
 
 }}
