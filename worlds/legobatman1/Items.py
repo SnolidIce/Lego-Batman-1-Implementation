@@ -79,7 +79,7 @@ basic_item = {
     "Zoo's Company":                        LegoBatman1ItemData("Levels",       45035996250, ItemClassification.progression),
     "Penguin's Lair":                       LegoBatman1ItemData("Levels",       45035996251, ItemClassification.progression),
     "Joker's Home Turf":                    LegoBatman1ItemData("Levels",       45035996252, ItemClassification.progression),
-    "Little Fun at Big Top":                LegoBatman1ItemData("Levels",       45035996253, ItemClassification.progression),
+    "Little Fun at the Big Top":                LegoBatman1ItemData("Levels",       45035996253, ItemClassification.progression),
     "Flight of the Bat":                    LegoBatman1ItemData("Levels",       45035996254, ItemClassification.progression),
     "In the Dark Night":                    LegoBatman1ItemData("Levels",       45035996255, ItemClassification.progression),
     "To the Top of the Tower":              LegoBatman1ItemData("Levels",       45035996256, ItemClassification.progression),
