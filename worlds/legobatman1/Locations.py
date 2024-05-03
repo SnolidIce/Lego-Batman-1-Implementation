@@ -560,7 +560,7 @@ kitsanity_locations = {
     "TJR Villian #1 - Room 1, Blow up silver gate, build switch, pull switch":                 LegoBatman1LocationData("A Surprise for the Commissioner",   45035996309),
     "TJR Villian #1 - Room 1, Walk up magnet wall then pull switches and grapple":              LegoBatman1LocationData("A Surprise for the Commissioner",   45035996310),
     "TJR Villian #1 - Room 1, Double jump on rollercoaster":                                   LegoBatman1LocationData("A Surprise for the Commissioner",   45035996311),
-    "TJR Villian #1 - Room 2, Blow up silver object, build grapple, climb magnet wall":        LegoBatman1LocationData("A Surprise for the Commissioner",   45035996312),
+    "TJR Villian #1 - Room 1, Blow up silver object, build grapple, climb magnet wall":        LegoBatman1LocationData("A Surprise for the Commissioner",   45035996312),
     "TJR Villian #1 - Room 3, Sink in duck pound":                                             LegoBatman1LocationData("A Surprise for the Commissioner",   45035996314),
     "TJR Villian #1 - Room 3, Use attract machine then use tech panel and race cars":         LegoBatman1LocationData("A Surprise for the Commissioner",   45035996315),
     "TJR Villian #1 - Room 3, Bring ice cream truck to garage":                                LegoBatman1LocationData("A Surprise for the Commissioner",   45035996316),
